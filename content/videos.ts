@@ -12,8 +12,18 @@ export const featuredVideos: Video[] = [
   { id: '73vfS0HiApM', title: 'Robust In-Hand Manipulation Policy based on RL-DOB', tag: 'Physical AI' },
 ];
 
-/** IDs cycled in the hero backdrop reel */
+/** IDs cycled in the hero backdrop reel (fallback when the playlist can't be fetched) */
 export const heroReel: string[] = ['pyLLG74D9jI', 'lJGHvHAex6g', '4oIh14FL_44', 'Qudi73Vm4_c'];
+
+/** YouTube "Research" playlist that feeds the hero backdrop — new uploads appear automatically */
+export const heroPlaylistId = 'PLAUadnYJsReuafzkvid6k_3qI1vjicdvk';
+
+/**
+ * Optional per-video override of the hero highlight segment.
+ * Videos not listed here automatically play ~12s starting 35% into the video
+ * (past intros/title cards). Example: { pyLLG74D9jI: { start: 42, seconds: 10 } }
+ */
+export const heroHighlights: Record<string, { start: number; seconds?: number }> = {};
 
 export const moreVideos: Video[] = [
   { id: 'n74F0ifQ4PE', title: 'Ultra-Low-Impedance, High-Bandwidth, High-Sensitivity Robotic Finger — Demo 1' },
