@@ -37,7 +37,10 @@ export default function PublicationsPage() {
     []
   );
   const filtered = useMemo(
-    () => (type === 'patents' ? patentRows : type === 'all' ? publications : publications.filter((p) => p.type === type)),
+    () =>
+      type === 'patents' ? patentRows
+      : type === 'all' ? [...publications, ...patentRows]
+      : publications.filter((p) => p.type === type),
     [type, patentRows]
   );
   const years = useMemo(
