@@ -1,5 +1,6 @@
 export const advisor = {
   name: 'Seokhwan Jeong, Ph.D.',
+  photo: '/images/team/seokhwan-jeong.jpg',
   title: 'Associate Professor, Department of Mechanical Engineering, Sogang University',
   office: 'Room 236, Building K, Sogang University, Seoul, Korea',
   phone: '+82-2-705-7886',

@@ -36,7 +36,13 @@ export default function AdvisorPage() {
         <div className="container-site">
           <Reveal>
             <div className="card p-7 md:flex md:items-center md:justify-between md:gap-8">
-              <div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={advisor.photo}
+                alt={advisor.name}
+                className="mb-6 h-40 w-32 shrink-0 rounded-2xl border border-rim-cyan/35 object-cover object-top md:mb-0"
+              />
+              <div className="md:flex-1">
                 <p className="eyebrow">Research Interests</p>
                 <p className="mt-3 flex flex-wrap gap-2">
                   {advisor.interests.map((x) => <span key={x} className="chip border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan !normal-case !text-[12.5px] !font-sans !tracking-normal">{x}</span>)}

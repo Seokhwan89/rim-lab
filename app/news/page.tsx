@@ -42,6 +42,15 @@ export default function NewsPage() {
                   </div>
                   <h2 className="mt-2.5 font-display text-[17.5px] font-semibold leading-snug">{n.title}</h2>
                   {n.body && <p className="mt-2 text-[13.5px] leading-relaxed text-rim-muted">{n.body}</p>}
+                  {n.image && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={n.image}
+                      alt={n.title}
+                      loading="lazy"
+                      className="mt-4 w-full max-w-2xl rounded-lg border border-rim-line object-cover"
+                    />
+                  )}
                   {n.link && <a href={n.link} target="_blank" rel="noreferrer" className="mt-3 inline-block font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">Related link ↗</a>}
                 </div>
               </Reveal>

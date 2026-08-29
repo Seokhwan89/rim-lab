@@ -4,15 +4,31 @@ export type Member = {
   topic?: string;
   background?: string;
   email?: string;
+  /** Optional portrait (path under /public), e.g. '/images/team/name.jpg' */
+  photo?: string;
 };
 
-export type Alum = { name: string; degree: string; date: string; position?: string };
+export type Alum = { name: string; degree: string; date: string; position?: string; photo?: string };
 
 export const pi: Member = {
   name: 'Seokhwan Jeong',
   role: 'Principal Investigator · Associate Professor',
   email: 'seokhwan@sogang.ac.kr',
+  photo: '/images/team/seokhwan-jeong.jpg',
 };
+
+/** Group photo shown at the top of the Team page */
+export const groupPhoto = {
+  src: '/images/lab/group-photo.jpg',
+  caption: 'RIM Lab members in the renovated lab space (RA313), 2025',
+};
+
+/** Lab & facilities gallery */
+export const labGallery: { src: string; caption: string }[] = [
+  { src: '/images/lab/lab-space-1.jpg', caption: 'Main research space — workstations and assembly benches' },
+  { src: '/images/lab/lab-equipment.jpg', caption: 'Robot experiment area — optical table and manipulator setups' },
+  { src: '/images/lab/lab-space-2.jpg', caption: 'Renovated lab interior, RA313' },
+];
 
 export const staff: Member[] = [
   { name: 'Eunjin Yang', role: 'Administrative Staff', email: 'yangeunjin@gmail.com' },

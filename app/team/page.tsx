@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
-import { pi, staff, phd, ms, undergrad, alumni, type Member } from '@/content/team';
+import { pi, staff, phd, ms, undergrad, alumni, groupPhoto, labGallery, type Member } from '@/content/team';
 
 export const metadata: Metadata = { title: 'Team' };
 
@@ -15,9 +15,14 @@ function MemberCard({ m, delay = 0 }: { m: Member; delay?: number }) {
   return (
     <Reveal delay={delay}>
       <div className="card card-hover flex h-full items-start gap-4 p-5">
-        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-rim-cyan/35 bg-rim-cyan/10 font-display text-[15px] font-semibold text-rim-cyan">
-          {initials(m.name)}
-        </span>
+        {m.photo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={m.photo} alt={m.name} loading="lazy" className="h-14 w-14 shrink-0 rounded-full border border-rim-cyan/35 object-cover" />
+        ) : (
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-rim-cyan/35 bg-rim-cyan/10 font-display text-[15px] font-semibold text-rim-cyan">
+            {initials(m.name)}
+          </span>
+        )}
         <div className="min-w-0">
           <p className="font-display text-[15.5px] font-semibold">{m.name}</p>
           {m.topic && <p className="mt-1 text-[13px] leading-snug text-rim-cyan/90">{m.topic}</p>}
@@ -51,16 +56,37 @@ export default function TeamPage() {
         title={<>The people who <span className="grad-cyan">build it</span></>}
         desc="Lab: RA313 · Sogang University. We design, machine, solder, and train — every member ships hardware that works in the real world."
       />
+      {/* Group photo */}
+      <section className="border-b border-rim-line bg-rim-bg">
+        <div className="container-site py-10">
+          <Reveal>
+            <figure className="card overflow-hidden p-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={groupPhoto.src} alt={groupPhoto.caption} className="max-h-[520px] w-full object-cover" />
+              <figcaption className="border-t border-rim-line px-5 py-3 font-mono text-[12px] uppercase tracking-[0.14em] text-rim-faint">
+                {groupPhoto.caption}
+              </figcaption>
+            </figure>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="bg-rim-bg py-20">
         <div className="container-site">
           <Section title="Principal Investigator">
             <Reveal>
               <div className="card card-hover relative overflow-hidden p-8 md:flex md:items-center md:justify-between md:gap-8">
                 <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-rim-cyan/10 blur-[90px]" aria-hidden />
-                <div className="relative">
-                  <p className="font-display text-[24px] font-semibold">{pi.name}</p>
-                  <p className="mt-1 text-[14.5px] text-rim-muted">{pi.role}</p>
-                  <a href={`mailto:${pi.email}`} className="mt-2 block font-mono text-[13px] text-rim-cyan hover:underline">{pi.email}</a>
+                <div className="relative flex items-center gap-6">
+                  {pi.photo && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={pi.photo} alt={pi.name} className="h-24 w-24 shrink-0 rounded-2xl border border-rim-cyan/35 object-cover object-top" />
+                  )}
+                  <div>
+                    <p className="font-display text-[24px] font-semibold">{pi.name}</p>
+                    <p className="mt-1 text-[14.5px] text-rim-muted">{pi.role}</p>
+                    <a href={`mailto:${pi.email}`} className="mt-2 block font-mono text-[13px] text-rim-cyan hover:underline">{pi.email}</a>
+                  </div>
                 </div>
                 <Link href="/advisor" className="btn-ghost relative mt-6 md:mt-0">Full profile →</Link>
               </div>
@@ -113,6 +139,20 @@ export default function TeamPage() {
                 </table>
               </div>
             </Reveal>
+          </Section>
+
+          <Section title="Lab & Facilities" count={labGallery.length}>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {labGallery.map((g, i) => (
+                <Reveal key={g.src} delay={(i % 3) * 70}>
+                  <figure className="card card-hover h-full overflow-hidden p-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={g.src} alt={g.caption} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                    <figcaption className="px-4 py-3 text-[12.5px] leading-snug text-rim-muted">{g.caption}</figcaption>
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
           </Section>
         </div>
       </section>

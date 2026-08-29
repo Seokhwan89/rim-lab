@@ -31,20 +31,33 @@ export default function Home() {
         <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-rim-cyan/8 blur-[130px]" aria-hidden />
         <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-rim-indigo/10 blur-[130px]" aria-hidden />
 
-        <div className="container-site relative py-32">
-          <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
-          <h1 className="h-display rise rise-2 mt-5 max-w-4xl">
-            Building the <span className="grad-cyan glow-text">hardware of</span><br />
-            <span className="grad-cyan glow-text">physical intelligence</span>
-          </h1>
-          <p className="rise rise-3 mt-7 max-w-2xl text-[17px] leading-relaxed text-rim-muted">
-            The Robotics &amp; Intelligent Mechanisms Lab develops core robotic hardware and physical
-            intelligence for dexterous interaction with the real world — robot hands, grippers, compact
-            high-performance actuators, variable transmissions, and proprioceptive, force-aware manipulation.
-          </p>
-          <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
-            <Link href="/research" className="btn-primary">Explore Research</Link>
-            <Link href="/opening" className="btn-ghost">Join the Lab</Link>
+        <div className="container-site relative py-32 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-14">
+          <div>
+            <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
+            <h1 className="h-display rise rise-2 mt-5 max-w-4xl">
+              Building the <span className="grad-cyan glow-text">hardware of</span><br />
+              <span className="grad-cyan glow-text">physical intelligence</span>
+            </h1>
+            <p className="rise rise-3 mt-7 max-w-2xl text-[17px] leading-relaxed text-rim-muted">
+              The Robotics &amp; Intelligent Mechanisms Lab develops core robotic hardware and physical
+              intelligence for dexterous interaction with the real world — robot hands, grippers, compact
+              high-performance actuators, variable transmissions, and proprioceptive, force-aware manipulation.
+            </p>
+            <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
+              <Link href="/research" className="btn-primary">Explore Research</Link>
+              <Link href="/opening" className="btn-ghost">Join the Lab</Link>
+            </div>
+          </div>
+
+          {/* Featured video */}
+          <div className="rise rise-4 mt-12 lg:mt-0">
+            <div className="card overflow-hidden p-0 shadow-[0_0_70px_-18px_rgba(34,211,238,0.35)]">
+              <LiteYouTube id={featuredVideos[0].id} title={featuredVideos[0].title} className="rounded-b-none" />
+              <div className="flex items-start justify-between gap-3 p-4">
+                <p className="line-clamp-2 text-[13.5px] font-medium leading-snug text-rim-text">{featuredVideos[0].title}</p>
+                <span className="chip shrink-0 border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan">Featured</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -130,9 +143,16 @@ export default function Home() {
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {newsGroups.map((g, gi) => {
               const items = news.filter((n) => g.cats.includes(n.category)).slice(0, 4);
+              const cover = items.find((n) => n.image);
               return (
                 <Reveal key={g.label} delay={gi * 90}>
-                  <div className="card h-full p-6">
+                  <div className={`card h-full overflow-hidden p-6 ${cover ? 'pt-0' : ''}`}>
+                    {cover?.image && (
+                      <Link href="/news" className="group -mx-6 mb-5 block overflow-hidden border-b border-rim-line">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={cover.image} alt={cover.title} loading="lazy" className="h-32 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]" />
+                      </Link>
+                    )}
                     <h3 className="font-display text-[15.5px] font-semibold uppercase tracking-wide text-rim-text">{g.label}</h3>
                     <div className="mt-4 space-y-4">
                       {items.map((n, i) => (
