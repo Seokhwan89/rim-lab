@@ -6,6 +6,7 @@ import Reveal from '@/components/Reveal';
 import LiteYouTube from '@/components/LiteYouTube';
 import ProjectIcon from '@/components/ProjectIcon';
 import { projects } from '@/content/projects';
+import { patentsByProject } from '@/content/patents';
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -77,15 +78,28 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                 <Link href="/publications" className="mt-5 inline-block font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">All publications →</Link>
               </Block>
             )}
-            {(p.patents || p.funding || p.highlights) && (
+            {(patentsByProject(p.slug).length > 0 || p.patents || p.funding || p.highlights) && (
               <Block title="Patents · Funding · Highlights">
                 <ul className="space-y-3">
-                  {[...(p.highlights ?? []), ...(p.patents ?? []), ...(p.funding ?? [])].map((x) => (
+                  {[...(p.highlights ?? []), ...(p.funding ?? []), ...(p.patents ?? [])].map((x) => (
                     <li key={x} className="flex gap-3 text-[13.5px] leading-relaxed text-rim-muted">
                       <span className="mt-[8px] h-1.5 w-1.5 shrink-0 rounded-full bg-rim-indigo" />{x}
                     </li>
                   ))}
+                  {patentsByProject(p.slug).map((pt) => (
+                    <li key={pt.numbers} className="flex gap-3 text-[13.5px] leading-relaxed text-rim-muted">
+                      <span className="mt-[8px] h-1.5 w-1.5 shrink-0 rounded-full bg-rim-indigo" />
+                      <span>
+                        {pt.title}
+                        <span className="ml-2 font-mono text-[11px] uppercase tracking-wide text-rim-faint">
+                          {pt.status === 'registered' ? 'Registered' : 'Filed'}
+                        </span>
+                        <span className="mt-0.5 block font-mono text-[11.5px] text-rim-faint">{pt.numbers}</span>
+                      </span>
+                    </li>
+                  ))}
                 </ul>
+                <Link href="/publications" className="mt-5 inline-block font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">All patents →</Link>
               </Block>
             )}
           </div>

@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 import { publications, type Pub } from '@/content/publications';
+import { patents, type Patent } from '@/content/patents';
 import { site } from '@/content/site';
 
 const TYPES = [
@@ -10,6 +11,7 @@ const TYPES = [
   { key: 'journal', label: 'Journals' },
   { key: 'conference', label: 'Conferences' },
   { key: 'domestic', label: 'Domestic' },
+  { key: 'patents', label: 'Patents' },
 ] as const;
 
 function highlightJeong(authors: string) {
@@ -22,9 +24,21 @@ function highlightJeong(authors: string) {
 
 export default function PublicationsPage() {
   const [type, setType] = useState<(typeof TYPES)[number]['key']>('all');
+  const patentRows = useMemo<Pub[]>(
+    () =>
+      patents.map((pt: Patent) => ({
+        title: pt.title,
+        authors: pt.assignee,
+        venue: pt.numbers,
+        year: pt.year,
+        type: 'patent',
+        note: pt.status === 'registered' ? (pt.note ? `Registered · ${pt.note.replace(/^Registered\s*/i, '')}` : 'Registered') : pt.note,
+      })),
+    []
+  );
   const filtered = useMemo(
-    () => (type === 'all' ? publications : publications.filter((p) => p.type === type)),
-    [type]
+    () => (type === 'patents' ? patentRows : type === 'all' ? publications : publications.filter((p) => p.type === type)),
+    [type, patentRows]
   );
   const years = useMemo(
     () => Array.from(new Set(filtered.map((p) => p.year))).sort((a, b) => b - a),
@@ -34,6 +48,7 @@ export default function PublicationsPage() {
     journal: publications.filter((p) => p.type === 'journal').length,
     conference: publications.filter((p) => p.type === 'conference').length,
     domestic: publications.filter((p) => p.type === 'domestic').length,
+    patents: patents.length,
   };
 
   return (
@@ -41,7 +56,7 @@ export default function PublicationsPage() {
       <PageHero
         eyebrow="Publications"
         title={<>Peer-reviewed <span className="grad-cyan">output</span></>}
-        desc={`${counts.journal} international journal papers · ${counts.conference} peer-reviewed conference papers · ${counts.domestic} domestic publications. Patents are listed on each research project page and Google Scholar.`}
+        desc={`${counts.journal} international journal papers · ${counts.conference} peer-reviewed conference papers · ${counts.domestic} domestic publications · ${counts.patents} patent families (KR, US, EP, JP, CN and more).`}
       />
       <section className="bg-rim-bg py-16">
         <div className="container-site">
@@ -78,7 +93,7 @@ export default function PublicationsPage() {
                               <a href={p.link} target="_blank" rel="noreferrer" className="transition-colors hover:text-rim-cyan">{p.title}</a>
                             ) : p.title}
                           </h2>
-                          <span className={`chip shrink-0 ${p.type === 'journal' ? 'border-cyan-300/40 bg-cyan-300/10 text-cyan-300' : p.type === 'conference' ? 'border-violet-300/40 bg-violet-300/10 text-violet-300' : 'border-slate-300/40 bg-slate-300/10 text-slate-300'}`}>
+                          <span className={`chip shrink-0 ${p.type === 'journal' ? 'border-cyan-300/40 bg-cyan-300/10 text-cyan-300' : p.type === 'conference' ? 'border-violet-300/40 bg-violet-300/10 text-violet-300' : p.type === 'patent' ? 'border-emerald-300/40 bg-emerald-300/10 text-emerald-300' : 'border-slate-300/40 bg-slate-300/10 text-slate-300'}`}>
                             {p.type}
                           </span>
                         </div>

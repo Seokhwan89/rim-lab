@@ -3,7 +3,7 @@ export type Pub = {
   authors: string;
   venue: string;
   year: number;
-  type: 'journal' | 'conference' | 'domestic';
+  type: 'journal' | 'conference' | 'domestic' | 'patent';
   link?: string;
   note?: string;
 };

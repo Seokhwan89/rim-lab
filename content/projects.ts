@@ -33,7 +33,6 @@ export const projects: Project[] = [
       'A Robotic Finger with a 4-bar Linkage-based Compact and Continuously Variable Active Transmission — IEEE RA-L, 2024',
       'A 2-Speed Small Transmission Mechanism Based on Twisted String Actuation and a Dog Clutch — IEEE RA-L, 2018',
     ],
-    patents: ['Multiple patents granted/filed on actively variable stiffness and dual-mode transmission mechanisms (KR, US, EU)'],
   },
   {
     slug: 'robotic-hands',
@@ -54,7 +53,6 @@ export const projects: Project[] = [
       'Designing Anthropomorphic Robot Hand With Active Dual-Mode Twisted String Actuation Mechanism and Tiny Tension Sensors — IEEE RA-L, 2017',
     ],
     highlights: ['Best Student Paper Award & Best Mechatronics Student Paper Award, IEEE AIM 2016'],
-    patents: ['Patents on twisted string actuation, dual-mode transmission, and gripper design (KR, US, EU)'],
   },
   {
     slug: 'ai-based-multifinger-grasping',
@@ -73,10 +71,6 @@ export const projects: Project[] = [
     ],
     pubs: [
       'Why Look at It at All?: Vision-Free Multifingered Blind Grasping Using Uniaxial Fingertip Force Sensing — under review, 2026',
-    ],
-    patents: [
-      'Single-axis force sensor-based robotic grasp control method (KR 10-2026-0014600)',
-      'Multi-DoF robot gripper using direct-drive differential mechanisms (KR 10-2026-0005274)',
     ],
   },
   {
@@ -98,7 +92,6 @@ export const projects: Project[] = [
       'Coaxial Magnetic Gear-based Tool-Changing System — IEEE Access, 2024',
     ],
     funding: ['NRF Basic Research Program (2021.06 – 2024.02)'],
-    patents: ['Four patents filed/registered on hybrid magnetic transmission systems and control (2022–2025)'],
   },
   {
     slug: 'factory-automation',
@@ -115,7 +108,6 @@ export const projects: Project[] = [
       '다발 하네스 케이블 조립 자동화 시스템 구현을 위한 메커니즘 설계 — 국방로봇학회 논문집, 2024',
     ],
     funding: ['Daeha Wire & Cable Co. (2022.04 – 2025.05)'],
-    patents: ['Five patent applications on harness-cable assembly automation (feeding, alignment, terminal coupling, weaving) — 2024'],
   },
   {
     slug: 'surgical-robots',
@@ -131,7 +123,6 @@ export const projects: Project[] = [
       'Modeling and Control of a 2-DoF Meso-scale Continuum Robotic Tool for Pediatric Neurosurgery — IEEE T-RO, 2021',
       'Design and Kinematics Analysis of a Robotic Pediatric Neuroendoscope Tool Body — IEEE/ASME T-Mech, 2020',
     ],
-    patents: ['US patent granted (17/433,165); application US20230158279A1 on steerable endoscopic tools'],
   },
   {
     slug: 'lower-limb-exo',
@@ -146,7 +137,6 @@ export const projects: Project[] = [
       'NRF Basic Research Lab — Exo-3D-printed sensing suit for walking enhancement (2023.06 – 2026.02, 1.5B KRW, joint)',
       'National Rehabilitation Center R&D — flexible wearable lower-limb assistive robot (2022.08 – 2024.12, 390M KRW, joint)',
     ],
-    patents: ['Lower limb force assistance device (KR 10-2023-0152159, filed 2023.11)'],
   },
   {
     slug: 'hand-exoskeletons',
@@ -161,7 +151,6 @@ export const projects: Project[] = [
       'FLEXotendon Glove-III: Voice-Controlled Soft Robotic Hand Exoskeleton — IEEE/ASME T-Mech, 2022',
       'A Review: Hand Exoskeleton Systems, Clinical Rehabilitation Practices, and Future Prospects — IEEE T-MRB, 2021',
     ],
-    patents: ['US20220143826A1 — Voice-activated, compact, portable robotic system (filed 2022)'],
   },
   {
     slug: 'optical-compact-force-sensor',
