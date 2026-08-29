@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import HeroCanvas from '@/components/HeroCanvas';
+import HeroVideo from '@/components/HeroVideo';
 import LiteYouTube from '@/components/LiteYouTube';
 import ProjectIcon from '@/components/ProjectIcon';
 import { researchAreas, projects } from '@/content/projects';
-import { featuredVideos } from '@/content/videos';
+import { featuredVideos, heroReel } from '@/content/videos';
 import { news, categoryColors, type NewsCategory } from '@/content/news';
 import { site } from '@/content/site';
 
@@ -26,38 +27,26 @@ export default function Home() {
     <>
       {/* ───────────────────────── Hero ───────────────────────── */}
       <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-rim-bg">
-        <div className="hero-grid absolute inset-0" aria-hidden />
         <HeroCanvas className="absolute inset-0 h-full w-full" />
+        <HeroVideo ids={heroReel} />
+        <div className="hero-grid absolute inset-0" aria-hidden />
         <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-rim-cyan/8 blur-[130px]" aria-hidden />
         <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-rim-indigo/10 blur-[130px]" aria-hidden />
 
-        <div className="container-site relative py-32 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-14">
-          <div>
-            <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
-            <h1 className="h-display rise rise-2 mt-5 max-w-4xl">
-              Building the <span className="grad-cyan glow-text">hardware of</span><br />
-              <span className="grad-cyan glow-text">physical intelligence</span>
-            </h1>
-            <p className="rise rise-3 mt-7 max-w-2xl text-[17px] leading-relaxed text-rim-muted">
-              The Robotics &amp; Intelligent Mechanisms Lab develops core robotic hardware and physical
-              intelligence for dexterous interaction with the real world — robot hands, grippers, compact
-              high-performance actuators, variable transmissions, and proprioceptive, force-aware manipulation.
-            </p>
-            <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
-              <Link href="/research" className="btn-primary">Explore Research</Link>
-              <Link href="/opening" className="btn-ghost">Join the Lab</Link>
-            </div>
-          </div>
-
-          {/* Featured video */}
-          <div className="rise rise-4 mt-12 lg:mt-0">
-            <div className="card overflow-hidden p-0 shadow-[0_0_70px_-18px_rgba(34,211,238,0.35)]">
-              <LiteYouTube id={featuredVideos[0].id} title={featuredVideos[0].title} className="rounded-b-none" />
-              <div className="flex items-start justify-between gap-3 p-4">
-                <p className="line-clamp-2 text-[13.5px] font-medium leading-snug text-rim-text">{featuredVideos[0].title}</p>
-                <span className="chip shrink-0 border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan">Featured</span>
-              </div>
-            </div>
+        <div className="container-site relative py-32">
+          <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
+          <h1 className="h-display rise rise-2 mt-5 max-w-4xl">
+            Building the <span className="grad-cyan glow-text">hardware of</span><br />
+            <span className="grad-cyan glow-text">physical intelligence</span>
+          </h1>
+          <p className="rise rise-3 mt-7 max-w-2xl text-[17px] leading-relaxed text-rim-muted">
+            The Robotics &amp; Intelligent Mechanisms Lab develops core robotic hardware and physical
+            intelligence for dexterous interaction with the real world — robot hands, grippers, compact
+            high-performance actuators, variable transmissions, and proprioceptive, force-aware manipulation.
+          </p>
+          <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
+            <Link href="/research" className="btn-primary">Explore Research</Link>
+            <Link href="/opening" className="btn-ghost">Join the Lab</Link>
           </div>
         </div>
 
