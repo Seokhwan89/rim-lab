@@ -14,7 +14,7 @@ import { heroPlaylistId, heroHighlights } from '@/content/videos';
  */
 const SEG_MIN_FRACTION = 0.15; // skip the first 15% (intros, title cards)
 const SEG_MAX_FRACTION = 0.8; // and the last 20% (outros, credits)
-const SEG_SECONDS = 5; // seconds each clip plays
+const SEG_SECONDS = 10; // seconds each clip plays
 const FADE_MS = 500; // veil fade duration between videos
 const MIN_AUTO_SEEK = 60; // don't auto-seek videos shorter than this (s)
 
