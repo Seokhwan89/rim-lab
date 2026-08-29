@@ -20,3 +20,11 @@
 - 메뉴 순서 유지: Opening, Team, Advisor, Research Projects, News, Publications
 - push 전에 `npm run build`로 빌드 통과를 확인한다.
 - 배포 사이트 직접 접속은 안 될 수 있으나 정상이며, 반영 확인은 사용자가 브라우저로 한다.
+
+## 자동화
+
+- 매주 월요일 09:00 KST에 "RIM Lab weekly news update" Routine이 실행된다.
+  교수 Gmail에서 지난 8일간의 공개 가능한 실적(논문 게재, 수상, 과제 선정,
+  특허 등록, 학회 활동, 구성원 소식)을 찾아 `content/*.ts` 수정안을
+  `claude/news-auto-YYYYMMDD` 브랜치 + PR로 제안한다. main 직접 push 금지,
+  머지는 교수가 검토 후 직접 한다.
