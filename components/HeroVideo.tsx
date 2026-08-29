@@ -144,7 +144,13 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
               if (cancelled || slot !== 0 || st.ids.length > 0) return;
               if (e.data === window.YT?.PlayerState?.CUED) {
                 const list = st.players[0].getPlaylist?.();
-                st.ids = Array.isArray(list) && list.length > 0 ? [...list] : fallbackIds;
+                const ids = Array.isArray(list) && list.length > 0 ? [...list] : [...fallbackIds];
+                // Fisher–Yates shuffle so every visit plays a different order
+                for (let k = ids.length - 1; k > 0; k--) {
+                  const j = Math.floor(Math.random() * (k + 1));
+                  [ids[k], ids[j]] = [ids[j], ids[k]];
+                }
+                st.ids = ids;
                 preload(0);
               }
             },
