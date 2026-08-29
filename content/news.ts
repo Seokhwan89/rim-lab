@@ -11,6 +11,7 @@ export type NewsItem = {
 };
 
 export const news: NewsItem[] = [
+  { date: '2026.08', title: 'Prof. Jeong selected as a Fulbright Visiting Scholar', category: 'Award', body: 'Prof. Seokhwan Jeong was selected for the Fulbright Visiting Scholar Program (PY 2027) for research in the United States.' },
   { date: '2026.07', title: 'ICROS 2026, Daegu EXCO', category: 'Conference', body: 'RIM Lab members participated in ICROS 2026 held at Daegu EXCO.' },
   { date: '2026.07', title: 'AIM 2026, Genova, Italy', category: 'Conference', body: 'The lab attended IEEE/ASME AIM 2026 in Genova, Italy.' },
   { date: '2026.06', title: 'MOTIE R&D project selected (Digital Healthcare)', category: 'Grant', body: 'Our proposal for the bio-industry technology development program (digital healthcare) was accepted.' },
