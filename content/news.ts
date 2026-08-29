@@ -24,6 +24,7 @@ export const news: NewsItem[] = [
   { date: '2026.02', title: 'KROC 2026 RED Show — Excellence Award', category: 'Award', body: 'Edgar Lee, Junho Choi, and Chihyun Han received the Excellence Award (general category) at the KROC 2026 RED Show.' },
   { date: '2026.02', title: 'KROC 2026 participation', category: 'Conference', body: 'The lab participated in the Korea Robotics Society Annual Conference 2026.' },
   { date: '2025.12', title: 'Young Scientist Award, KROS', category: 'Award', body: 'Prof. Seokhwan Jeong received the Young Scientist Award from the Korea Robotics Society, recognizing excellence in robotic actuation research.', image: '/images/news/2025-12-kros-award.jpg' },
+  { date: '2025.12', title: 'KSME Annual Meeting 2025', category: 'Conference', body: 'RIM Lab participated in the KSME Annual Meeting 2025.' },
   { date: '2025.10', title: 'Lab renovation', category: 'Lab Life', body: 'Our research space was renovated for a better research environment.', image: '/images/lab/lab-space-1.jpg' },
   { date: '2025.09', title: 'NRF national agenda project selected', category: 'Grant', body: 'Funding awarded for robotic hand/gripper platform hardware and control technologies.' },
   { date: '2025.08', title: 'NRF Materials Global Young Connect selected', category: 'Grant', body: 'New project on high-dielectric elastomers for electroadhesive robotic end-effectors.' },

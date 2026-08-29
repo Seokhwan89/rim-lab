@@ -6,7 +6,7 @@ export type Pub = {
   type: 'journal' | 'conference' | 'domestic' | 'patent';
   link?: string;
   note?: string;
-  /** YouTube video ID of the paper's demo video */
+  /** Demo video: a YouTube video ID, or a full URL for journal-hosted videos */
   video?: string;
   /** Representative/abstract figure (path under /public, e.g. /images/pubs/xxx.jpg) */
   image?: string;
