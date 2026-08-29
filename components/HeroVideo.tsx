@@ -28,7 +28,7 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
   const hostRef = useRef<HTMLDivElement>(null);
   // true = fully dark (loading / between videos), false = video visible under the tint
   const [veiled, setVeiled] = useState(true);
-  const s = useRef<{ player?: any; ids: string[]; i: number; timer?: ReturnType<typeof setTimeout> }>({ ids: [], i: 0 });
+  const s = useRef<{ player?: any; ids: string[]; i: number; seeked: boolean; timer?: ReturnType<typeof setTimeout> }>({ ids: [], i: 0, seeked: false });
 
   useEffect(() => {
     let cancelled = false;
@@ -42,6 +42,7 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
         if (cancelled) return;
         const id = st.ids[st.i % st.ids.length];
         st.i += 1;
+        st.seeked = false;
         const hl = heroHighlights[id];
         st.player.loadVideoById(hl ? { videoId: id, startSeconds: hl.start } : id);
       }, FADE_MS);
@@ -57,7 +58,10 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
       } else if (e.data === PLAYING) {
         const id = st.ids[(st.i - 1 + st.ids.length) % st.ids.length];
         const hl = heroHighlights[id];
-        if (!hl) {
+        // Seek once per video — seeking re-triggers PLAYING, so a repeated
+        // seek here would freeze the frame in an endless loop.
+        if (!hl && !st.seeked) {
+          st.seeked = true;
           const d = st.player.getDuration?.() ?? 0;
           if (d > MIN_AUTO_SEEK) st.player.seekTo(d * SEG_FRACTION, true);
         }
