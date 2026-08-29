@@ -11,8 +11,11 @@ export type NewsItem = {
 };
 
 export const news: NewsItem[] = [
+  { date: '2026.11', title: 'KSME Annual Meeting 2026, Jeju (upcoming)', category: 'Conference', body: 'Prof. Jeong will give an oral presentation on robot hand and gripper design and control optimized for physical-AI learning environments at the KSME Annual Meeting (Nov 11–14, ICC Jeju), with lab members presenting their work.' },
+  { date: '2026.08', title: 'New RIM Lab website launched', category: 'Announcement', body: 'The lab homepage was fully rebuilt with updated research projects, publications, patents, and news.', link: 'https://rim-lab.vercel.app' },
   { date: '2026.08', title: 'Prof. Jeong selected as a Fulbright Visiting Scholar', category: 'Award', body: 'Prof. Seokhwan Jeong was selected for the Fulbright Visiting Scholar Program (PY 2027) for research in the United States.' },
-  { date: '2026.07', title: 'ICROS 2026, Daegu EXCO', category: 'Conference', body: 'RIM Lab members participated in ICROS 2026 held at Daegu EXCO.' },
+  { date: '2026.08', title: 'Graduation — Chunghyeon Lee (M.S.)', category: 'Members', body: 'Chunghyeon Lee received his M.S. degree and will join Texas A&M University as a Ph.D. student. Congratulations!' },
+  { date: '2026.07', title: 'ICROS 2026, Daegu EXCO', category: 'Conference', body: 'RIM Lab members participated in ICROS 2026 at Daegu EXCO, where the lab also presented its lab-introduction poster; Prof. Jeong served on the organizing committee.' },
   { date: '2026.07', title: 'AIM 2026, Genova, Italy', category: 'Conference', body: 'The lab attended IEEE/ASME AIM 2026 in Genova, Italy.' },
   { date: '2026.06', title: 'MOTIE R&D project selected (Digital Healthcare)', category: 'Grant', body: 'Our proposal for the bio-industry technology development program (digital healthcare) was accepted.' },
   { date: '2026.06', title: 'Undergraduate internship news', category: 'Members', body: 'Updates from our undergraduate research internship program.' },
