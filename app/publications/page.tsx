@@ -87,19 +87,58 @@ export default function PublicationsPage() {
                   {filtered.filter((p) => p.year === year).map((p: Pub, i) => (
                     <Reveal key={p.title} delay={Math.min(i, 4) * 50}>
                       <article className="card card-hover p-5">
-                        <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
-                          <h2 className="max-w-3xl text-[15px] font-semibold leading-snug">
-                            {p.link ? (
-                              <a href={p.link} target="_blank" rel="noreferrer" className="transition-colors hover:text-rim-cyan">{p.title}</a>
-                            ) : p.title}
-                          </h2>
-                          <span className={`chip shrink-0 ${p.type === 'journal' ? 'border-cyan-300/40 bg-cyan-300/10 text-cyan-300' : p.type === 'conference' ? 'border-violet-300/40 bg-violet-300/10 text-violet-300' : p.type === 'patent' ? 'border-emerald-300/40 bg-emerald-300/10 text-emerald-300' : 'border-slate-300/40 bg-slate-300/10 text-slate-300'}`}>
-                            {p.type}
-                          </span>
+                        <div className={p.image || p.video ? 'gap-5 sm:flex sm:items-start' : ''}>
+                          <div className="min-w-0 flex-1">
+                            <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
+                              <h2 className="max-w-3xl text-[15px] font-semibold leading-snug">
+                                {p.link ? (
+                                  <a href={p.link} target="_blank" rel="noreferrer" className="transition-colors hover:text-rim-cyan">{p.title}</a>
+                                ) : p.title}
+                              </h2>
+                              <span className={`chip shrink-0 ${p.type === 'journal' ? 'border-cyan-300/40 bg-cyan-300/10 text-cyan-300' : p.type === 'conference' ? 'border-violet-300/40 bg-violet-300/10 text-violet-300' : p.type === 'patent' ? 'border-emerald-300/40 bg-emerald-300/10 text-emerald-300' : 'border-slate-300/40 bg-slate-300/10 text-slate-300'}`}>
+                                {p.type}
+                              </span>
+                            </div>
+                            <p className="mt-2 text-[13px] leading-relaxed text-rim-muted">{highlightJeong(p.authors)}</p>
+                            <p className="mt-1.5 font-mono text-[12px] italic text-rim-faint">{p.venue}</p>
+                            {p.note && <p className="mt-2 inline-block rounded border border-amber-300/35 bg-amber-300/10 px-2 py-0.5 font-mono text-[11px] text-amber-300">★ {p.note}</p>}
+                          </div>
+                          {(p.image || p.video) && (
+                            <div className="mt-4 flex shrink-0 gap-3 sm:mt-0 sm:w-auto">
+                              {p.image && (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img
+                                  src={p.image}
+                                  alt={`Figure — ${p.title}`}
+                                  loading="lazy"
+                                  className="h-24 w-36 rounded-md border border-rim-line bg-white/95 object-contain p-1"
+                                />
+                              )}
+                              {p.video && (
+                                <a
+                                  href={`https://www.youtube.com/watch?v=${p.video}`}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="group relative block h-24 w-36 shrink-0 overflow-hidden rounded-md border border-rim-line bg-black"
+                                  aria-label={`Watch video — ${p.title}`}
+                                >
+                                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                                  <img
+                                    src={`https://i.ytimg.com/vi/${p.video}/mqdefault.jpg`}
+                                    alt=""
+                                    loading="lazy"
+                                    className="h-full w-full object-cover opacity-90 transition-transform duration-300 group-hover:scale-[1.07]"
+                                  />
+                                  <span className="absolute inset-0 flex items-center justify-center">
+                                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black/60 ring-1 ring-white/40 transition-colors group-hover:bg-rim-cyan/80">
+                                      <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff" aria-hidden><path d="M8 5.5v13l11-6.5-11-6.5z" /></svg>
+                                    </span>
+                                  </span>
+                                </a>
+                              )}
+                            </div>
+                          )}
                         </div>
-                        <p className="mt-2 text-[13px] leading-relaxed text-rim-muted">{highlightJeong(p.authors)}</p>
-                        <p className="mt-1.5 font-mono text-[12px] italic text-rim-faint">{p.venue}</p>
-                        {p.note && <p className="mt-2 inline-block rounded border border-amber-300/35 bg-amber-300/10 px-2 py-0.5 font-mono text-[11px] text-amber-300">★ {p.note}</p>}
                       </article>
                     </Reveal>
                   ))}
