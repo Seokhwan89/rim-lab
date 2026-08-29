@@ -7,13 +7,14 @@ import { heroPlaylistId, heroHighlights } from '@/content/videos';
  * Full-bleed muted backdrop for the landing hero, driven by the lab's
  * YouTube "Research" playlist (new uploads appear automatically).
  *
- * Instead of playing each video from the start, it jumps to a highlight
- * segment — 12s starting ~35% into the video, past intros and title cards —
- * and cross-fades between videos through a dark veil. Per-video segments
- * can be pinned in content/videos.ts (heroHighlights).
+ * Instead of playing each video from the start, it jumps to a random spot
+ * in the middle of the video (skipping the intro/outro 15%) and plays a
+ * short clip before cross-fading to the next video through a dark veil.
+ * Per-video segments can be pinned in content/videos.ts (heroHighlights).
  */
-const SEG_FRACTION = 0.35; // auto-highlight start point (fraction of duration)
-const SEG_SECONDS = 12; // seconds each highlight plays
+const SEG_MIN_FRACTION = 0.15; // skip the first 15% (intros, title cards)
+const SEG_MAX_FRACTION = 0.8; // and the last 20% (outros, credits)
+const SEG_SECONDS = 5; // seconds each clip plays
 const FADE_MS = 500; // veil fade duration between videos
 const MIN_AUTO_SEEK = 60; // don't auto-seek videos shorter than this (s)
 
@@ -63,7 +64,10 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
         if (!hl && !st.seeked) {
           st.seeked = true;
           const d = st.player.getDuration?.() ?? 0;
-          if (d > MIN_AUTO_SEEK) st.player.seekTo(d * SEG_FRACTION, true);
+          if (d > MIN_AUTO_SEEK) {
+            const start = d * (SEG_MIN_FRACTION + Math.random() * (SEG_MAX_FRACTION - SEG_MIN_FRACTION));
+            st.player.seekTo(Math.min(start, d - SEG_SECONDS - 2), true);
+          }
         }
         setTimeout(() => { if (!cancelled) setVeiled(false); }, 350);
         if (st.timer) clearTimeout(st.timer);
