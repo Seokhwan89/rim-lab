@@ -117,35 +117,40 @@ export default function PublicationsPage() {
                                   className="h-24 w-36 rounded-md border border-rim-line bg-white/95 object-contain p-1"
                                 />
                               )}
-                              {p.video && (
-                                <a
-                                  href={p.video.startsWith('http') ? p.video : `https://www.youtube.com/watch?v=${p.video}`}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  className="group relative block h-24 w-36 shrink-0 overflow-hidden rounded-md border border-rim-line bg-black"
-                                  aria-label={`Watch video — ${p.title}`}
-                                >
-                                  {p.video.startsWith('http') ? (
-                                    <span className="absolute inset-0 bg-gradient-to-br from-rim-indigo/40 to-black" />
-                                  ) : (
-                                    // eslint-disable-next-line @next/next/no-img-element
-                                    <img
-                                      src={`https://i.ytimg.com/vi/${p.video}/mqdefault.jpg`}
-                                      alt=""
-                                      loading="lazy"
-                                      className="h-full w-full object-cover opacity-90 transition-transform duration-300 group-hover:scale-[1.07]"
-                                    />
-                                  )}
-                                  <span className="absolute inset-0 flex flex-col items-center justify-center gap-1">
-                                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black/60 ring-1 ring-white/40 transition-colors group-hover:bg-rim-cyan/80">
-                                      <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff" aria-hidden><path d="M8 5.5v13l11-6.5-11-6.5z" /></svg>
-                                    </span>
-                                    {p.video.startsWith('http') && (
-                                      <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/80">Video</span>
+                              {p.video && (() => {
+                                const isYouTube = !p.video!.startsWith('http') && !p.video!.startsWith('/');
+                                const href = isYouTube ? `https://www.youtube.com/watch?v=${p.video}` : p.video!;
+                                const thumb = isYouTube ? `https://i.ytimg.com/vi/${p.video}/mqdefault.jpg` : p.videoThumb;
+                                return (
+                                  <a
+                                    href={href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="group relative block h-24 w-36 shrink-0 overflow-hidden rounded-md border border-rim-line bg-black"
+                                    aria-label={`Watch video — ${p.title}`}
+                                  >
+                                    {thumb ? (
+                                      // eslint-disable-next-line @next/next/no-img-element
+                                      <img
+                                        src={thumb}
+                                        alt=""
+                                        loading="lazy"
+                                        className="h-full w-full object-cover opacity-90 transition-transform duration-300 group-hover:scale-[1.07]"
+                                      />
+                                    ) : (
+                                      <span className="absolute inset-0 bg-gradient-to-br from-rim-indigo/40 to-black" />
                                     )}
-                                  </span>
-                                </a>
-                              )}
+                                    <span className="absolute inset-0 flex flex-col items-center justify-center gap-1">
+                                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black/60 ring-1 ring-white/40 transition-colors group-hover:bg-rim-cyan/80">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff" aria-hidden><path d="M8 5.5v13l11-6.5-11-6.5z" /></svg>
+                                      </span>
+                                      {!isYouTube && !thumb && (
+                                        <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/80">Video</span>
+                                      )}
+                                    </span>
+                                  </a>
+                                );
+                              })()}
                             </div>
                           )}
                         </div>

@@ -6,8 +6,10 @@ export type Pub = {
   type: 'journal' | 'conference' | 'domestic' | 'patent';
   link?: string;
   note?: string;
-  /** Demo video: a YouTube video ID, or a full URL for journal-hosted videos */
+  /** Demo video: a YouTube video ID, a full URL, or a site path (e.g. /videos/pubs/xxx.mp4) */
   video?: string;
+  /** Poster image for non-YouTube videos (path under /public) */
+  videoThumb?: string;
   /** Representative/abstract figure (path under /public, e.g. /images/pubs/xxx.jpg) */
   image?: string;
 };
@@ -21,8 +23,8 @@ export const publications: Pub[] = [
   { title: 'Continuously Variable Transmission and Stiffness Actuator based on Actively Variable Four-Bar Linkage for Highly Dynamic Robot Systems', authors: 'J. Hur, H. Song, S. Jeong*', venue: 'IEEE Robotics and Automation Letters', year: 2024, type: 'journal', link: 'https://ieeexplore.ieee.org/document/10569041', video: 'Qudi73Vm4_c' },
   { title: 'A Robotic Finger with a 4-bar Linkage-based Compact and Continuously Variable Active Transmission', authors: 'S. Chung, E. Sohn, S. Jeong*', venue: 'IEEE Robotics and Automation Letters', year: 2024, type: 'journal', link: 'https://ieeexplore.ieee.org/document/10531636', video: 'rm8DG30cxmQ' },
   { title: 'Coaxial Magnetic Gear-based Tool-Changing System', authors: 'H. Song, J. Hur, S. Jeong*', venue: 'IEEE Access', year: 2024, type: 'journal', link: 'https://ieeexplore.ieee.org/document/10458127', video: 'zuAvOsLDOUI' },
-  { title: 'A Modular Robotic Platform for Biological Research: Cell Culture Automation and Remote Experimentation', authors: 'J. Hamm, S. Lim, J. Park, J. Kang, I. Lee, Y. Lee, J. Kang, Y. Jo, J. Lee, S. Lee, M. C. Ratri, A. I. Brilian, S. Lee, S. Jeong, K. Shin*', venue: 'Advanced Intelligent Systems', year: 2024, type: 'journal', link: 'https://onlinelibrary.wiley.com/doi/10.1002/aisy.202300566', note: 'Journal cover' },
-  { title: 'Magnetic Gear-based Actuator: A Framework of Design, Optimization, and Disturbance Observer-based Torque Control', authors: 'H. Song, E. Lee, H.-T. Seo*, S. Jeong*', venue: 'IEEE Robotics and Automation Letters', year: 2023, type: 'journal', link: 'https://ieeexplore.ieee.org/document/10242358' },
+  { title: 'A Modular Robotic Platform for Biological Research: Cell Culture Automation and Remote Experimentation', authors: 'J. Hamm, S. Lim, J. Park, J. Kang, I. Lee, Y. Lee, J. Kang, Y. Jo, J. Lee, S. Lee, M. C. Ratri, A. I. Brilian, S. Lee, S. Jeong, K. Shin*', venue: 'Advanced Intelligent Systems', year: 2024, type: 'journal', link: 'https://onlinelibrary.wiley.com/doi/10.1002/aisy.202300566', note: 'Journal cover', video: '64h1yNFKHZI' },
+  { title: 'Magnetic Gear-based Actuator: A Framework of Design, Optimization, and Disturbance Observer-based Torque Control', authors: 'H. Song, E. Lee, H.-T. Seo*, S. Jeong*', venue: 'IEEE Robotics and Automation Letters', year: 2023, type: 'journal', link: 'https://ieeexplore.ieee.org/document/10242358', video: 'HTXwTqTGt8E' },
   { title: 'Coaxial Magnetic Gear-Based Actuation Module for Robotic Applications: Torque Control Using Magnetic Spring', authors: 'H. Song, E. Lee, H.-T. Seo*, S. Jeong*', venue: 'IEEE ICRA (video presentation)', year: 2023, type: 'conference' },
   { title: 'Variable Transmission between Series Elastic Actuator and Quasi-Direct Drive Actuator in One Actuator for Dynamic Interaction Tasks', authors: 'J. Hur, H. Song, T. Lee, W. Lee, J. Kim, S. Jeong*', venue: 'IEEE IROS (late-breaking result)', year: 2023, type: 'conference', video: 'Qudi73Vm4_c' },
   { title: 'FLEXotendon Glove-III: Voice-Controlled Soft Robotic Hand Exoskeleton With Novel Fabrication Method and Admittance Grasping Control', authors: 'P. Tran*, S. Jeong, F. Lyu, K. Herrin, S. Bhatia, D. Elliott, S. Kozin, J. P. Desai', venue: 'IEEE/ASME Transactions on Mechatronics', year: 2022, type: 'journal', link: 'https://ieeexplore.ieee.org/document/9718020', video: 'OM03dU-8-aQ' },
@@ -48,7 +50,7 @@ export const publications: Pub[] = [
   { title: 'Design of Robot Hand with Pneumatic Dual-Mode Actuation Mechanism Powered by Chemical Gas Generation Method', authors: 'K. R. Kim, S. H. Jeong, P. Kim, K.-S. Kim', venue: 'IEEE Robotics and Automation Letters', year: 2018, type: 'journal', link: 'https://ieeexplore.ieee.org/document/8408498' },
   { title: 'A 2-Speed Small Transmission Mechanism Based on Twisted String Actuation and a Dog Clutch', authors: 'S. H. Jeong, K.-S. Kim', venue: 'IEEE Robotics and Automation Letters', year: 2018, type: 'journal', link: 'https://ieeexplore.ieee.org/document/8253814', video: 'RxmGPmoC-yg' },
   { title: 'Design of a Miniature Force Sensor based on Photointerrupter for Robotic Hand', authors: 'S. H. Jeong, H. J. Lee, K. R. Kim, K.-S. Kim', venue: 'Sensors and Actuators A: Physical', year: 2018, type: 'journal', link: 'https://www.sciencedirect.com/science/article/pii/S0924424717309317' },
-  { title: 'Design and Analysis of the Active Dual-Mode Twisting Actuation Mechanism', authors: 'S. H. Jeong, Y. J. Shin, K.-S. Kim', venue: 'IEEE/ASME Transactions on Mechatronics', year: 2017, type: 'journal', link: 'https://ieeexplore.ieee.org/document/8089392' },
+  { title: 'Design and Analysis of the Active Dual-Mode Twisting Actuation Mechanism', authors: 'S. H. Jeong, Y. J. Shin, K.-S. Kim', venue: 'IEEE/ASME Transactions on Mechatronics', year: 2017, type: 'journal', link: 'https://ieeexplore.ieee.org/document/8089392', video: 'QBQMZsSQJQM' },
   { title: 'Designing Anthropomorphic Robot Hand With Active Dual-Mode Twisted String Actuation Mechanism and Tiny Tension Sensors', authors: 'S. H. Jeong, K.-S. Kim, S. Kim', venue: 'IEEE Robotics and Automation Letters', year: 2017, type: 'journal', link: 'https://ieeexplore.ieee.org/document/7805142', video: '5PtXTI1t3Po' },
   { title: 'Control of and Experimentation on an Active Dual-Mode Twisted String Actuation Mechanism', authors: 'S. H. Jeong, K.-S. Kim, S. Kim', venue: 'IEEE AIM', year: 2017, type: 'conference', link: 'https://ieeexplore.ieee.org/document/8014147' },
   { title: 'Design of Small Mobile Robot Remotely Controlled by an Android Operating System via Bluetooth and NFC Communication', authors: 'K. R. Kim, S. H. Jeong, W. Y. Kim, Y. Jeon, K.-S. Kim, J. H. Hong', venue: 'URAI', year: 2017, type: 'conference', link: 'https://ieeexplore.ieee.org/document/7992864' },

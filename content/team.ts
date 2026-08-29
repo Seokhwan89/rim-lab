@@ -63,7 +63,7 @@ export const alumni: Alum[] = [
   { name: 'Jeongyoon Han', degree: 'M.S.', date: '2025.02', position: 'LG Electronics, Production Technology Division' },
   { name: 'Jeongwoo Ha', degree: 'M.S.', date: '2025.02', position: 'Samsung Electronics, DX Division' },
   { name: 'Andrew Jeong', degree: 'M.S.', date: '2024.08', position: 'Ph.D. student, KAIST' },
-  { name: 'Samuel Mekonnen', degree: 'M.S.', date: '2024.08', position: 'Kangwon National University' },
+  { name: 'Samuel Mekonnen', degree: 'M.S.', date: '2024.08' },
   { name: 'Sungho Chung', degree: 'M.S.', date: '2024.02', position: 'LG Electronics, H&A Division' },
   { name: 'Seungmin Lee', degree: 'M.S.', date: '2024.02', position: 'LG Electronics, H&A Division' },
   { name: 'Jaehyun Lee', degree: 'M.S.', date: '2024.02' },
