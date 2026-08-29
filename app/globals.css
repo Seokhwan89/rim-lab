@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* RIM Lab dark navy + electric cyan system */
+  --rim-bg: #050a16;        /* page background */
+  --rim-bg2: #081020;       /* alternating section background */
+  --rim-surface: #0b1426;   /* card background */
+  --rim-raised: #101c33;    /* elevated card */
+  --rim-line: rgba(148, 163, 184, 0.14);
+  --rim-line2: rgba(148, 163, 184, 0.26);
+  --rim-cyan: #22d3ee;
+  --rim-cyan-light: #7deffc;
+  --rim-cyan-deep: #0891b2;
+  --rim-indigo: #818cf8;
+  --rim-text: #e7eef8;
+  --rim-muted: #9db0c8;
+  --rim-faint: #64748b;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-rim-bg text-rim-text font-sans antialiased; word-break: keep-all; }
+::selection { background: var(--rim-cyan); color: #04121a; }
+:focus-visible { outline: 2px solid var(--rim-cyan); outline-offset: 3px; }
+
+.container-site { @apply mx-auto w-full max-w-site px-5 md:px-8; }
+.eyebrow { @apply font-mono text-[12.5px] font-medium tracking-[0.22em] text-rim-cyan uppercase; }
+.h-display { @apply font-display font-semibold text-[2.5rem] md:text-[3.6rem] leading-[1.08] tracking-[-0.02em]; }
+.h-section { @apply font-display font-semibold text-[1.9rem] md:text-[2.5rem] leading-tight tracking-[-0.01em]; }
+.h-sub { @apply font-display font-medium text-[1.35rem] md:text-[1.7rem] leading-snug; }
+
+.card {
+  @apply relative bg-rim-surface border border-rim-line rounded-xl transition-all duration-300;
+}
+.card-hover {
+  @apply hover:-translate-y-1 hover:border-rim-line2 hover:shadow-[0_0_0_1px_rgba(34,211,238,0.25),0_24px_48px_-24px_rgba(0,0,0,0.8),0_0_44px_-14px_rgba(34,211,238,0.28)];
+}
+.chip { @apply inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 font-mono text-[11px] tracking-wide uppercase; }
+
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3.5 text-[15px] font-semibold transition-all duration-200; }
+.btn-primary { @apply btn bg-rim-cyan text-[#04121a] hover:bg-rim-cyanLight hover:shadow-[0_0_28px_-6px_rgba(34,211,238,0.75)]; }
+.btn-ghost { @apply btn border border-rim-line2 text-rim-text hover:border-rim-cyan hover:text-rim-cyan; }
+
+.glow-text { text-shadow: 0 0 24px rgba(34, 211, 238, 0.45); }
+.grad-cyan { background: linear-gradient(96deg, #7deffc 0%, #22d3ee 45%, #818cf8 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* hero grid backdrop */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 90% 75% at 50% 40%, black 35%, transparent 78%);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; } .no-scrollbar { scrollbar-width: none; }
+
+/* Reveal on scroll */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+@keyframes rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 1s cubic-bezier(.2,.7,.2,1) both; }
+.rise-1 { animation-delay: .1s } .rise-2 { animation-delay: .28s } .rise-3 { animation-delay: .46s } .rise-4 { animation-delay: .64s } .rise-5 { animation-delay: .82s }
+
+@keyframes floaty { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+.floaty { animation: floaty 5s ease-in-out infinite; }
+@keyframes marquee { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+.marquee { animation: marquee 36s linear infinite; }
+@keyframes pulse-glow { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+.pulse-glow { animation: pulse-glow 3.2s ease-in-out infinite; }
+@keyframes scanline { from { transform: translateY(-100%) } to { transform: translateY(100%) } }
+
+/* video card play button */
+.play-badge { @apply absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full border border-white/25 bg-black/55 backdrop-blur transition-all duration-300; }
+.group:hover .play-badge { @apply bg-rim-cyan border-rim-cyan shadow-[0_0_34px_rgba(34,211,238,0.6)]; }
+.group:hover .play-badge svg { fill: #04121a; }
