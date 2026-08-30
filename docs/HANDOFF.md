@@ -66,6 +66,11 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
   lockupViewModel/구 playlistVideoRenderer 두 구조 모두 파싱 — 실패 시
   RSS(15개)→content/videos.ts의 playlistSnapshot 순으로 폴백. 매 배포
   시점에 갱신되므로 주간 Routine 배포로 새 영상이 자동 반영됨.
+- 프로젝트 상세 페이지 리디자인 (2026-08-30): 논문 프로젝트 페이지 스타일 —
+  Overview(2단: 요약+티저 figure) / Highlights / Demonstrations /
+  **Representative Publications를 figure 썸네일+저자+저널+Paper·Video 버튼
+  카드 그리드**로(pubs 문자열을 publications.ts와 fuzzy 매칭해 전체 서지
+  표시, 미매칭 시 텍스트 폴백) / Patents·Funding 2단 카드 / Prev·Next.
 - Advisor 프로필 사진을 상반신 크기(md:w-72)로 확대. CV(Drive 공개 링크)
   'Curriculum Vitae' 버튼을 Advisor 연락처 아래 추가.
 - Team 멤버 카드 얼굴 사진 확대(h-14→h-20, object-top).
