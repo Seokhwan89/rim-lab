@@ -112,6 +112,13 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
    TE608A 2장 → labGallery 'Workspace 3 (TE608A)', ProJet MJP 2500 Plus →
    equipment 카드. 구글 포토 자동 접근은 API 폐지로 불가 — 사진은 교수가
    직접 준다(채팅 업로드 권장; 공유 링크는 scripts/fetch-shared-album.py).
+   **클라우드→PC 자동 메시징 시도 결과(2026-08-30, 실패 — 재시도 금지)**:
+   ListAgents는 클라우드↔PC 간 서로 안 보임. Remote Control 브릿지 세션
+   (desktop-*, tags remote-control-sdk)에 persistent_session_id 트리거로
+   메시지를 넣으면 unread로 쌓이기만 하고 처리 안 됨(8/23에도
+   computer_unreachable 실패 이력). Cowork 세션은 목록 API에서 숨겨져
+   주소를 알 수 없음. → 결론: PC 위임은 교수가 PC 에이전트에 직접 한 문장
+   지시하고, 결과는 아래 자료함으로 받는다.
    **상설 수거함(2026-08-30)**: Drive 폴더 'RIM 홈페이지 자료함'
    (id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7). 교수 PC의 codex가 구글 포토 등
    접근 불가 소스에서 자료를 꺼내 이 폴더에 넣는 브릿지 구조 — 세션은
