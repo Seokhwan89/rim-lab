@@ -21,8 +21,9 @@ const PRELOAD_SECONDS = 6; // how long before the switch the next video starts l
 const FADE_MS = 700; // crossfade duration
 const MIN_AUTO_SEEK = 60; // don't auto-seek videos shorter than this (s)
 const FIRST_CLIP_START = 40; // first clip starts here directly (no post-play seek → shows sooner)
-/** Self-hosted poster frames (one per reel video) shown instantly while the player boots */
-const posterFor = (id: string) => `/images/hero/${id}.jpg`;
+/** Poster frame straight from YouTube's thumbnail CDN — instant for any playlist video */
+const posterFor = (id: string) => `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+const posterFallback = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 const TICK_MS = 500;
 
 declare global {
@@ -34,7 +35,10 @@ declare global {
 
 type Slot = 0 | 1;
 
-export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
+export default function HeroVideo({ fallbackIds, reelIds }: { fallbackIds: string[]; reelIds?: string[] }) {
+  // the reel draws from the full Research playlist (resolved at build time);
+  // the static fallback list keeps the hero alive if that ever comes back empty
+  const pool = reelIds && reelIds.length > 0 ? reelIds : fallbackIds;
   const hostA = useRef<HTMLDivElement>(null);
   const hostB = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState<Slot | null>(null); // null = nothing ready yet (dark)
@@ -50,11 +54,11 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
       }
       return a;
     };
-    const first = fallbackIds[Math.floor(Math.random() * fallbackIds.length)];
+    const first = pool[Math.floor(Math.random() * pool.length)];
     setPosterId(first);
     const st = {
       players: [] as any[],
-      ids: [first, ...shuffled(fallbackIds.filter((x) => x !== first))],
+      ids: [first, ...shuffled(pool.filter((x) => x !== first))],
       playlistMerged: false,
       firstLoad: true,
       i: 0, // index of the next video to load
@@ -196,7 +200,8 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
       st.players.forEach((p) => p?.destroy?.());
       st.players = [];
     };
-  }, [fallbackIds]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fallbackIds, reelIds]);
 
   const layer = (slot: Slot) =>
     `absolute left-1/2 top-1/2 h-[max(100%,56.25vw)] w-[max(100%,177.78vh)] -translate-x-1/2 -translate-y-1/2 transition-opacity ` +
@@ -210,6 +215,10 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
         <img
           src={posterFor(posterId)}
           alt=""
+          onError={(e) => {
+            const img = e.currentTarget;
+            if (!img.src.includes('hqdefault')) img.src = posterFallback(posterId);
+          }}
           className={`absolute left-1/2 top-1/2 h-[max(100%,56.25vw)] w-[max(100%,177.78vh)] -translate-x-1/2 -translate-y-1/2 object-cover transition-opacity duration-700 ${visible === null ? 'opacity-100 animate-hero-zoom' : 'opacity-0'}`}
         />
       )}
