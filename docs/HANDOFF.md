@@ -107,6 +107,11 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
    TE608A 2장 → labGallery 'Workspace 3 (TE608A)', ProJet MJP 2500 Plus →
    equipment 카드. 구글 포토 자동 접근은 API 폐지로 불가 — 사진은 교수가
    직접 준다(채팅 업로드 권장; 공유 링크는 scripts/fetch-shared-album.py).
+   **상설 수거함(2026-08-30)**: Drive 폴더 'RIM 홈페이지 자료함'
+   (id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7). 교수 PC의 codex가 구글 포토 등
+   접근 불가 소스에서 자료를 꺼내 이 폴더에 넣는 브릿지 구조 — 세션은
+   사진·자료 작업 시작 시 이 폴더를 확인하고, 수확한 파일은 trash_file로
+   정리해 비워 둔다.
 
 1. **특허 대표도 잔여분**: 완료 4건 — 준직구동(DE 출원서류 Fig.1),
    로봇용핸드(KM23109 출원서류 도2), 동축자석기어 제어(P2023-0021KR

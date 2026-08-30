@@ -34,8 +34,12 @@
   MCP 세션이 끊겨 불가, Drive는 `download_file_content` 결과 파일을 디코드,
   문서 속 사진은 pymupdf/zip으로 추출). 교수에게 부탁하는 것은 토큰이 과도하게
   들거나 도구가 없는 경우뿐이며, 그 사유를 HANDOFF에 남긴다.
-- 구글 포토 사진은 교수가 직접 준다 (채팅 업로드 또는 공유 링크 —
-  링크는 `scripts/fetch-shared-album.py`로 무인증 수집 가능).
+- 접근 불가 자료(구글 포토 등)는 교수 PC의 GPT/codex가 다리 역할을 한다:
+  교수가 codex에게 시키면 codex가 자료를 Drive의 **'RIM 홈페이지 자료함'**
+  폴더(id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7)에 넣거나 채팅에 업로드한다.
+  **사진·자료 작업 전에 이 폴더를 먼저 확인**하고, 사용한 파일은 리포에
+  저장 후 폴더에서 정리(휴지통)해 수거함을 비워 둔다. 공유 링크가 오면
+  `scripts/fetch-shared-album.py`로 수집.
 
 ## 진행 상황
 
