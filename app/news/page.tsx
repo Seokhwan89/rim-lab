@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
+import NewsImages from '@/components/NewsImages';
 import { news, categoryColors, type NewsCategory } from '@/content/news';
 
 const FILTERS: ('All' | NewsCategory)[] = ['All', 'Announcement', 'Conference', 'Award', 'Grant', 'Publication', 'Members', 'Lab Life'];
@@ -42,24 +43,7 @@ export default function NewsPage() {
                   </div>
                   <h2 className="mt-2.5 font-display text-[17.5px] font-semibold leading-snug">{n.title}</h2>
                   {n.body && <p className="mt-2 text-[13.5px] leading-relaxed text-rim-muted">{n.body}</p>}
-                  {n.image && !n.images?.length && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={n.image}
-                      alt={n.title}
-                      loading="lazy"
-                      className="mt-4 w-full max-w-2xl rounded-lg border border-rim-line object-cover"
-                    />
-                  )}
-                  {n.image && (n.images?.length ?? 0) > 0 && (
-                    /* multi-photo events: uniform-height tiles, natural aspect ratios */
-                    <div className="mt-4 flex max-w-4xl flex-wrap gap-3">
-                      {[n.image, ...(n.images ?? [])].map((src) => (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img key={src} src={src} alt={n.title} loading="lazy" className="h-40 w-auto max-w-full rounded-lg border border-rim-line object-cover sm:h-52" />
-                      ))}
-                    </div>
-                  )}
+                  {n.image && <NewsImages images={[n.image, ...(n.images ?? [])]} alt={n.title} />}
                   {(n.link || n.links) && (
                     <div className="mt-3 flex flex-wrap gap-4">
                       {n.link && <a href={n.link} target="_blank" rel="noreferrer" className="font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">Related link ↗</a>}

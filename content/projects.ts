@@ -64,7 +64,7 @@ export const projects: Project[] = [
     ],
     highlights: ['Best Student Paper Award & Best Mechatronics Student Paper Award, IEEE AIM 2016'],
     funding: [
-      'NRF Materials Global Young Connect — high-dielectric elastomers for electroadhesive robotic end-effectors (2025.08 – )',
+      'NRF Materials Global Young Connect — high-dielectric elastomers for electroadhesive robotic end-effectors (2025.07 – 2028.12, 3.5B KRW; lead: Sogang, with KETI · GIST · Yonsei; intl. collaboration with UW-Madison and U. Louisville)',
     ],
   },
   {
