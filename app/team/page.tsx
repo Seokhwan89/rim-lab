@@ -129,7 +129,17 @@ export default function TeamPage() {
                   <tbody>
                     {alumni.map((a) => (
                       <tr key={a.name + a.date} className="border-b border-rim-line/60 transition-colors last:border-0 hover:bg-rim-cyan/5">
-                        <td className="px-4 py-3 font-medium">{a.name}</td>
+                        <td className="px-4 py-3 font-medium">
+                          <span className="flex items-center gap-3">
+                            {a.photo ? (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img src={a.photo} alt={a.name} loading="lazy" className="h-9 w-9 shrink-0 rounded-full border border-rim-line object-cover object-top" />
+                            ) : (
+                              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-rim-line font-mono text-[11px] text-rim-faint">{initials(a.name)}</span>
+                            )}
+                            {a.name}
+                          </span>
+                        </td>
                         <td className="px-4 py-3 text-rim-muted">{a.degree}</td>
                         <td className="px-4 py-3 font-mono text-[12.5px] text-rim-faint">{a.date}</td>
                         <td className="px-4 py-3 text-rim-muted">{a.position ?? '—'}</td>
