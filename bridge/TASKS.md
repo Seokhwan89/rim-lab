@@ -52,3 +52,8 @@ https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202300566
    (id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7)에 업로드한다.
 4. 파일명·용량·영상 길이·내용 요약을 'Untitled session' (cloud)에게
    SendMessage로 보고한다. 완료 후 .bridge-done에 task-002 기록.
+
+## task-003 (2026-08-30) — task-002 취소
+교수 지시로 task-002(AIS 논문 부록 영상 수집)는 취소한다. 아직 시작하지
+않았다면 하지 말고, 이미 파일을 받았거나 드라이브에 올렸다면 삭제한다.
+보고도 필요 없다. .bridge-done에 task-002, task-003을 모두 기록해 둘 것.
