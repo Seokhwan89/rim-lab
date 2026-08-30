@@ -52,6 +52,9 @@ export default function AdvisorPage() {
                 <a href={`mailto:${advisor.email}`} className="block font-mono text-[13px] text-rim-cyan hover:underline">{advisor.email}</a>
                 <p className="mt-1 font-mono text-[13px] text-rim-muted">{advisor.phone}</p>
                 <p className="mt-1 text-[12.5px] text-rim-faint">{advisor.office}</p>
+                {advisor.cv && (
+                  <a href={advisor.cv} target="_blank" rel="noreferrer" className="btn-ghost mt-4 inline-block">Curriculum Vitae ↗</a>
+                )}
               </div>
             </div>
           </Reveal>

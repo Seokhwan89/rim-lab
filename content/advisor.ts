@@ -4,6 +4,7 @@ export const advisor = {
   title: 'Associate Professor, Department of Mechanical Engineering, Sogang University',
   office: 'Room 236, Building K, Sogang University, Seoul, Korea',
   phone: '+82-2-705-7886',
+  cv: 'https://drive.google.com/file/d/1Od3EuGPwVmM5kRFyMun_c2io94LxQXQ6/view',
   email: 'seokhwan@sogang.ac.kr',
   interests: [
     'Novel actuator design & mechanisms — variable transmissions, magnetic gears, twisted string actuation',

@@ -17,9 +17,9 @@ function MemberCard({ m, delay = 0 }: { m: Member; delay?: number }) {
       <div className="card card-hover flex h-full items-start gap-4 p-5">
         {m.photo ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={m.photo} alt={m.name} loading="lazy" className="h-14 w-14 shrink-0 rounded-full border border-rim-cyan/35 object-cover" />
+          <img src={m.photo} alt={m.name} loading="lazy" className="h-20 w-20 shrink-0 rounded-full border border-rim-cyan/35 object-cover object-top" />
         ) : (
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-rim-cyan/35 bg-rim-cyan/10 font-display text-[15px] font-semibold text-rim-cyan">
+          <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-rim-cyan/35 bg-rim-cyan/10 font-display text-[15px] font-semibold text-rim-cyan">
             {initials(m.name)}
           </span>
         )}
