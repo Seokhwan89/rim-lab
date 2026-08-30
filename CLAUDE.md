@@ -34,15 +34,15 @@
   MCP 세션이 끊겨 불가, Drive는 `download_file_content` 결과 파일을 디코드,
   문서 속 사진은 pymupdf/zip으로 추출). 교수에게 부탁하는 것은 토큰이 과도하게
   들거나 도구가 없는 경우뿐이며, 그 사유를 HANDOFF에 남긴다.
-- **교수 PC 브릿지(GPT 활용)**: 교수 PC에서 Claude Code가 Remote Control로
-  연결되어 있으면 ListAgents에 그 세션이 보인다. 구글 포토 등 접근 불가
-  자료 수집, 그리고 **Gmail 심층 검색의 이중 확인**(교수 지시: GPT 검색이
-  더 정확하므로 중요한 메일 서칭은 PC 세션을 통해 GPT에도 물어 교차 검증)
-  이 필요하면 SendMessage로 PC 세션에 위임한다 — PC 세션이 교수의 로그인된
-  크롬으로 GPT에 질의하고 결과를 Drive 'RIM 홈페이지 자료함'
-  (id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7)이나 채팅으로 가져온다.
-  PC 세션이 안 보이면(오프라인) 기존 방식대로 진행하고, 교수에게 codex
-  상용구("…찾아서 'RIM 홈페이지 자료함'에 저장해줘")를 안내한다.
+- **교수 PC 브릿지 (2026-08-30 가동 확인)**: 구글 포토·로그인된 크롬(GPT)·
+  PC 파일 등 클라우드가 못 가는 곳은 PC 세션(DESKTOP-TD61GAQ)에 위임한다.
+  프로토콜 — ①클라우드→PC: `bridge/TASKS.md`에 새 task(증가하는 id) 추가
+  후 main에 push하면 PC 감시 루프가 ~90초 내 수행 (직접 SendMessage는 인증
+  차단으로 불가). ②PC→클라우드: PC 세션이 SendMessage로 결과 보고(발신
+  bridge:session_...) — 메시지가 이 세션을 자동으로 깨운다. 큰 산출물은
+  Drive 'RIM 홈페이지 자료함'(id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7) 경유.
+  PC 창이 꺼져 있으면 보고가 안 오니, 무응답 시 교수에게 PC 세션 상태를
+  확인 요청. Gmail 심층 검색은 GPT 교차 검증을 이 브릿지로 병행(교수 지시).
   **사진·자료 작업 전에 자료함 폴더를 먼저 확인**하고, 사용한 파일은
   리포 저장 후 휴지통으로 정리한다. 공유 링크는
   `scripts/fetch-shared-album.py`로 수집.
