@@ -37,7 +37,9 @@ export const projects: Project[] = [
       'Continuously Variable Transmission and Stiffness Actuator based on Actively Variable Four-Bar Linkage — IEEE RA-L, 2024',
       'A Robotic Finger with a 4-bar Linkage-based Compact and Continuously Variable Active Transmission — IEEE RA-L, 2024',
       'A 2-Speed Small Transmission Mechanism Based on Twisted String Actuation and a Dog Clutch — IEEE RA-L, 2018',
+      'Development of a Robotic Finger with an Active Dual-Mode Twisting Actuation and a Miniature Tendon Tension Sensor — IEEE AIM, 2016',
     ],
+    highlights: ['Best Student Paper Award & Best Mechatronics Student Paper Award, IEEE AIM 2016 — dual-mode twisting actuation robotic finger'],
     funding: [
       'NRF LINC Industry-Academia Joint Project — RL protocols and hardware for quadruped-robot mobility over varied terrain (joint)',
     ],
@@ -62,7 +64,6 @@ export const projects: Project[] = [
       'The MSC Prosthetic Hand: Rapid, Powerful, and Intuitive — IEEE RA-L, 2022',
       'Designing Anthropomorphic Robot Hand With Active Dual-Mode Twisted String Actuation Mechanism and Tiny Tension Sensors — IEEE RA-L, 2017',
     ],
-    highlights: ['Best Student Paper Award & Best Mechatronics Student Paper Award, IEEE AIM 2016'],
     funding: [
       'NRF Materials Global Young Connect — high-dielectric elastomers for electroadhesive robotic end-effectors (2025.07 – 2028.12, 3.5B KRW; lead: Sogang, with KETI · GIST · Yonsei; intl. collaboration with UW-Madison and U. Louisville)',
     ],
