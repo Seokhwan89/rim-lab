@@ -108,7 +108,7 @@ export const projects: Project[] = [
       { id: 'zuAvOsLDOUI', title: 'Coaxial Magnetic Gear-based Tool-Changing System' },
     ],
     pubs: [
-      'Magnetic Gear-based Actuator: Design, Optimization, and DOB-based Torque Control — IEEE RA-L, 2023',
+      'Magnetic Gear-based Actuator: A Framework of Design, Optimization, and DOB-based Torque Control — IEEE RA-L, 2023',
       'Mechanical Variable Magnetic Gear Transmission: Concept and Preliminary Research — IEEE RA-L, 2022',
       'Coaxial Magnetic Gear-based Tool-Changing System — IEEE Access, 2024',
     ],
