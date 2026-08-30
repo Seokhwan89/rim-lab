@@ -35,13 +35,15 @@ export const labGallery: { src: string; caption: string }[] = [
 
 
 /** Equipment & facilities (from the lab's own records) */
-export const equipment: { src: string; caption: string }[] = [
+export const equipment: { src?: string; caption: string; icon?: 'hand' | 'sensor' }[] = [
   { src: '/images/lab/equipment-manipulator.jpg', caption: 'Robotic manipulator' },
   { src: '/images/lab/equipment-mini-arm.jpg', caption: 'Mini robot arm' },
   { src: '/images/lab/equipment-3d-printing.jpg', caption: '3D printing lab (SLA, FDM)' },
   { src: '/images/lab/equipment-projet-mjp2500.jpg', caption: 'ProJet MJP 2500 Plus (3D Systems) — MJP 3D printer' },
   { src: '/images/lab/equipment-laser-cutter.jpg', caption: 'Laser cutter' },
   { src: '/images/lab/equipment-optitrack.jpg', caption: 'Vision tracking system (OptiTrack)' },
+  { caption: 'Tesollo DG-5F-M — five-finger robotic hand', icon: 'hand' },
+  { caption: 'Mech-Mind Mech-Eye Nano — 3D vision system with Mech-Vision, Mech-Viz, and deep-learning toolkit', icon: 'sensor' },
   { src: '/images/lab/equipment-tools.jpg', caption: 'Mechanical tools' },
 ];
 
