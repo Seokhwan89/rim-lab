@@ -37,6 +37,16 @@ const tracks = [
     ],
   },
   {
+    id: 'postdoc',
+    title: 'Postdoctoral Researcher',
+    chip: 'Inquiries welcome',
+    items: [
+      'Open to researchers in robotic actuation, mechanism design, or robot learning',
+      'Positions are opened as projects allow — inquiries are welcome at any time',
+      'Email seokhwan@sogang.ac.kr with a CV and a short research statement',
+    ],
+  },
+  {
     id: 'kitech',
     title: 'Sogang–KITECH Joint Program',
     chip: 'Recruiting',
@@ -68,14 +78,12 @@ export default function OpeningPage() {
 
       <section className="bg-rim-bg py-20">
         <div className="container-site">
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {tracks.map((t, i) => (
               <Reveal key={t.id} delay={i * 90}>
                 <div id={t.id} className="card card-hover h-full scroll-mt-28 p-8">
-                  <div className="flex items-center justify-between gap-3">
-                    <h2 className="h-sub">{t.title}</h2>
-                    <span className="chip border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan">{t.chip}</span>
-                  </div>
+                  <span className="chip mb-3 inline-block border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan">{t.chip}</span>
+                  <h2 className="h-sub">{t.title}</h2>
                   <ul className="mt-5 space-y-3">
                     {t.items.map((x) => (
                       <li key={x} className="flex gap-3 text-[14px] leading-relaxed text-rim-muted">
