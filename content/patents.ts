@@ -155,7 +155,7 @@ export const patents: Patent[] = [
     status: 'registered',
     assignee: 'Georgia Tech Research Corp.',
     project: 'surgical-robots',
-    note: 'Registered in JP (2026) and CN (2025); accepted in AU (2026); pending elsewhere',
+    note: 'Registered in JP (2026) and CN (2025); allowed in the US and accepted in AU (2026); continuation and DE/JP counterparts filed in 2026',
     link: 'https://patents.google.com/patent/JP7798789B2',
   },
   {
