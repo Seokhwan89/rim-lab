@@ -86,7 +86,7 @@ export const projects: Project[] = [
       { id: 'n74F0ifQ4PE', title: 'Ultra-Low-Impedance Robotic Finger — Demo 1' },
     ],
     pubs: [
-      'Why Look at It at All?: Vision-Free Multifingered Blind Grasping Using Uniaxial Fingertip Force Sensing — IEEE AIM, 2026',
+      'Learning Blind Grasping with Uniaxial Fingertip Force Sensors — IEEE AIM, 2026',
     ],
     funding: [
       'NRF National Agenda Basic Research — hardware & control core technologies for physical-AI robot hand/gripper platforms (2025.09 – )',
