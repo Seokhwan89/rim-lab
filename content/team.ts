@@ -29,6 +29,8 @@ export const labGallery: { src: string; caption: string }[] = [
   { src: '/images/lab/lab-equipment.jpg', caption: 'Workspace 1 (RA313) — robot experiment area' },
   { src: '/images/lab/lab-space-2.jpg', caption: 'Workspace 1 (RA313) — renovated interior' },
   { src: '/images/lab/workspace-cy507.jpg', caption: 'Workspace 2 (CY507)' },
+  { src: '/images/lab/workspace-te608a.jpg', caption: 'Workspace 3 (TE608A) — moved in July 2026' },
+  { src: '/images/lab/workspace-te608a-2.jpg', caption: 'Workspace 3 (TE608A) — student work area' },
 ];
 
 
@@ -37,6 +39,7 @@ export const equipment: { src: string; caption: string }[] = [
   { src: '/images/lab/equipment-manipulator.jpg', caption: 'Robotic manipulator' },
   { src: '/images/lab/equipment-mini-arm.jpg', caption: 'Mini robot arm' },
   { src: '/images/lab/equipment-3d-printing.jpg', caption: '3D printing lab (SLA, FDM)' },
+  { src: '/images/lab/equipment-projet-mjp2500.jpg', caption: 'ProJet MJP 2500 Plus (3D Systems) — MJP 3D printer' },
   { src: '/images/lab/equipment-laser-cutter.jpg', caption: 'Laser cutter' },
   { src: '/images/lab/equipment-optitrack.jpg', caption: 'Vision tracking system (OptiTrack)' },
   { src: '/images/lab/equipment-tools.jpg', caption: 'Mechanical tools' },
