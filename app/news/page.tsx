@@ -42,7 +42,7 @@ export default function NewsPage() {
                   </div>
                   <h2 className="mt-2.5 font-display text-[17.5px] font-semibold leading-snug">{n.title}</h2>
                   {n.body && <p className="mt-2 text-[13.5px] leading-relaxed text-rim-muted">{n.body}</p>}
-                  {n.image && (
+                  {n.image && !n.images?.length && (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={n.image}
@@ -51,11 +51,12 @@ export default function NewsPage() {
                       className="mt-4 w-full max-w-2xl rounded-lg border border-rim-line object-cover"
                     />
                   )}
-                  {n.images && n.images.length > 0 && (
-                    <div className="mt-3 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-3">
-                      {n.images.map((src) => (
+                  {n.image && (n.images?.length ?? 0) > 0 && (
+                    /* multi-photo events: uniform-height tiles, natural aspect ratios */
+                    <div className="mt-4 flex max-w-4xl flex-wrap gap-3">
+                      {[n.image, ...(n.images ?? [])].map((src) => (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img key={src} src={src} alt={n.title} loading="lazy" className="h-44 w-full rounded-lg border border-rim-line bg-black/30 object-contain" />
+                        <img key={src} src={src} alt={n.title} loading="lazy" className="h-40 w-auto max-w-full rounded-lg border border-rim-line object-cover sm:h-52" />
                       ))}
                     </div>
                   )}
