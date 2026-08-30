@@ -21,7 +21,8 @@ const PRELOAD_SECONDS = 6; // how long before the switch the next video starts l
 const FADE_MS = 700; // crossfade duration
 const MIN_AUTO_SEEK = 60; // don't auto-seek videos shorter than this (s)
 const FIRST_CLIP_START = 40; // first clip starts here directly (no post-play seek → shows sooner)
-const POSTER = '/images/hero-poster.jpg'; // self-hosted frame shown instantly while the player boots
+/** Self-hosted poster frames (one per reel video) shown instantly while the player boots */
+const posterFor = (id: string) => `/images/hero/${id}.jpg`;
 const TICK_MS = 500;
 
 declare global {
@@ -37,6 +38,7 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
   const hostA = useRef<HTMLDivElement>(null);
   const hostB = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState<Slot | null>(null); // null = nothing ready yet (dark)
+  const [posterId, setPosterId] = useState<string | null>(null); // picked per visit on mount
 
   useEffect(() => {
     let cancelled = false;
@@ -48,9 +50,11 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
       }
       return a;
     };
+    const first = fallbackIds[Math.floor(Math.random() * fallbackIds.length)];
+    setPosterId(first);
     const st = {
       players: [] as any[],
-      ids: shuffled(fallbackIds),
+      ids: [first, ...shuffled(fallbackIds.filter((x) => x !== first))],
       playlistMerged: false,
       firstLoad: true,
       i: 0, // index of the next video to load
@@ -200,13 +204,15 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
 
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      {/* instant poster frame — visible until the first clip is actually playing */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={POSTER}
-        alt=""
-        className={`absolute left-1/2 top-1/2 h-[max(100%,56.25vw)] w-[max(100%,177.78vh)] -translate-x-1/2 -translate-y-1/2 object-cover transition-opacity duration-700 ${visible === null ? 'opacity-100 animate-hero-zoom' : 'opacity-0'}`}
-      />
+      {/* instant poster frame (random per visit, same video the reel opens with) */}
+      {posterId && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={posterFor(posterId)}
+          alt=""
+          className={`absolute left-1/2 top-1/2 h-[max(100%,56.25vw)] w-[max(100%,177.78vh)] -translate-x-1/2 -translate-y-1/2 object-cover transition-opacity duration-700 ${visible === null ? 'opacity-100 animate-hero-zoom' : 'opacity-0'}`}
+        />
+      )}
       <div className={layer(0)}><div ref={hostA} className="h-full w-full" /></div>
       <div className={layer(1)}><div ref={hostB} className="h-full w-full" /></div>
       {/* constant theme tint — players cross-fade beneath it */}
