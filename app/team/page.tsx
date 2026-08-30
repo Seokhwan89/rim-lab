@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
-import { pi, staff, phd, ms, undergrad, alumni, groupPhoto, labGallery, type Member } from '@/content/team';
+import { pi, staff, phd, ms, undergrad, alumni, groupPhoto, labGallery, equipment, type Member } from '@/content/team';
 
 export const metadata: Metadata = { title: 'Team' };
 
@@ -154,6 +154,20 @@ export default function TeamPage() {
           <Section title="Lab & Facilities" count={labGallery.length}>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {labGallery.map((g, i) => (
+                <Reveal key={g.src} delay={(i % 3) * 70}>
+                  <figure className="card card-hover h-full overflow-hidden p-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={g.src} alt={g.caption} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                    <figcaption className="px-4 py-3 text-[12.5px] leading-snug text-rim-muted">{g.caption}</figcaption>
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          </Section>
+
+          <Section title="Equipment" count={equipment.length}>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {equipment.map((g, i) => (
                 <Reveal key={g.src} delay={(i % 3) * 70}>
                   <figure className="card card-hover h-full overflow-hidden p-0">
                     {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -25,9 +25,22 @@ export const groupPhoto = {
 
 /** Lab & facilities gallery */
 export const labGallery: { src: string; caption: string }[] = [
-  { src: '/images/lab/lab-space-1.jpg', caption: 'Main research space — workstations and assembly benches' },
-  { src: '/images/lab/lab-equipment.jpg', caption: 'Robot experiment area — optical table and manipulator setups' },
-  { src: '/images/lab/lab-space-2.jpg', caption: 'Renovated lab interior, RA313' },
+  { src: '/images/lab/lab-space-1.jpg', caption: 'Workspace 1 (RA313) — main research space' },
+  { src: '/images/lab/lab-equipment.jpg', caption: 'Workspace 1 (RA313) — robot experiment area' },
+  { src: '/images/lab/lab-space-2.jpg', caption: 'Workspace 1 (RA313) — renovated interior' },
+  { src: '/images/lab/workspace-cy507.jpg', caption: 'Workspace 2 (CY507)' },
+  { src: '/images/lab/workspace-te208.jpg', caption: 'Workspace 3 (TE208)' },
+];
+
+
+/** Equipment & facilities (from the lab's own records) */
+export const equipment: { src: string; caption: string }[] = [
+  { src: '/images/lab/equipment-manipulator.jpg', caption: 'Robotic manipulator' },
+  { src: '/images/lab/equipment-mini-arm.jpg', caption: 'Mini robot arm' },
+  { src: '/images/lab/equipment-3d-printing.jpg', caption: '3D printing lab (SLA, FDM)' },
+  { src: '/images/lab/equipment-laser-cutter.jpg', caption: 'Laser cutter' },
+  { src: '/images/lab/equipment-optitrack.jpg', caption: 'Vision tracking system (OptiTrack)' },
+  { src: '/images/lab/equipment-tools.jpg', caption: 'Mechanical tools' },
 ];
 
 export const staff: Member[] = [

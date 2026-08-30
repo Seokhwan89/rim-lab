@@ -11,6 +11,10 @@ export type Patent = {
   /** Related research project slug (content/projects.ts) */
   project?: string;
   note?: string;
+  /** Public patent-document page (Google Patents) */
+  link?: string;
+  /** Representative drawing (path under /public) */
+  image?: string;
 };
 
 /** Patent families, newest first. Same-invention filings in multiple countries are grouped as one entry. */
@@ -33,6 +37,7 @@ export const patents: Patent[] = [
     assignee: 'Sogang University',
     project: 'robotic-hands',
     note: 'US, JP and DE filings completed 2026.08',
+    image: '/images/patents/quasi-direct-drive-hand.jpg',
   },
   {
     title: 'Robot grasp control based on uniaxial force sensing',
@@ -80,6 +85,7 @@ export const patents: Patent[] = [
     assignee: 'Daeha Wire & Cable · Sogang University',
     project: 'factory-automation',
     note: 'Five patents registered 2024.12',
+    link: 'https://patents.google.com/patent/KR102744921B1',
   },
   {
     title: 'End-effector exchange system',
@@ -99,6 +105,7 @@ export const patents: Patent[] = [
     assignee: 'Sogang University · Yujin MS',
     project: 'robotic-hands',
     note: 'Registered 2026.02',
+    link: 'https://patents.google.com/patent/KR102927194B1',
   },
   {
     title: 'Lower-limb force assistance device',
@@ -119,6 +126,7 @@ export const patents: Patent[] = [
     assignee: 'Sogang University',
     project: 'magnetic-gear',
     note: 'Registered 2025.01',
+    link: 'https://patents.google.com/patent/KR102755860B1',
   },
   {
     title: 'Magnet transmission',
@@ -146,6 +154,7 @@ export const patents: Patent[] = [
     assignee: 'Georgia Tech Research Corp.',
     project: 'surgical-robots',
     note: 'Registered in JP (2026) and CN (2025); accepted in AU (2026); pending elsewhere',
+    link: 'https://patents.google.com/patent/JP7798789B2',
   },
   {
     title: 'Steerable and flexible robotic endoscopic tools for minimally invasive procedures',
@@ -155,6 +164,7 @@ export const patents: Patent[] = [
     assignee: "Georgia Tech Research Corp. · Children's Healthcare of Atlanta",
     project: 'surgical-robots',
     note: 'Registered in US (2025, 2026) and JP (2025)',
+    link: 'https://patents.google.com/patent/US12318067B2',
   },
   {
     title: 'Voice-activated, compact, and portable robotic system',
@@ -164,6 +174,7 @@ export const patents: Patent[] = [
     assignee: 'Georgia Tech Research Corp.',
     project: 'hand-exoskeletons',
     note: 'Registered in US (2024, 2026) and JP (2024)',
+    link: 'https://patents.google.com/patent/US12179356B2',
   },
   {
     title: 'Dual-mode transmission mechanism based on twisted string actuation',
@@ -174,6 +185,7 @@ export const patents: Patent[] = [
     assignee: 'KAIST',
     project: 'compact-variable-transmission',
     note: 'Registered in US (2019), EP (2021), KR (2018)',
+    link: 'https://patents.google.com/patent/US10480590B2',
   },
   {
     title: 'Dual-mode actively variable twisted string actuator and robotic finger',
@@ -184,6 +196,7 @@ export const patents: Patent[] = [
     assignee: 'KAIST',
     project: 'compact-variable-transmission',
     note: 'Registered 2016.10',
+    link: 'https://patents.google.com/patent/KR101664622B1',
   },
 ];
 

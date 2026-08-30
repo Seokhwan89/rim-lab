@@ -32,6 +32,8 @@ export default function PublicationsPage() {
         venue: pt.numbers,
         year: pt.year,
         type: 'patent',
+        link: pt.link,
+        image: pt.image,
         note: pt.status === 'registered' ? (pt.note ? `Registered · ${pt.note.replace(/^Registered\s*/i, '')}` : 'Registered') : pt.note,
       })),
     []

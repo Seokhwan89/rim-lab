@@ -38,6 +38,9 @@ export const projects: Project[] = [
       'A Robotic Finger with a 4-bar Linkage-based Compact and Continuously Variable Active Transmission — IEEE RA-L, 2024',
       'A 2-Speed Small Transmission Mechanism Based on Twisted String Actuation and a Dog Clutch — IEEE RA-L, 2018',
     ],
+    funding: [
+      'NRF LINC Industry-Academia Joint Project — RL protocols and hardware for quadruped-robot mobility over varied terrain (joint)',
+    ],
   },
   {
     slug: 'robotic-hands',
@@ -60,6 +63,9 @@ export const projects: Project[] = [
       'Designing Anthropomorphic Robot Hand With Active Dual-Mode Twisted String Actuation Mechanism and Tiny Tension Sensors — IEEE RA-L, 2017',
     ],
     highlights: ['Best Student Paper Award & Best Mechatronics Student Paper Award, IEEE AIM 2016'],
+    funding: [
+      'NRF Materials Global Young Connect — high-dielectric elastomers for electroadhesive robotic end-effectors (2025.08 – )',
+    ],
   },
   {
     slug: 'ai-based-multifinger-grasping',
@@ -80,6 +86,10 @@ export const projects: Project[] = [
     ],
     pubs: [
       'Why Look at It at All?: Vision-Free Multifingered Blind Grasping Using Uniaxial Fingertip Force Sensing — under review, 2026',
+    ],
+    funding: [
+      'NRF National Agenda Basic Research — hardware & control core technologies for physical-AI robot hand/gripper platforms (2025.09 – )',
+      'KEIT Robot Industry Core Technology Program — multimodal flexible tactile sensing system for universal grippers (joint)',
     ],
   },
   {
@@ -120,7 +130,10 @@ export const projects: Project[] = [
       'Automated Terminal-to-Housing Assembly System for Flat Ribbon Cable Harness — under review, 2026',
       '다발 하네스 케이블 조립 자동화 시스템 구현을 위한 메커니즘 설계 — 국방로봇학회 논문집, 2024',
     ],
-    funding: ['Daeha Wire & Cable Co. (2022.04 – 2025.05)'],
+    funding: ['Daeha Wire & Cable Co. (2022.04 – 2025.05)',
+      'KEITI Field-Demand Environmental Technology Program — unmanned enclosed robotic–AI platform for automated hazardous-chemical analysis (2026 – , joint with Sogang Bio-Interface Institute · Tesollo)',
+      'TIPA Green Venture Program — automated waste-collection and operator-assist vehicle systems (2022.04 – , with Ecube Labs)',
+    ],
   },
   {
     slug: 'surgical-robots',
@@ -153,6 +166,8 @@ export const projects: Project[] = [
     funding: [
       'NRF Basic Research Lab — Exo-3D-printed sensing suit for walking enhancement (2023.06 – 2026.02, 1.5B KRW, joint)',
       'National Rehabilitation Center R&D — flexible wearable lower-limb assistive robot (2022.08 – 2024.12, 390M KRW, joint)',
+    
+      'KEIT Bio-Industry Technology Program (Digital Healthcare) — precision controllers for personalized rehabilitation & daily-assist robots based on intelligent multi-wearable sensors (2026.06 – , joint)',
     ],
   },
   {

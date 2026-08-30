@@ -51,6 +51,14 @@ export default function NewsPage() {
                       className="mt-4 w-full max-w-2xl rounded-lg border border-rim-line object-cover"
                     />
                   )}
+                  {n.images && n.images.length > 0 && (
+                    <div className="mt-3 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-3">
+                      {n.images.map((src) => (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img key={src} src={src} alt={n.title} loading="lazy" className="aspect-[4/3] w-full rounded-lg border border-rim-line object-cover" />
+                      ))}
+                    </div>
+                  )}
                   {n.link && <a href={n.link} target="_blank" rel="noreferrer" className="mt-3 inline-block font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">Related link ↗</a>}
                 </div>
               </Reveal>

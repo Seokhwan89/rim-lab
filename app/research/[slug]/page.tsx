@@ -6,6 +6,7 @@ import Reveal from '@/components/Reveal';
 import LiteYouTube from '@/components/LiteYouTube';
 import ProjectIcon from '@/components/ProjectIcon';
 import { projects } from '@/content/projects';
+import { publications } from '@/content/publications';
 import { patentsByProject } from '@/content/patents';
 
 export function generateStaticParams() {
@@ -81,11 +82,16 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             {p.pubs && (
               <Block title="Representative Publications">
                 <ul className="space-y-3">
-                  {p.pubs.map((x) => (
-                    <li key={x} className="flex gap-3 text-[13.5px] leading-relaxed text-rim-muted">
-                      <span className="mt-[8px] h-1.5 w-1.5 shrink-0 rounded-full bg-rim-cyan" />{x}
-                    </li>
-                  ))}
+                  {p.pubs.map((x) => {
+                    const head = x.split(' — ')[0].trim().toLowerCase();
+                    const hit = publications.find((pub) => pub.link && (pub.title.toLowerCase().startsWith(head.slice(0, 40)) || head.startsWith(pub.title.toLowerCase().slice(0, 40))));
+                    return (
+                      <li key={x} className="flex gap-3 text-[13.5px] leading-relaxed text-rim-muted">
+                        <span className="mt-[8px] h-1.5 w-1.5 shrink-0 rounded-full bg-rim-cyan" />
+                        {hit ? <a href={hit.link} target="_blank" rel="noreferrer" className="transition-colors hover:text-rim-cyan">{x} ↗</a> : x}
+                      </li>
+                    );
+                  })}
                 </ul>
                 <Link href="/publications" className="mt-5 inline-block font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">All publications →</Link>
               </Block>
@@ -102,7 +108,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     <li key={pt.numbers} className="flex gap-3 text-[13.5px] leading-relaxed text-rim-muted">
                       <span className="mt-[8px] h-1.5 w-1.5 shrink-0 rounded-full bg-rim-indigo" />
                       <span>
-                        {pt.title}
+                        {pt.link ? <a href={pt.link} target="_blank" rel="noreferrer" className="transition-colors hover:text-rim-cyan">{pt.title} ↗</a> : pt.title}
                         <span className="ml-2 font-mono text-[11px] uppercase tracking-wide text-rim-faint">
                           {pt.status === 'registered' ? 'Registered' : 'Filed'}
                         </span>
