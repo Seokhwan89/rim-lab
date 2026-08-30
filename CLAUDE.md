@@ -34,11 +34,17 @@
   MCP 세션이 끊겨 불가, Drive는 `download_file_content` 결과 파일을 디코드,
   문서 속 사진은 pymupdf/zip으로 추출). 교수에게 부탁하는 것은 토큰이 과도하게
   들거나 도구가 없는 경우뿐이며, 그 사유를 HANDOFF에 남긴다.
-- 접근 불가 자료(구글 포토 등)는 교수 PC의 GPT/codex가 다리 역할을 한다:
-  교수가 codex에게 시키면 codex가 자료를 Drive의 **'RIM 홈페이지 자료함'**
-  폴더(id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7)에 넣거나 채팅에 업로드한다.
-  **사진·자료 작업 전에 이 폴더를 먼저 확인**하고, 사용한 파일은 리포에
-  저장 후 폴더에서 정리(휴지통)해 수거함을 비워 둔다. 공유 링크가 오면
+- **교수 PC 브릿지(GPT 활용)**: 교수 PC에서 Claude Code가 Remote Control로
+  연결되어 있으면 ListAgents에 그 세션이 보인다. 구글 포토 등 접근 불가
+  자료 수집, 그리고 **Gmail 심층 검색의 이중 확인**(교수 지시: GPT 검색이
+  더 정확하므로 중요한 메일 서칭은 PC 세션을 통해 GPT에도 물어 교차 검증)
+  이 필요하면 SendMessage로 PC 세션에 위임한다 — PC 세션이 교수의 로그인된
+  크롬으로 GPT에 질의하고 결과를 Drive 'RIM 홈페이지 자료함'
+  (id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7)이나 채팅으로 가져온다.
+  PC 세션이 안 보이면(오프라인) 기존 방식대로 진행하고, 교수에게 codex
+  상용구("…찾아서 'RIM 홈페이지 자료함'에 저장해줘")를 안내한다.
+  **사진·자료 작업 전에 자료함 폴더를 먼저 확인**하고, 사용한 파일은
+  리포 저장 후 휴지통으로 정리한다. 공유 링크는
   `scripts/fetch-shared-album.py`로 수집.
 
 ## 진행 상황
