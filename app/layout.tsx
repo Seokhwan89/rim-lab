@@ -31,6 +31,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="preconnect" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+      </head>
       <body>
         <Header />
         <main className="min-h-screen">{children}</main>

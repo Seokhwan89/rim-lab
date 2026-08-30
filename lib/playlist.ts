@@ -1,5 +1,15 @@
 import { heroPlaylistId, playlistSnapshot, type Video } from '@/content/videos';
 
+const AGE_UNITS: Record<string, number> = {
+  second: 1, minute: 60, hour: 3600, day: 86400, week: 604800, month: 2629800, year: 31557600,
+};
+
+/** "3 weeks ago" (anywhere in the serialized metadata) → seconds; unknown → Infinity */
+function ageSeconds(metaJson: string): number {
+  const m = metaJson.match(/(\d+)\s+(second|minute|hour|day|week|month|year)s?\s+ago/);
+  return m ? parseInt(m[1], 10) * AGE_UNITS[m[2]] : Number.POSITIVE_INFINITY;
+}
+
 /**
  * Fetch the full YouTube "Research" playlist at build time (no API key).
  * Falls back to the RSS feed (first 15 items) and then to the static
@@ -21,7 +31,7 @@ export async function getResearchPlaylist(): Promise<Video[]> {
     );
     if (res.ok) {
       const data = await res.json();
-      const out: Video[] = [];
+      const out: (Video & { age: number })[] = [];
       const seen = new Set<string>();
       const walk = (o: unknown): void => {
         if (Array.isArray(o)) { o.forEach(walk); return; }
@@ -32,19 +42,28 @@ export async function getResearchPlaylist(): Promise<Video[]> {
         if (lv && typeof lv.contentId === 'string') {
           const meta = lv.metadata as { lockupMetadataViewModel?: { title?: { content?: string } } } | undefined;
           const title = meta?.lockupMetadataViewModel?.title?.content ?? '';
-          if (title && !seen.has(lv.contentId)) { seen.add(lv.contentId); out.push({ id: lv.contentId, title }); }
+          if (title && !seen.has(lv.contentId)) {
+            seen.add(lv.contentId);
+            out.push({ id: lv.contentId, title, age: ageSeconds(JSON.stringify(lv.metadata ?? {})) });
+          }
         }
         const pv = rec.playlistVideoRenderer as
           | { videoId?: string; title?: { runs?: { text?: string }[]; simpleText?: string } }
           | undefined;
         if (pv?.videoId) {
           const title = pv.title?.simpleText ?? (pv.title?.runs ?? []).map((r) => r.text ?? '').join('');
-          if (title && !seen.has(pv.videoId)) { seen.add(pv.videoId); out.push({ id: pv.videoId, title }); }
+          if (title && !seen.has(pv.videoId)) { seen.add(pv.videoId); out.push({ id: pv.videoId, title, age: Number.POSITIVE_INFINITY }); }
         }
         Object.values(rec).forEach(walk);
       };
       walk(data);
-      if (out.length >= 5) return out;
+      if (out.length >= 5) {
+        // newest first; items with unknown age keep their playlist position at the end
+        return out
+          .map((v, i) => ({ ...v, i }))
+          .sort((a, b) => (a.age - b.age) || (a.i - b.i))
+          .map(({ id, title }) => ({ id, title }));
+      }
     }
   } catch { /* fall through */ }
   try {

@@ -75,3 +75,9 @@ body { @apply bg-rim-bg text-rim-text font-sans antialiased; word-break: keep-al
 .play-badge { @apply absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full border border-white/25 bg-black/55 backdrop-blur transition-all duration-300; }
 .group:hover .play-badge { @apply bg-rim-cyan border-rim-cyan shadow-[0_0_34px_rgba(34,211,238,0.6)]; }
 .group:hover .play-badge svg { fill: #04121a; }
+
+@keyframes hero-zoom {
+  from { transform: translate(-50%, -50%) scale(1); }
+  to { transform: translate(-50%, -50%) scale(1.07); }
+}
+.animate-hero-zoom { animation: hero-zoom 14s ease-out forwards; }

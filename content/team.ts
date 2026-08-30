@@ -29,7 +29,6 @@ export const labGallery: { src: string; caption: string }[] = [
   { src: '/images/lab/lab-equipment.jpg', caption: 'Workspace 1 (RA313) — robot experiment area' },
   { src: '/images/lab/lab-space-2.jpg', caption: 'Workspace 1 (RA313) — renovated interior' },
   { src: '/images/lab/workspace-cy507.jpg', caption: 'Workspace 2 (CY507)' },
-  { src: '/images/lab/workspace-te208.jpg', caption: 'Workspace 3 (TE208)' },
 ];
 
 

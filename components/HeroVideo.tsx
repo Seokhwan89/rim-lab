@@ -20,6 +20,8 @@ const SEG_SECONDS = 10; // seconds each clip stays on screen
 const PRELOAD_SECONDS = 6; // how long before the switch the next video starts loading
 const FADE_MS = 700; // crossfade duration
 const MIN_AUTO_SEEK = 60; // don't auto-seek videos shorter than this (s)
+const FIRST_CLIP_START = 40; // first clip starts here directly (no post-play seek → shows sooner)
+const POSTER = '/images/hero-poster.jpg'; // self-hosted frame shown instantly while the player boots
 const TICK_MS = 500;
 
 declare global {
@@ -38,9 +40,19 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
 
   useEffect(() => {
     let cancelled = false;
+    const shuffled = (arr: string[]) => {
+      const a = [...arr];
+      for (let k = a.length - 1; k > 0; k--) {
+        const j = Math.floor(Math.random() * (k + 1));
+        [a[k], a[j]] = [a[j], a[k]];
+      }
+      return a;
+    };
     const st = {
       players: [] as any[],
-      ids: [] as string[],
+      ids: shuffled(fallbackIds),
+      playlistMerged: false,
+      firstLoad: true,
       i: 0, // index of the next video to load
       active: 0 as Slot,
       started: false, // first clip revealed
@@ -57,9 +69,11 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
       const id = st.ids[st.i % st.ids.length];
       st.i += 1;
       const hl = heroHighlights[id];
-      st.needSeek[slot] = !hl;
-      st.seekDoneAt[slot] = hl ? Date.now() : 0;
-      p.loadVideoById(hl ? { videoId: id, startSeconds: hl.start } : id);
+      const start = hl?.start ?? (st.firstLoad ? FIRST_CLIP_START : undefined);
+      st.firstLoad = false;
+      st.needSeek[slot] = start === undefined;
+      st.seekDoneAt[slot] = start !== undefined ? Date.now() : 0;
+      p.loadVideoById(start !== undefined ? { videoId: id, startSeconds: start } : id);
     };
 
     const slotReady = (slot: Slot) => {
@@ -67,7 +81,7 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
       return (
         p?.getPlayerState?.() === window.YT?.PlayerState?.PLAYING &&
         !st.needSeek[slot] &&
-        Date.now() - st.seekDoneAt[slot] > 600 // let playback settle after the seek
+        Date.now() - st.seekDoneAt[slot] > 300 // let playback settle after the seek
       );
     };
 
@@ -138,20 +152,17 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
             onReady: () => {
               if (cancelled) return;
               st.players[slot].mute();
-              if (slot === 0) st.players[0].cuePlaylist({ list: heroPlaylistId, listType: 'playlist' });
+              // slot 0 starts the first clip immediately from the static reel;
+              // slot 1 resolves the full playlist in the background and merges it in.
+              if (slot === 0) preload(0);
+              if (slot === 1) st.players[1].cuePlaylist({ list: heroPlaylistId, listType: 'playlist' });
             },
             onStateChange: (e: any) => {
-              if (cancelled || slot !== 0 || st.ids.length > 0) return;
+              if (cancelled || slot !== 1 || st.playlistMerged) return;
               if (e.data === window.YT?.PlayerState?.CUED) {
-                const list = st.players[0].getPlaylist?.();
-                const ids = Array.isArray(list) && list.length > 0 ? [...list] : [...fallbackIds];
-                // Fisher–Yates shuffle so every visit plays a different order
-                for (let k = ids.length - 1; k > 0; k--) {
-                  const j = Math.floor(Math.random() * (k + 1));
-                  [ids[k], ids[j]] = [ids[j], ids[k]];
-                }
-                st.ids = ids;
-                preload(0);
+                st.playlistMerged = true;
+                const list = st.players[1].getPlaylist?.();
+                if (Array.isArray(list) && list.length > 0) st.ids = shuffled(list);
               }
             },
             onError: () => { if (!cancelled) preload(slot); }, // broken/unembeddable video → next
@@ -189,6 +200,13 @@ export default function HeroVideo({ fallbackIds }: { fallbackIds: string[] }) {
 
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      {/* instant poster frame — visible until the first clip is actually playing */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={POSTER}
+        alt=""
+        className={`absolute left-1/2 top-1/2 h-[max(100%,56.25vw)] w-[max(100%,177.78vh)] -translate-x-1/2 -translate-y-1/2 object-cover transition-opacity duration-700 ${visible === null ? 'opacity-100 animate-hero-zoom' : 'opacity-0'}`}
+      />
       <div className={layer(0)}><div ref={hostA} className="h-full w-full" /></div>
       <div className={layer(1)}><div ref={hostB} className="h-full w-full" /></div>
       {/* constant theme tint — players cross-fade beneath it */}
