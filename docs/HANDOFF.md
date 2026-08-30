@@ -83,6 +83,18 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
   브라우저는 irobotnews.com 직접 접속이 차단되므로 curl로 HTML+CSS+이미지를
   받아 로컬화(file://)한 뒤 Playwright로 렌더·크롭(스크립트: scratchpad
   rnews/). 분류기는 배너(가로비>1.6) 제외 후 밝은 이미지를 문서로 취급.
+- **브라우저로 외부 사이트 라이브 접속하는 법** (2026-08-30 해결): 사이트
+  차단이 아니라 Chromium의 TLS 핸드셰이크가 TLS 재종단 프록시와 비호환
+  (터널은 열리나 ClientHello 직후 리셋; --proxy-server, ECH/ML-KEM 비활성
+  모두 무효). 우회: page.route('**/*')로 전 요청을 가로채 Node fetch로
+  대신 받아 route.fulfill — `NODE_USE_ENV_PROXY=1
+  NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node script.js`
+  (스크립트 예: scratchpad/test3.js). irobotnews.com 라이브 렌더 확인됨.
+- 멤버 얼굴 사진 파이프라인: YuNet(cv2.FaceDetectorYN, 모델
+  scratchpad/yunet.onnx)로 얼굴 검출 → 얼굴폭 2.5배 정사각 크롭(얼굴이
+  중심 약간 위) → 800px 상한. 27장 전원 적용, 원본은 scratchpad/team_orig.
+  advisor 상반신(seokhwan-jeong-portrait.jpg)은 크롭 제외. 새 멤버 사진이
+  오면 같은 파이프라인 적용.
 - NANO KOREA 2026 전시 뉴스 추가 (2026.07, KINTEX 나노융합 성과전시 —
   9-DOF 그리퍼 + 김형준 교수팀 고유전 전기접착 패드 데모; 근거:
   최아리 8/3 메일·서강 기사). 부적절한 번개 그래픽(nrf-materials)은 삭제.

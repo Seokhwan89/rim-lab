@@ -43,7 +43,7 @@ export const equipment: { src: string; caption: string }[] = [
 ];
 
 export const staff: Member[] = [
-  { name: 'Eunjin Yang', role: 'Administrative Staff', email: 'yangeunjin@gmail.com', photo: '/images/team/eunjin-yang.jpg' },
+  { name: 'Eunjin Yang', role: 'Administrative Staff', topic: 'Administrative Staff', email: 'yangeunjin@gmail.com', photo: '/images/team/eunjin-yang.jpg' },
 ];
 
 export const phd: Member[] = [
@@ -66,8 +66,8 @@ export const ms: Member[] = [
 ];
 
 export const undergrad: Member[] = [
-  { name: 'Uisu Hwang', role: 'Undergraduate Fellow', photo: '/images/team/uisu-hwang.jpg' },
-  { name: 'Sungeon Kim', role: 'Undergraduate Fellow', photo: '/images/team/sungeon-kim.jpg' },
+  { name: 'Uisu Hwang', role: 'Undergraduate Fellow', topic: 'Robot Gripper', email: 'dmltn3906@sogang.ac.kr', photo: '/images/team/uisu-hwang.jpg' },
+  { name: 'Sungeon Kim', role: 'Undergraduate Fellow', topic: 'Robot Hand', email: 'sungeon200102@gmail.com', photo: '/images/team/sungeon-kim.jpg' },
 ];
 
 export const alumni: Alum[] = [

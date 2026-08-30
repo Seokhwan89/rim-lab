@@ -17,7 +17,7 @@ function MemberCard({ m, delay = 0 }: { m: Member; delay?: number }) {
       <div className="card card-hover flex h-full items-start gap-4 p-5">
         {m.photo ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={m.photo} alt={m.name} loading="lazy" className="h-20 w-20 shrink-0 rounded-full border border-rim-cyan/35 object-cover object-top" />
+          <img src={m.photo} alt={m.name} loading="lazy" className="h-20 w-20 shrink-0 rounded-full border border-rim-cyan/35 object-cover" />
         ) : (
           <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-rim-cyan/35 bg-rim-cyan/10 font-display text-[15px] font-semibold text-rim-cyan">
             {initials(m.name)}
@@ -80,7 +80,7 @@ export default function TeamPage() {
                 <div className="relative flex items-center gap-6">
                   {pi.photo && (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={pi.photo} alt={pi.name} className="h-24 w-24 shrink-0 rounded-2xl border border-rim-cyan/35 object-cover object-top" />
+                    <img src={pi.photo} alt={pi.name} className="h-24 w-24 shrink-0 rounded-2xl border border-rim-cyan/35 object-cover" />
                   )}
                   <div>
                     <p className="font-display text-[24px] font-semibold">{pi.name}</p>
@@ -133,7 +133,7 @@ export default function TeamPage() {
                           <span className="flex items-center gap-3">
                             {a.photo ? (
                               // eslint-disable-next-line @next/next/no-img-element
-                              <img src={a.photo} alt={a.name} loading="lazy" className="h-9 w-9 shrink-0 rounded-full border border-rim-line object-cover object-top" />
+                              <img src={a.photo} alt={a.name} loading="lazy" className="h-9 w-9 shrink-0 rounded-full border border-rim-line object-cover" />
                             ) : (
                               <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-rim-line font-mono text-[11px] text-rim-faint">{initials(a.name)}</span>
                             )}
