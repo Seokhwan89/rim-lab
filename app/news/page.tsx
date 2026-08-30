@@ -55,11 +55,18 @@ export default function NewsPage() {
                     <div className="mt-3 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-3">
                       {n.images.map((src) => (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img key={src} src={src} alt={n.title} loading="lazy" className="aspect-[4/3] w-full rounded-lg border border-rim-line object-cover" />
+                        <img key={src} src={src} alt={n.title} loading="lazy" className="h-44 w-full rounded-lg border border-rim-line bg-black/30 object-contain" />
                       ))}
                     </div>
                   )}
-                  {n.link && <a href={n.link} target="_blank" rel="noreferrer" className="mt-3 inline-block font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">Related link ↗</a>}
+                  {(n.link || n.links) && (
+                    <div className="mt-3 flex flex-wrap gap-4">
+                      {n.link && <a href={n.link} target="_blank" rel="noreferrer" className="font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">Related link ↗</a>}
+                      {n.links?.map((l) => (
+                        <a key={l.href} href={l.href} target="_blank" rel="noreferrer" className="font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan hover:text-rim-cyanLight">{l.label} ↗</a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </Reveal>
             ))}
