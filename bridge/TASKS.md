@@ -33,3 +33,22 @@ GPT에게 보낼 질의:
 
 보고: 정리 결과를 'Untitled session' (cloud)에게 SendMessage로 전달 (길면
 2~3개로 분할). 완료 후 .bridge-done에 task-001 기록.
+
+## task-002 (2026-08-30) — OA 논문 보조영상 내려받기
+(교수가 클라우드 세션에서 지시한 작업. 클라우드에서는 Wiley가 403으로
+막혀 접근 불가하나 교수 PC 브라우저에서는 열린다.)
+
+대상 논문(오픈액세스 CC-BY 4.0, 재사용 허용):
+"A Modular Robotic Platform for Biological Research: Cell Culture Automation
+and Remote Experimentation", Advanced Intelligent Systems, 2024,
+https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202300566
+
+할 일:
+1. 위 논문 페이지의 Supporting Information에서 보조 영상 파일(Video S1 등,
+   mp4 또는 zip)을 내려받는다.
+2. 파일이 25MB를 넘으면 ffmpeg로 720p/H.264로 압축해 25MB 이하로 만든다
+   (없으면 원본 그대로).
+3. 구글 드라이브의 **'RIM 홈페이지 자료함'** 폴더
+   (id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7)에 업로드한다.
+4. 파일명·용량·영상 길이·내용 요약을 'Untitled session' (cloud)에게
+   SendMessage로 보고한다. 완료 후 .bridge-done에 task-002 기록.
