@@ -15,8 +15,8 @@ const CLS = {
 };
 
 function isDocument(im: HTMLImageElement): boolean {
-  const portrait = im.naturalHeight > im.naturalWidth * 1.05;
-  if (!portrait) return false;
+  // banners and very wide graphics never count as documents
+  if (im.naturalWidth > im.naturalHeight * 1.6) return false;
   try {
     const c = document.createElement('canvas');
     c.width = 24;
