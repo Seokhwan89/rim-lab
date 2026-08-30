@@ -117,12 +117,13 @@ export default function OpeningPage() {
               <h2 className="h-sub">How to apply</h2>
               <p className="mt-3 max-w-2xl text-[14.5px] leading-relaxed text-rim-muted">
                 Fill in the application form, or email Prof. Seokhwan Jeong with your CV and transcript.
-                Our weekly open lab meeting is open to anyone without prior permission — come and see what we build.
+                Our weekly open lab meeting is open to anyone without prior permission — email the lab manager to ask when
+                the next one is, and come see what we build.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-primary">Application Form ↗</a>
                 <a href={`mailto:${site.email}`} className="btn-ghost">{site.email}</a>
-                <a href="mailto:ryan8834@gmail.com" className="btn-ghost">Open lab meeting: ryan8834@gmail.com</a>
+                <a href="mailto:ryan8834@gmail.com?subject=Open%20lab%20meeting%20inquiry" className="btn-ghost">Ask about the lab meeting ✉ ryan8834@gmail.com</a>
               </div>
             </div>
           </Reveal>
