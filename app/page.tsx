@@ -6,6 +6,7 @@ import LiteYouTube from '@/components/LiteYouTube';
 import ProjectIcon from '@/components/ProjectIcon';
 import { researchAreas, projects } from '@/content/projects';
 import { featuredVideos, heroReel } from '@/content/videos';
+import { getResearchPlaylist } from '@/lib/playlist';
 import { news, categoryColors, type NewsCategory } from '@/content/news';
 import { site } from '@/content/site';
 
@@ -22,7 +23,13 @@ const newsGroups: { label: string; cats: NewsCategory[] }[] = [
   { label: 'Members & Alumni', cats: ['Members', 'Lab Life'] },
 ];
 
-export default function Home() {
+/** Fetch the playlist once at build time and prerender — refreshed on every deploy */
+export const dynamic = 'force-static';
+
+export default async function Home() {
+  const featured = featuredVideos.slice(0, 2);
+  const featuredIds = new Set(featured.map((v) => v.id));
+  const playlist = (await getResearchPlaylist()).filter((v) => !featuredIds.has(v.id));
   return (
     <>
       {/* ───────────────────────── Hero ───────────────────────── */}
@@ -105,15 +112,27 @@ export default function Home() {
               </a>
             </Reveal>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {featuredVideos.map((v, i) => (
-              <Reveal key={v.id} delay={(i % 4) * 80} className={i < 2 ? 'md:col-span-2 lg:col-span-2' : ''}>
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {featured.map((v, i) => (
+              <Reveal key={v.id} delay={i * 80}>
                 <div className="card card-hover group overflow-hidden p-0">
                   <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" />
                   <div className="flex items-start justify-between gap-3 p-4">
                     <p className="line-clamp-2 text-[13.5px] font-medium leading-snug text-rim-text">{v.title}</p>
                     {v.tag && <span className="chip shrink-0 border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan">{v.tag}</span>}
                   </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal className="mt-14"><p className="eyebrow">Research Playlist · {playlist.length} videos</p></Reveal>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {playlist.map((v, i) => (
+              <Reveal key={v.id} delay={(i % 4) * 60}>
+                <div className="card card-hover group overflow-hidden p-0">
+                  <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" />
+                  <p className="line-clamp-2 p-3 text-[12.5px] font-medium leading-snug text-rim-text">{v.title}</p>
                 </div>
               </Reveal>
             ))}

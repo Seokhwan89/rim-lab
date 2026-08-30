@@ -59,6 +59,15 @@ _최종 갱신: 2026-08-30 (2차: 뉴스 갤러리·장비·CV 동기화·특허
 - 특허 대표도 1건: 준직구동 로봇핸드 — Drive의 P2026-0084DE 출원서류에서
   Fig.1 추출(/images/patents/quasi-direct-drive-hand.jpg)
 
+- 메인 유튜브 섹션 (2026-08-30): 대표 대형 2개(featuredVideos[0..1],
+  교수가 바꾸라고 할 때만 변경)는 유지하고, 그 아래에 Research 재생목록
+  전체를 그리드로 표시. 목록은 빌드 시 lib/playlist.ts가 유튜브
+  innertube(공개 웹 키, browseId=VL<재생목록ID>)로 받아오며 — 새
+  lockupViewModel/구 playlistVideoRenderer 두 구조 모두 파싱 — 실패 시
+  RSS(15개)→content/videos.ts의 playlistSnapshot 순으로 폴백. 매 배포
+  시점에 갱신되므로 주간 Routine 배포로 새 영상이 자동 반영됨.
+- Advisor 프로필 사진을 상반신 크기(md:w-72)로 확대.
+
 ## 남은 작업 (우선순위순)
 
 1. **특허 대표도 잔여분**: 완료 4건 — 준직구동(DE 출원서류 Fig.1),

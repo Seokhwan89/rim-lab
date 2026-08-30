@@ -35,12 +35,12 @@ export default function AdvisorPage() {
       <section className="bg-rim-bg py-20">
         <div className="container-site">
           <Reveal>
-            <div className="card p-7 md:flex md:items-center md:justify-between md:gap-8">
+            <div className="card p-7 md:flex md:items-start md:gap-10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={advisor.photo}
                 alt={advisor.name}
-                className="mb-6 h-40 w-32 shrink-0 rounded-2xl border border-rim-cyan/35 object-cover object-top md:mb-0"
+                className="mx-auto mb-6 w-56 max-w-full shrink-0 rounded-2xl border border-rim-cyan/35 sm:w-64 md:mx-0 md:mb-0 md:w-72"
               />
               <div className="md:flex-1">
                 <p className="eyebrow">Research Interests</p>
@@ -48,7 +48,7 @@ export default function AdvisorPage() {
                   {advisor.interests.map((x) => <span key={x} className="chip border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan !normal-case !text-[12.5px] !font-sans !tracking-normal">{x}</span>)}
                 </p>
               </div>
-              <div className="mt-6 shrink-0 md:mt-0 md:text-right">
+              <div className="mt-8 shrink-0 md:mt-0 md:self-end md:text-right">
                 <a href={`mailto:${advisor.email}`} className="block font-mono text-[13px] text-rim-cyan hover:underline">{advisor.email}</a>
                 <p className="mt-1 font-mono text-[13px] text-rim-muted">{advisor.phone}</p>
                 <p className="mt-1 text-[12.5px] text-rim-faint">{advisor.office}</p>
