@@ -52,9 +52,9 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
           {p.image && (
             <Reveal className="mt-12">
-              <figure className="card overflow-hidden p-0">
+              <figure className="card mx-auto w-fit max-w-4xl overflow-hidden p-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.image} alt={p.imageCaption ?? p.title} className="w-full bg-white object-contain" />
+                <img src={p.image} alt={p.imageCaption ?? p.title} className="mx-auto block h-auto w-auto max-w-full bg-white object-contain px-2 py-2" style={{ maxHeight: 560 }} />
                 {p.imageCaption && (
                   <figcaption className="p-4 text-[13px] leading-snug text-rim-muted">{p.imageCaption}</figcaption>
                 )}
