@@ -37,7 +37,6 @@ export const patents: Patent[] = [
     assignee: 'Sogang University',
     project: 'robotic-hands',
     note: 'US, JP and DE filings completed 2026.08',
-    image: '/images/patents/quasi-direct-drive-hand.jpg',
   },
   {
     title: 'Robot grasp control based on uniaxial force sensing',
