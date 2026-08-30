@@ -49,6 +49,18 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </div>
           </Reveal>
 
+          {p.image && (
+            <Reveal className="mt-12">
+              <figure className="card overflow-hidden p-0">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={p.image} alt={p.imageCaption ?? p.title} className="w-full bg-white object-contain" />
+                {p.imageCaption && (
+                  <figcaption className="p-4 text-[13px] leading-snug text-rim-muted">{p.imageCaption}</figcaption>
+                )}
+              </figure>
+            </Reveal>
+          )}
+
           {p.videos && p.videos.length > 0 && (
             <div className="mt-14">
               <Reveal><p className="eyebrow">Demonstrations</p></Reveal>
