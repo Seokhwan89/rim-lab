@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     title: 'RIM Lab — Robotics & Intelligent Mechanisms Lab',
     description: 'Robotic hardware and physical intelligence for dexterous interaction with the real world.',
     type: 'website',
+    siteName: 'RIM Lab, Sogang University',
+    url: 'https://rim.sogang.ac.kr',
+    locale: 'en_US',
+    images: [
+      {
+        url: '/og-cover.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'RIM Lab — Robotics & Intelligent Mechanisms Lab, Sogang University',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'RIM Lab — Robotics & Intelligent Mechanisms Lab',
+    description: 'Robotic hardware and physical intelligence for dexterous interaction with the real world.',
+    images: ['/og-cover.jpg'],
   },
 };
 
