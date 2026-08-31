@@ -8,13 +8,14 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
 ## 완료된 것
 
 - 사이트 구축·배포: main push → Vercel 자동 배포 (https://rim-lab.vercel.app)
-- 도메인 rim.sogang.ac.kr 진행 중(2026-08-31): 교수가 8/29 디지털정보처
-  김현일 선생님께 DNS 변경 신청 → 8/31 오전 "변경 완료, 전파 6~8시간" 회신.
-  8/31 11시 기준 CNAME은 아직 옛 ghs.googlehosted.com(전파 대기, TTL 159),
-  _vercel TXT는 미조회. Vercel Domains에는 도메인이 "No Deployment" 상태라
-  본 커밋으로 재배포를 트리거함. 2시간 뒤 자동 재확인 예약됨
-  (trig_01GbCtVW6eTyHNjzUinNc7iL). 전파 후에도 Vercel이 TXT 인증을
-  요구하면 김현일 선생님께 _vercel TXT 추가 요청 필요.
+- **도메인 rim.sogang.ac.kr 연결 완료(2026-08-31)**: 8/29 디지털정보처
+  김현일 선생님께 DNS 변경 신청 → 8/31 오전 "변경 완료" 회신. 8/31 10:37
+  기준 CNAME → 728b851d8e151a2a.vercel-dns-017.com, _vercel TXT
+  (vc-domain-verify) 등록 확인, Vercel Domains 두 도메인 모두 Valid
+  Configuration, https://rim.sogang.ac.kr 이 새 홈페이지를 HTTPS로 정상
+  서빙(HTTP/2 200, server: Vercel). 일부 리졸버(dns.google 등)엔 옛
+  ghs.googlehosted.com 캐시가 최대 수 시간 남아 있을 수 있음(정상).
+  예약했던 재확인 Routine은 삭제함.
 - 히어로: YouTube Research 재생목록(PLAUadnYJsReuafzkvid6k_3qI1vjicdvk)에서
   영상 목록을 받아 셔플 → 랜덤 구간 10초씩 더블버퍼 크로스페이드 재생
   (components/HeroVideo.tsx, 구간 고정은 content/videos.ts heroHighlights)
