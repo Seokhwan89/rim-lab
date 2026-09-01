@@ -7,6 +7,11 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
 
 ## 완료된 것
 
+- Lectures 섹션 신설(2026-09-01): 메뉴 맨 뒤 'Lectures' 추가.
+  content/lectures.ts(과목·강의 데이터) + app/lectures/page.tsx.
+  MEE4033 Mechatronics(Fall 2026) Lecture 1 게시. 매 강의 후 교수가 PDF를
+  올리면 public/lectures/mee4033-fall-2026/lecture-NN-<slug>.pdf 저장 후
+  lectures.ts에 {no,title,date,file,pages,size} 추가만 하면 됨.
 - 사이트 구축·배포: main push → Vercel 자동 배포 (https://rim-lab.vercel.app)
 - **도메인 rim.sogang.ac.kr 연결 완료(2026-08-31)**: 8/29 디지털정보처
   김현일 선생님께 DNS 변경 신청 → 8/31 오전 "변경 완료" 회신. 8/31 10:37

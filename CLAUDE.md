@@ -14,10 +14,11 @@
   - `projects.ts` — 연구 프로젝트
   - `videos.ts` — 유튜브
   - `advisor.ts` — 지도교수
+  - `lectures.ts` — 강의 자료 (새 슬라이드: PDF를 public/lectures/<course.id>/에 저장 후 항목 추가)
   - `site.ts` — 메뉴, 연락처
 - 디자인 테마는 다크 네이비 배경에 일렉트릭 시안 포인트(`app/globals.css`의 CSS 변수). 이 테마를 임의로 바꾸지 않는다.
 - 언어는 영어 기본, 불가피한 경우만 한글 병기.
-- 메뉴 순서 유지: Opening, Team, Advisor, Research Projects, News, Publications
+- 메뉴 순서 유지: Opening, Team, Advisor, Research Projects, News, Publications, Lectures
 - push 전에 `npm run build`로 빌드 통과를 확인한다.
 - 교수가 직접 지시한 작업은 `main`까지 반영해 실제 사이트에 나가게 한다.
   배포까지가 작업 완료다. 작업 브랜치에만 올려두고 되묻지 않는다.

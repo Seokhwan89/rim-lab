@@ -38,4 +38,5 @@ export const nav: NavItem[] = [
   },
   { id: 'news', label: 'News', href: '/news' },
   { id: 'publications', label: 'Publications', href: '/publications' },
+  { id: 'lectures', label: 'Lectures', href: '/lectures' },
 ];
