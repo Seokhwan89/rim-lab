@@ -15,7 +15,7 @@ export default function LecturesPage() {
       <PageHero
         eyebrow="Lectures"
         title={<>Course materials, <span className="grad-cyan">openly shared</span></>}
-        desc="Slides from courses taught by Prof. Seokhwan Jeong at Sogang University. New materials are posted here after each lecture."
+        desc="Slides from courses taught by Prof. Seokhwan Jeong at Sogang University. Materials for each session are posted here right before the lecture. Homework must be submitted on Cybercampus — and check Cybercampus regularly for course announcements."
       />
       <section className="bg-rim-bg py-20">
         <div className="container-site space-y-12">
