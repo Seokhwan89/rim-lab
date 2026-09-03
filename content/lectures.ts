@@ -17,6 +17,7 @@ export type Course = {
   semester: string; // e.g. Fall 2026
   level: 'Undergraduate' | 'Graduate';
   desc: string;
+  ta?: { name: string; email?: string };
   active: boolean; // currently running course
   lectures: Lecture[];
 };
@@ -29,6 +30,7 @@ export const courses: Course[] = [
     semester: 'Fall 2026',
     level: 'Undergraduate',
     desc: 'Principles and applications of electrical engineering for mechanical engineers — circuits, electronics, sensors, actuators, and feedback control that bring machines to life.',
+    ta: { name: 'Hyukjun Kwon', email: 'dragonian1030@gmail.com' },
     active: true,
     lectures: [
       {
@@ -37,7 +39,7 @@ export const courses: Course[] = [
         date: '2026-09-01',
         file: '/lectures/mee4033-fall-2026/lecture-01-introduction-of-mechatronics.pdf',
         pages: 27,
-        size: '2.9 MB',
+        size: '3.0 MB',
       },
     ],
   },

@@ -35,6 +35,17 @@ export default function LecturesPage() {
                   </div>
                   <h2 className="mt-3 font-display text-[26px] font-semibold">{c.title}</h2>
                   <p className="mt-2 max-w-3xl text-[14px] leading-relaxed text-rim-muted">{c.desc}</p>
+                  {c.ta && (
+                    <p className="mt-3 font-mono text-[12px] uppercase tracking-[0.14em] text-rim-faint">
+                      TA — <span className="text-rim-text normal-case tracking-normal">{c.ta.name}</span>
+                      {c.ta.email && (
+                        <>
+                          {' · '}
+                          <a href={`mailto:${c.ta.email}`} className="lowercase tracking-normal text-rim-cyan hover:underline">{c.ta.email}</a>
+                        </>
+                      )}
+                    </p>
+                  )}
                 </div>
 
                 {/* Lecture rows */}
