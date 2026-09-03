@@ -34,6 +34,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 2,
+        title: 'Circuit Basics 1 — Fundamentals of Electric Circuits',
+        date: '2026-09-03',
+        file: '/lectures/mee4033-fall-2026/lecture-02-fundamentals-of-electric-circuits.pdf',
+        pages: 38,
+        size: '3.5 MB',
+      },
+      {
         no: 1,
         title: 'Introduction of Mechatronics',
         date: '2026-09-01',
