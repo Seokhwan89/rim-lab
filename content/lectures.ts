@@ -39,7 +39,7 @@ export const courses: Course[] = [
         date: '2026-09-03',
         file: '/lectures/mee4033-fall-2026/lecture-02-fundamentals-of-electric-circuits.pdf',
         pages: 38,
-        size: '3.5 MB',
+        size: '3.3 MB',
       },
       {
         no: 1,
