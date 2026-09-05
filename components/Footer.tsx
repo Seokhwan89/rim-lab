@@ -33,7 +33,7 @@ export default function Footer() {
           <ul className="space-y-2 text-[13.5px] text-rim-muted">
             <li><a href={site.youtube} target="_blank" rel="noreferrer" className="hover:text-rim-cyan">YouTube Channel ↗</a></li>
             <li><a href={site.scholar} target="_blank" rel="noreferrer" className="hover:text-rim-cyan">Google Scholar ↗</a></li>
-            <li><a href="https://mech.sogang.ac.kr" target="_blank" rel="noreferrer" className="hover:text-rim-cyan">Sogang Mechanical Engineering ↗</a></li>
+            <li><a href="https://me.sogang.ac.kr" target="_blank" rel="noreferrer" className="hover:text-rim-cyan">Sogang Mechanical Engineering ↗</a></li>
             <li><a href="https://www.sogang.ac.kr" target="_blank" rel="noreferrer" className="hover:text-rim-cyan">Sogang University ↗</a></li>
             <li><Link href="/opening" className="hover:text-rim-cyan">Join Us → Opening</Link></li>
           </ul>

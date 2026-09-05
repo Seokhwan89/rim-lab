@@ -7,6 +7,17 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
 
 ## 완료된 것
 
+- 전수 점검 (2026-09-04): 17개 페이지 데스크톱·모바일 렌더, 내부 자산
+  220건·외부 링크 85건·유튜브 ID 30건·콘텐츠 참조 222건 검사. 수정 5건 —
+  ①구글 스칼라 ID 오류(Vd9OOGIAAAAJ→_e2qTHcAAAAJ, 옛 ID는 404),
+  ②푸터 기계공학과 링크 mech.sogang.ac.kr(도메인 소멸)→me.sogang.ac.kr,
+  ③송한결 풀브라이트 뉴스의 서강대 게시판 링크 404→scc.sogang.ac.kr 기사,
+  ④Team 모바일 10px 가로 넘침(긴 이메일 nowrap이 grid 최소폭을 키움 →
+  MemberCard Reveal에 min-w-0), ⑤News·Publications가 클라이언트 컴포넌트라
+  <title>이 기본값이던 것 → app/news·publications/layout.tsx에 metadata.
+  참고: 컨테이너 Chromium은 i.ytimg.com 등 외부 TLS가 리셋되므로 유튜브
+  썸네일 '깨짐'은 환경 문제(oEmbed로 30편 전부 유효 확인). Sage/Elsevier/
+  Wiley 403은 봇 차단이며 DOI 해석 정상.
 - Lectures 섹션 신설(2026-09-01): 메뉴 맨 뒤 'Lectures' 추가.
   content/lectures.ts(과목·강의 데이터) + app/lectures/page.tsx.
   MEE4033 Mechatronics(Fall 2026) Lecture 1 게시. 매 강의 후 교수가 PDF를

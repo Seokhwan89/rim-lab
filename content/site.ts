@@ -8,7 +8,7 @@ export const site = {
   phone: '+82-2-705-7886',
   address: 'RA313, Ricci Hall A, Sogang University, 35 Baekbeom-ro, Mapo-gu, Seoul, Korea',
   youtube: 'https://www.youtube.com/@rimlab.9158',
-  scholar: 'https://scholar.google.com/citations?user=Vd9OOGIAAAAJ',
+  scholar: 'https://scholar.google.com/citations?user=_e2qTHcAAAAJ',
   applyForm: 'https://forms.gle/iL8kcczz2YYmdbne7',
   legacy: 'https://rim.sogang.ac.kr/',
 };

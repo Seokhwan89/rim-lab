@@ -14,7 +14,7 @@ function initials(name: string) {
 
 function MemberCard({ m, delay = 0 }: { m: Member; delay?: number }) {
   return (
-    <Reveal delay={delay}>
+    <Reveal delay={delay} className="min-w-0">
       <div className="card card-hover flex h-full items-start gap-4 p-5">
         {m.photo ? (
           // eslint-disable-next-line @next/next/no-img-element
