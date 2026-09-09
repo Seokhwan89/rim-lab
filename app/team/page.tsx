@@ -25,7 +25,10 @@ function MemberCard({ m, delay = 0 }: { m: Member; delay?: number }) {
           </span>
         )}
         <div className="min-w-0">
-          <p className="font-display text-[15.5px] font-semibold">{m.name}</p>
+          <p className="flex flex-wrap items-center gap-2 font-display text-[15.5px] font-semibold">
+            {m.name}
+            {m.badge && <span className="chip border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan">{m.badge}</span>}
+          </p>
           {m.topic && <p className="mt-1 text-[13px] leading-snug text-rim-cyan/90">{m.topic}</p>}
           {m.background && <p className="mt-1 text-[12.5px] text-rim-muted">{m.background}</p>}
           {m.email && <a href={`mailto:${m.email}`} className="mt-1.5 block truncate font-mono text-[11.5px] text-rim-faint hover:text-rim-cyan">{m.email}</a>}
