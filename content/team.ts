@@ -73,6 +73,7 @@ export const ms: Member[] = [
 export const undergrad: Member[] = [
   { name: 'Uisu Hwang', role: 'Undergraduate Fellow', topic: 'Robot Gripper', email: 'dmltn3906@sogang.ac.kr', photo: '/images/team/uisu-hwang.jpg' },
   { name: 'Sungeon Kim', role: 'Undergraduate Fellow', topic: 'Robot Hand', email: 'sungeon200102@gmail.com', photo: '/images/team/sungeon-kim.jpg' },
+  { name: 'Gyungseo Choi', role: 'Undergraduate Fellow', email: 'gomdore1000@naver.com', photo: '/images/team/gyungseo-choi.jpg' },
 ];
 
 export const alumni: Alum[] = [
