@@ -20,11 +20,11 @@ const tracks = [
   {
     id: 'intern',
     title: 'Undergraduate Intern',
-    chip: 'Always open',
+    chip: 'Selective',
     items: [
-      'Short-term and long-term research internships',
-      'URECA undergraduate research program',
-      'Participation before graduate admission is strongly encouraged',
+      'Offered to undergraduates who are seriously considering graduate study in RIM Lab — selected individually',
+      'We do not run stand-alone short-term visiting or summer research-experience internships that are not tied to graduate admission',
+      'URECA undergraduate research program · joining before graduate admission is strongly encouraged',
     ],
   },
   {
@@ -117,6 +117,8 @@ export default function OpeningPage() {
               <h2 className="h-sub">How to apply</h2>
               <p className="mt-3 max-w-2xl text-[14.5px] leading-relaxed text-rim-muted">
                 Fill in the application form, or email Prof. Seokhwan Jeong with your CV and transcript.
+                Undergraduate internships are offered only to students seriously considering graduate study in RIM Lab
+                and are selected individually; we do not host independent short-term visiting or summer research-experience internships.
                 Our weekly open lab meeting is open to anyone without prior permission — email the lab manager to ask when
                 the next one is, and come see what we build.
               </p>
