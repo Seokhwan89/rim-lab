@@ -7,6 +7,17 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
 
 ## 완료된 것
 
+- COAST 가이드와이어 특허 호주 등록 반영 (2026-09-13): AU 2021259459
+  (등록공고 2026-09-03, 만료 2041-04-21) — patents.ts 번호·비고 갱신.
+  CV(Drive docx 30MB + PDF)는 PC 브릿지 task-004로 수정(Word COM 치환,
+  같은 이름으로 PDF 덮어쓰기 → Drive id 유지). 환경 사실 3건: ①Drive
+  커넥터는 10MB 초과 파일 다운로드 불가, update_file은 제목·폴더만 바꾸고
+  내용 덮어쓰기 불가 → 로컬 파일 수정은 PC 브릿지 경로가 정답. ②PC 세션의
+  90초 감시 루프는 죽어 있을 수 있음("Background command failed") — 교수가
+  PC 세션에 "TASKS.md 다시 읽어 task-N 수행 후 감시 루프 재가동" 한 줄로
+  복구됨. ③클라우드 세션 표시 이름이 'Untitled session'→'RIM Lab 홈페이지
+  관리'로 바뀌어 PC는 새 이름으로 SendMessage(TASKS.md 머리말 갱신).
+  Drive for Desktop 업로드 지연이 있어 PDF 반영 검증은 저장 후 수 분 뒤.
 - 전수 점검 (2026-09-04): 17개 페이지 데스크톱·모바일 렌더, 내부 자산
   220건·외부 링크 85건·유튜브 ID 30건·콘텐츠 참조 222건 검사. 수정 5건 —
   ①구글 스칼라 ID 오류(Vd9OOGIAAAAJ→_e2qTHcAAAAJ, 옛 ID는 404),
