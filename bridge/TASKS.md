@@ -57,3 +57,28 @@ https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202300566
 교수 지시로 task-002(AIS 논문 부록 영상 수집)는 취소한다. 아직 시작하지
 않았다면 하지 말고, 이미 파일을 받았거나 드라이브에 올렸다면 삭제한다.
 보고도 필요 없다. .bridge-done에 task-002, task-003을 모두 기록해 둘 것.
+
+## task-004 (2026-09-13) — CV 특허 항목 갱신 + PDF 재출력 (PC 로컬 파일)
+(교수가 클라우드 세션에서 지시한 작업. 호주 특허가 2026-09-03 등록되어
+CV를 고쳐야 하는데, 클라우드는 Drive 파일 내용을 덮어쓸 수 없어 PC에 위임.)
+
+대상 파일 (G:\My Drive 는 Drive for Desktop 동기화 폴더):
+  G:\My Drive\Drive\취업\CV\CV+Research Statement_Jeong, Seokhwan_(Most recent).docx
+  (확장자가 .doc 이면 그 파일. 같은 폴더의 같은 이름 .pdf 도 대상.)
+
+할 일:
+1. Word 문서의 "International Patent" 절에서 호주 특허 줄을 찾는다:
+     … coaxially aligned robotically steerable guidewire,” Australia Patent,
+     AU2021259459A, (2026.5.21)
+   → "AU2021259459A, (2026.5.21)" 를 "AU2021259459B2, (2026.9.3)" 로 바꾼다.
+   (등록 완료. 서식·글꼴·줄바꿈은 그대로 두고 텍스트만 교체. Word를 COM으로
+   열어 Find/Replace 하는 것이 가장 안전함. 텍스트가 여러 run에 나뉘어 있을
+   수 있으니 python-docx로 할 경우 문단 단위로 처리할 것.)
+2. 페이지 머리글의 날짜 "May 24, 2026" 을 "September 13, 2026" 으로 바꾼다.
+3. 저장(같은 파일명·같은 위치에 덮어쓰기 — 새 파일을 만들지 말 것).
+4. Word로 같은 폴더에 PDF 내보내기:
+     CV+Research Statement_Jeong, Seokhwan_(Most recent).pdf  (기존 파일 덮어쓰기)
+   같은 이름으로 덮어써야 Drive 파일 id가 유지되어 홈페이지 CV 링크가 계속 산다.
+5. 'Untitled session' (cloud)에 SendMessage로 보고: 바뀐 줄의 최종 텍스트,
+   PDF 쪽수, 저장 시각. 실패하면 어디서 막혔는지 보고.
+6. .bridge-done 에 task-004 기록.
