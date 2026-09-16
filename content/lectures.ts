@@ -34,6 +34,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 5,
+        title: 'AC Network Analysis 2',
+        date: '2026-09-16',
+        file: '/lectures/mee4033-fall-2026/lecture-05-ac-network-analysis-2.pdf',
+        pages: 39,
+        size: '4.2 MB',
+      },
+      {
         no: 4,
         title: 'AC Network Analysis 1',
         date: '2026-09-10',
