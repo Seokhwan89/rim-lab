@@ -3,8 +3,8 @@ export type Video = { id: string; title: string; tag?: string };
 /** Featured on the landing page — representative works, newest first */
 export const featuredVideos: Video[] = [
   { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper', tag: 'Gripper' },
-  { id: 'pyLLG74D9jI', title: 'Ultra-Low-Impedance Robotic Gripper for High-Bandwidth, Transparent Physical Interaction', tag: 'Gripper' },
   { id: 'lJGHvHAex6g', title: 'Vision-Free Multifingered Blind Grasping Using Uniaxial Fingertip Force Sensing', tag: 'Physical AI' },
+  { id: 'pyLLG74D9jI', title: 'Ultra-Low-Impedance Robotic Gripper for High-Bandwidth, Transparent Physical Interaction', tag: 'Gripper' },
   { id: '3eF24n0M4sI', title: 'Automated Terminal-to-Housing Assembly System for Flat Ribbon Cable Harness', tag: 'Automation' },
   { id: '4oIh14FL_44', title: 'Flex RIM Hand — 1st Prototyping', tag: 'Robot Hand' },
   { id: 'Qudi73Vm4_c', title: 'Continuously Variable Transmission & Stiffness Actuator based on Actively Variable Four-Bar Linkage', tag: 'Actuation' },
