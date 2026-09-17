@@ -2,6 +2,7 @@ export type Video = { id: string; title: string; tag?: string };
 
 /** Featured on the landing page — representative works, newest first */
 export const featuredVideos: Video[] = [
+  { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper', tag: 'Gripper' },
   { id: 'pyLLG74D9jI', title: 'Ultra-Low-Impedance Robotic Gripper for High-Bandwidth, Transparent Physical Interaction', tag: 'Gripper' },
   { id: 'lJGHvHAex6g', title: 'Vision-Free Multifingered Blind Grasping Using Uniaxial Fingertip Force Sensing', tag: 'Physical AI' },
   { id: '3eF24n0M4sI', title: 'Automated Terminal-to-Housing Assembly System for Flat Ribbon Cable Harness', tag: 'Automation' },
@@ -13,7 +14,7 @@ export const featuredVideos: Video[] = [
 ];
 
 /** IDs cycled in the hero backdrop reel (fallback when the playlist can't be fetched) */
-export const heroReel: string[] = ['pyLLG74D9jI', 'lJGHvHAex6g', '4oIh14FL_44', 'Qudi73Vm4_c'];
+export const heroReel: string[] = ['0o204ERceus', 'pyLLG74D9jI', 'lJGHvHAex6g', '4oIh14FL_44', 'Qudi73Vm4_c'];
 
 /** YouTube "Research" playlist that feeds the hero backdrop — new uploads appear automatically */
 export const heroPlaylistId = 'PLAUadnYJsReuafzkvid6k_3qI1vjicdvk';
