@@ -17,7 +17,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: 'compact-variable-transmission',
-    image: '/images/projects/compact-variable-transmission.jpg',
+    image: '/images/projects/compact-variable-transmission.webp',
     imageCaption: 'Torque–speed operating principle of the compact variable transmission mechanism',
     title: 'Compact Variable Transmission',
     short: 'Actuators that shift gear like machines should — compact CVT/VTM modules for dynamic robots.',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'robotic-hands',
-    image: '/images/projects/robotic-hands.jpg',
+    image: '/images/projects/robotic-hands.webp',
     imageCaption: 'Anthropomorphic robot hand with finger and palm skin design',
     title: 'Robotic Hands',
     short: 'Anthropomorphic hands with novel actuation, sensing, and skeletal structures.',
@@ -70,7 +70,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'ai-based-multifinger-grasping',
-    image: '/images/projects/ai-based-multifinger-grasping.jpg',
+    image: '/images/projects/ai-based-multifinger-grasping.webp',
     imageCaption: 'Multifinger grasping with and without disturbance-observer-based control',
     title: 'AI-based Multifinger Grasping',
     short: 'Physical AI — learning-based grasping and in-hand manipulation with proprioceptive hardware.',
@@ -95,7 +95,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'magnetic-gear',
-    image: '/images/projects/magnetic-gear.jpg',
+    image: '/images/projects/magnetic-gear.webp',
     imageCaption: 'Coaxial magnetic gear actuator assembly',
     title: 'Magnetic Gear',
     short: 'Contact-free torque transmission — magnetic gearing for backdrivable, robust actuation.',
@@ -117,7 +117,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'factory-automation',
-    image: '/images/projects/factory-automation.jpg',
+    image: '/images/projects/factory-automation.webp',
     imageCaption: 'Robotic cell for harness cable terminal-to-housing assembly',
     title: 'Factory Automation — Harness Cable Assembly',
     short: 'Robotic grippers and manipulation strategies that automate wire-harness assembly.',
@@ -138,7 +138,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'surgical-robots',
-    image: '/images/projects/surgical-robots.jpg',
+    image: '/images/projects/surgical-robots.webp',
     imageCaption: 'Tendon-driven steerable continuum tool with bidirectional asymmetric joints',
     title: 'Surgical Robots',
     short: 'Steerable meso-scale robots for neurosurgery and endovascular intervention.',
@@ -155,7 +155,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'lower-limb-exo',
-    image: '/images/projects/lower-limb-exo.jpg',
+    image: '/images/projects/lower-limb-exo.webp',
     imageCaption: 'Soft wearable lower-limb assistance robot layout',
     title: 'Lower Limb Exoskeleton',
     short: 'Actuators and controllers for flexible wearable walking-assist robots.',
@@ -173,7 +173,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'hand-exoskeletons',
-    image: '/images/projects/hand-exoskeletons.jpg',
+    image: '/images/projects/hand-exoskeletons.webp',
     imageCaption: 'FLEXotendon Glove hand rehabilitation exoskeleton',
     title: 'Hand Exoskeletons',
     short: 'FLEXotendon Glove — soft wearable rehabilitation for spinal cord injury.',
@@ -189,7 +189,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'optical-compact-force-sensor',
-    image: '/images/projects/optical-compact-force-sensor.jpg',
+    image: '/images/projects/optical-compact-force-sensor.webp',
     imageCaption: 'Dual-photointerrupter miniature force sensor',
     title: 'Optical Compact Force Sensor',
     short: 'Photointerrupter-based miniature force sensing with high linearity.',

@@ -105,7 +105,7 @@ export const patents: Patent[] = [
     project: 'robotic-hands',
     note: 'Registered 2026.02',
     link: 'https://patents.google.com/patent/KR102927194B1',
-    image: '/images/patents/robot-hand-cvt-finger.jpg',
+    image: '/images/patents/robot-hand-cvt-finger.webp',
   },
   {
     title: 'Lower-limb force assistance device',
@@ -116,7 +116,7 @@ export const patents: Patent[] = [
     assignee: 'Sogang University · Sejong University · National Rehabilitation Center',
     project: 'lower-limb-exo',
     note: 'Registered 2025.05',
-    image: '/images/patents/lower-limb-assist.jpg',
+    image: '/images/patents/lower-limb-assist.webp',
   },
   {
     title: 'Control system and method for a coaxial magnetic gear-based drive module',
@@ -128,7 +128,7 @@ export const patents: Patent[] = [
     project: 'magnetic-gear',
     note: 'Registered 2025.01',
     link: 'https://patents.google.com/patent/KR102755860B1',
-    image: '/images/patents/coaxial-magnetic-gear-module.jpg',
+    image: '/images/patents/coaxial-magnetic-gear-module.webp',
   },
   {
     title: 'Magnet transmission',

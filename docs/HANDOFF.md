@@ -7,6 +7,15 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
 
 ## 완료된 것
 
+- 무료 한도 최적화 (2026-09-17, 기계과 사이트가 Hobby 한도 초과로 정지된
+  사례 대응): Hobby 월 한도 = 전송 100GB·이미지 최적화 변환 5천·함수 100만.
+  우리 사이트는 정적+YouTube라 위험은 대역폭뿐 → ①사진 218장 전부 WebP
+  (긴 변 1200, q76)로 전환, 참조 223건 .jpg→.webp 일괄 치환: 43.8→12.5MB,
+  News 페이지 첫 방문 34.5→2.4MB, Team 6.4→0.8MB. ②next.config headers:
+  /images·/logo 30일, /lectures 1일 캐시. ③robots.txt로 AI/대량 크롤러 차단
+  + /lectures 검색 제외, app/sitemap.ts 신설. 강의 PDF 압축은 교수 지시로
+  보류. 원본 JPEG는 git 이력(커밋 ba2042a 이전)에 있음. Vercel Firewall의
+  봇 차단은 대시보드 설정이라 교수가 켜야 함(Firewall → Bot Protection).
 - COAST 가이드와이어 특허 호주 등록 반영 (2026-09-13): AU 2021259459
   (등록공고 2026-09-03, 만료 2041-04-21) — patents.ts 번호·비고 갱신.
   CV(Drive docx 30MB + PDF)는 PC 브릿지 task-004로 수정(Word COM 치환,

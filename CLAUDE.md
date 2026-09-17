@@ -16,6 +16,11 @@
   - `advisor.ts` — 지도교수
   - `lectures.ts` — 강의 자료 (새 슬라이드: PDF를 public/lectures/<course.id>/에 저장 후 항목 추가)
   - `site.ts` — 메뉴, 연락처
+- **사진은 WebP로만 저장**(2026-09-17, Vercel Hobby 대역폭 보호): 새 사진은
+  `python3 scripts/optimize-image.py <원본> public/images/<폴더>/<이름>.webp`
+  (긴 변 1200px, q76)로 변환해 넣고 content에서 .webp 경로로 참조한다.
+  동영상 파일은 절대 리포에 넣지 않는다(유튜브 임베드만). next/image는
+  갤러리에 쓰지 않는다(이미지 최적화 변환 월 5,000회 한도).
 - 디자인 테마는 다크 네이비 배경에 일렉트릭 시안 포인트(`app/globals.css`의 CSS 변수). 이 테마를 임의로 바꾸지 않는다.
 - 언어는 영어 기본, 불가피한 경우만 한글 병기.
 - 메뉴 순서 유지: Opening, Team, Advisor, Research Projects, News, Publications, Lectures
