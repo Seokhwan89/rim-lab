@@ -7,6 +7,13 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
 
 ## 완료된 것
 
+- Vercel 배포 저장소 75% 경고 (2026-09-17, 팀 sogang-me, 10GB 중 7.5GB):
+  원인은 우리 프로젝트 — 8/20 이후 main 96회 + 작업 브랜치 프리뷰 배포, 회당
+  ~70MB 산출물이 전부 보존됨. 조치: ①vercel.json으로 작업 브랜치 프리뷰
+  배포 비활성화, ②교수가 프로젝트 Settings → Security → Deployment Retention
+  Policy에서 Production 7일·Pre-Production/Canceled/Errored 1일로 설정(요청함),
+  ③산출물 자체는 WebP 전환으로 65→34MB. 이후에도 높으면 강의 PDF(20MB)를
+  별도 저장소로 분리하는 것이 다음 수단.
 - 무료 한도 최적화 (2026-09-17, 기계과 사이트가 Hobby 한도 초과로 정지된
   사례 대응): Hobby 월 한도 = 전송 100GB·이미지 최적화 변환 5천·함수 100만.
   우리 사이트는 정적+YouTube라 위험은 대역폭뿐 → ①사진 218장 전부 WebP

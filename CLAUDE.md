@@ -25,6 +25,10 @@
 - 언어는 영어 기본, 불가피한 경우만 한글 병기.
 - 메뉴 순서 유지: Opening, Team, Advisor, Research Projects, News, Publications, Lectures
 - push 전에 `npm run build`로 빌드 통과를 확인한다.
+- **배포 횟수를 아낀다**(Vercel Hobby 배포 저장소 10GB — 배포마다 산출물
+  전체가 보존됨, 2026-09-17 75% 경고): 작은 수정 여러 건은 모아서 한 번에
+  push. 작업 브랜치의 프리뷰 배포는 vercel.json에서 꺼 두었으니 브랜치 push는
+  자유. 교수가 대시보드에서 보존 기간(Production 7일 등)을 설정해 둠.
 - 교수가 직접 지시한 작업은 `main`까지 반영해 실제 사이트에 나가게 한다.
   배포까지가 작업 완료다. 작업 브랜치에만 올려두고 되묻지 않는다.
 - 배포 경로: 빌드 통과 확인 → `git push`. auto 모드 권한 분류기가 이를
