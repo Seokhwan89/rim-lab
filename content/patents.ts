@@ -20,6 +20,16 @@ export type Patent = {
 /** Patent families, newest first. Same-invention filings in multiple countries are grouped as one entry. */
 export const patents: Patent[] = [
   {
+    title: 'Fingertip 3-axis force estimation from actuator current in a direct-drive differential mechanism',
+    titleKo: '직구동 차동 메커니즘 기반 구동기 전류를 이용한 손끝 3축 힘 추정 방법',
+    numbers: 'KR 10-2026-0177849',
+    year: 2026,
+    status: 'filed',
+    assignee: 'Sogang University',
+    project: 'robotic-hands',
+    note: 'Filed 2026.09.17',
+  },
+  {
     title: 'Multi-DOF robotic gripper using a direct-drive differential mechanism',
     titleKo: '직구동 차동 메커니즘을 이용한 다자유도 로봇 그리퍼',
     numbers: 'KR 10-2026-0005274 · PCT/KR2026/005769',
