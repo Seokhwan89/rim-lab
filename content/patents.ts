@@ -160,12 +160,12 @@ export const patents: Patent[] = [
   },
   {
     title: 'Multi-DOF bending and bend-length control of a coaxially aligned robotically steerable guidewire (COAST)',
-    numbers: 'JP 7798789 · CN 115916317A · AU 2021259459 · US 17/919,763 · EP 21793176.5 · CA/KR/PCT family',
+    numbers: 'JP 7798789 · CN 115916317A · AU 2021259459 · US 17/919,763 · US 19/795,936 (continuation) · EP 21793176.5 · CA/KR/PCT family',
     year: 2021,
     status: 'registered',
     assignee: 'Georgia Tech Research Corp.',
     project: 'surgical-robots',
-    note: 'Registered in JP (2026), CN (2025) and AU (granted Sep 2026); allowed in the US; continuation and DE/JP counterparts filed in 2026',
+    note: 'Registered in JP (2026), CN (2025) and AU (granted Sep 2026); allowed in the US; US continuation (Track One) filed Sep 2026',
     link: 'https://patents.google.com/patent/JP7798789B2',
   },
   {
