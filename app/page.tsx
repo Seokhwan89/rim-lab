@@ -117,7 +117,7 @@ export default async function Home() {
             {featured.map((v, i) => (
               <Reveal key={v.id} delay={i * 80}>
                 <div className="card card-hover group overflow-hidden p-0">
-                  <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" />
+                  <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" quality="max" />
                   <div className="flex items-start justify-between gap-3 p-4">
                     <p className="line-clamp-2 text-[13.5px] font-medium leading-snug text-rim-text">{v.title}</p>
                     {v.tag && <span className="chip shrink-0 border-rim-cyan/40 bg-rim-cyan/10 text-rim-cyan">{v.tag}</span>}
@@ -132,7 +132,7 @@ export default async function Home() {
             {playlist.map((v, i) => (
               <Reveal key={v.id} delay={(i % 4) * 60}>
                 <div className="card card-hover group overflow-hidden p-0">
-                  <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" />
+                  <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" quality="sd" />
                   <p className="line-clamp-2 p-3 text-[12.5px] font-medium leading-snug text-rim-text">{v.title}</p>
                 </div>
               </Reveal>

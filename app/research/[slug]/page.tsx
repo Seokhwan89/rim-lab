@@ -130,7 +130,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                 {p.videos.map((v, i) => (
                   <Reveal key={v.id} delay={(i % 2) * 80}>
                     <div className="card card-hover group overflow-hidden p-0">
-                      <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" />
+                      <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" quality="max" />
                       <p className="p-4 text-[13.5px] font-medium leading-snug">{v.title}</p>
                     </div>
                   </Reveal>
