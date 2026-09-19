@@ -7,6 +7,14 @@ _최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로�
 
 ## 완료된 것
 
+- 방문 통계 장기 보존 (2026-09-19): Hobby는 조회 1개월뿐이라
+  `scripts/snapshot-analytics.py`로 Vercel API(`/v1/query/web-analytics/visits/count`,
+  projectId=rim-lab, slug=sogang-me)에서 일별 방문자·페이지뷰를 긁어
+  `docs/analytics/visitors.{json,md}`에 누적. 이미 기록된 날은 덮어쓰지 않고,
+  31일보다 오래된 0값은 '만료'로 보고 버린다(재실행 안전). Routine
+  "RIM Lab 방문통계 스냅샷"이 매월 1·16일 09:07 KST에 새 세션으로 실행.
+  ⚠️ `VERCEL_TOKEN` 환경변수 등록은 교수가 해야 함(vercel.com/account/tokens,
+  scope sogang-me) — 미등록 시 스크립트가 안내 후 종료.
 - 방문자 집계 도입 (2026-09-19): Vercel Web Analytics(@vercel/analytics)를
   app/layout.tsx에 추가. 쿠키리스라 동의 배너 불필요. 그 전에는 어떤 분석
   도구도 없었으므로 **리뉴얼~9/18 방문 기록은 소급 불가**(집계는 배포 시점

@@ -57,6 +57,14 @@
   리포 저장 후 휴지통으로 정리한다. 공유 링크는
   `scripts/fetch-shared-album.py`로 수집.
 
+## 방문 통계
+
+- Vercel Web Analytics로 집계(app/layout.tsx의 `<Analytics />`). 무료 플랜은 조회
+  기간이 1개월이라 `scripts/snapshot-analytics.py`가 일별 수치를
+  `docs/analytics/visitors.json`에 보존한다(매월 1·16일 Routine 자동 실행).
+  실행에는 `VERCEL_TOKEN` 환경변수가 필요하며 **토큰은 절대 리포에 커밋하지 않는다**.
+  자세한 내용은 `docs/analytics/README.md`.
+
 ## 진행 상황
 
 - 세션 간 작업 인수인계는 `docs/HANDOFF.md`를 읽고 이어서 하며, 처리한 항목은
