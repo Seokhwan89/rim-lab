@@ -8,6 +8,7 @@ import '@fontsource/space-grotesk/700.css';
 import '@fontsource/ibm-plex-mono/400.css';
 import '@fontsource/ibm-plex-mono/500.css';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -58,6 +59,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        {/* Cookieless visitor counting (Vercel Web Analytics). Dashboard: project → Analytics. */}
+        <Analytics />
       </body>
     </html>
   );
