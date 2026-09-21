@@ -128,7 +128,7 @@ export const projects: Project[] = [
     ],
     videos: [{ id: '3eF24n0M4sI', title: 'Automated Terminal-to-Housing Assembly System for Flat Ribbon Cable Harness' }],
     pubs: [
-      'Automated Terminal-to-Housing Assembly System for Flat Ribbon Cable Harness — under review, 2026',
+      'Automated Terminal-to-Housing Assembly System for Flat Ribbon Cable Harness — IEEE Transactions on Automation Science and Engineering, accepted 2026',
       '다발 하네스 케이블 조립 자동화 시스템 구현을 위한 메커니즘 설계 — 국방로봇학회 논문집, 2024',
     ],
     funding: ['Daeha Wire & Cable Co. (2022.04 – 2025.05)',

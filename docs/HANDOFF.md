@@ -3,9 +3,27 @@
 > 새 세션은 CLAUDE.md의 작업 규칙을 따르고, 이 문서로 진행 상황을 파악한다.
 > 완료된 항목을 처리하면 이 문서를 갱신하고 함께 커밋한다.
 
-_최종 갱신: 2026-08-30 (3차: 뉴스 이미지 크기·나노코리아·로봇신문 보완 세션)_
+_최종 갱신: 2026-09-21 (AX대학원 입학설명회 연구실 소개 덱 제작 세션)_
 
 ## 완료된 것
+
+- AX대학원 입학설명회 소개자료 (2026-09-21): AX사업단(신은영) 요청으로 연구실
+  소개 PPT 10장 제작. 내용은 전부 `content/*.ts` 실측값만 사용. 생성기는
+  `docs/decks/ax-2026/`에 커밋(content.json + render.js/layout.js + build/pdf/QA
+  스크립트, README에 재생성 절차). 산출물 pptx/pdf/jpg는 커밋하지 않음 —
+  `make-images.py` → `build.js` → `pdf.js`로 재생성한다.
+  ⚠️ 발견한 사실 2가지: ①**특허는 19패밀리(등록 9·출원 10)**다. 기존에 쓰던
+  "20건(등록 10)"은 patents.ts의 타입 정의 줄(`status: 'registered' | 'filed';`)이
+  grep에 같이 잡힌 결과였다. 사이트 표시값도 19가 맞다.
+  ②`content/projects.ts`의 factory-automation은 하네스 논문을 아직
+  'under review, 2026'으로 적고 있는데 publications.ts·news.ts는 'Accepted Sep 2026'
+  이다 — projects.ts 갱신 누락, 별건으로 고칠 것.
+  교수 확인 대기: AX대학원 = 리포의 'AI Graduate School / AI Convergence Program'과
+  같은 과정인지(같으면 10쪽에 모집 인원 3명을 되살릴 수 있다), 풀브라이트
+  파견 기간(2027) 지도 방식 Q&A 답변.
+  ⚠️ 이 컨테이너에서 **LibreOffice(soffice)는 모든 파일 변환에 실패**한다.
+  그래서 render.js가 같은 좌표로 HTML 트윈을 그리고 Playwright로 스크린샷을 떠
+  시각 검수하며, PDF도 그 HTML을 인쇄해 만든다. 다음 세션도 이 경로를 쓸 것.
 
 - 방문 통계 장기 보존 (2026-09-19): Hobby는 조회 1개월뿐이라
   `scripts/snapshot-analytics.py`로 Vercel API(`/v1/query/web-analytics/visits/count`,

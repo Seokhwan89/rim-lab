@@ -1,0 +1,6 @@
+img/
+node_modules/
+preview.html
+shot-*.png
+*.pptx
+*.pdf
