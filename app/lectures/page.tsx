@@ -58,7 +58,7 @@ export default function LecturesPage() {
                         className="group flex items-center gap-4 px-7 py-4 transition-colors hover:bg-rim-cyan/5 md:px-9"
                       >
                         <span className="w-10 shrink-0 font-mono text-[13px] tracking-[0.12em] text-rim-faint">
-                          {String(l.no).padStart(2, '0')}
+                          {l.label ?? String(l.no).padStart(2, '0')}
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-[15px] font-medium transition-colors group-hover:text-rim-cyan">{l.title}</span>
