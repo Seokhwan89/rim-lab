@@ -3,9 +3,20 @@
 > 새 세션은 CLAUDE.md의 작업 규칙을 따르고, 이 문서로 진행 상황을 파악한다.
 > 완료된 항목을 처리하면 이 문서를 갱신하고 함께 커밋한다.
 
-_최종 갱신: 2026-09-21 (AX대학원 입학설명회 연구실 소개 덱 제작 세션)_
+_최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)_
 
 ## 완료된 것
+
+- T-ASE 하네스 논문 게재 반영 (2026-09-23): IEEE Xplore Early Access 공개
+  (document/11701309, DOI 10.1109/TASE.2026.3735421). publications.ts는 링크를
+  arXiv → Xplore로 바꾸고 note를 'Early Access on IEEE Xplore · DOI …'로,
+  news.ts의 2026.09 항목은 '게재'로 갱신하고 links에 Xplore·arXiv 두 개를 달았다
+  (accepted 항목을 따로 두지 않고 같은 항목을 갱신). projects.ts의 pubs 줄도 정리.
+  정식 issue(volume/number/page)가 나오면 note를 그때 값으로 교체할 것.
+- MEE1006 C 프로그래밍 기초 강의 개설 (2026-09-22): Week 4-2 슬라이드 업로드와
+  함께 Lectures 페이지에 두 번째 과목 카드 신설. 주차제 과목을 위해 Lecture 타입에
+  `label`(예 '4-2')을 추가했고, 없으면 기존처럼 `no`를 0채움해 표시한다.
+  1-1 ~ 4-1 자료와 조교 정보는 교수 회신 대기.
 
 - AX대학원 입학설명회 소개자료 (2026-09-21): AX사업단(신은영) 요청으로 연구실
   소개 PPT 10장 제작. 내용은 전부 `content/*.ts` 실측값만 사용. 생성기는
