@@ -55,7 +55,7 @@ export default async function Home() {
           </p>
           <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
             <Link href="/research" className="btn-primary">Explore Research</Link>
-            <Link href="/opening" className="btn-ghost">Apply · 지원서 작성</Link>
+            <Link href="/opening" className="btn border border-rim-cyan/70 bg-[#04121a]/60 text-rim-cyanLight shadow-[0_0_26px_-6px_rgba(34,211,238,0.7)] backdrop-blur-md hover:bg-rim-cyan/25 hover:text-white">Apply · 지원서 작성</Link>
           </div>
         </div>
 
