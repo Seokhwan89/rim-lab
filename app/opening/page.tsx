@@ -13,7 +13,6 @@ const tracks = [
     items: [
       'Integrated M.S./Ph.D. and Ph.D. programs (priority)',
       'M.S. program (considered when continuing toward a Ph.D.)',
-      'ME Dept. 2027-1 admissions: closed · 2027-2: announced Dec 2026',
       'AI Graduate School: 3 positions for 2027-1,2 (AI Convergence Program — same lab, AI dept. affiliation)',
     ],
   },
