@@ -4,6 +4,7 @@ import HeroCanvas from '@/components/HeroCanvas';
 import HeroVideo from '@/components/HeroVideo';
 import LiteYouTube from '@/components/LiteYouTube';
 import ProjectIcon from '@/components/ProjectIcon';
+import ApplyCard from '@/components/ApplyCard';
 import { researchAreas, projects } from '@/content/projects';
 import { featuredVideos, heroReel } from '@/content/videos';
 import { getResearchPlaylist } from '@/lib/playlist';
@@ -42,6 +43,14 @@ export default async function Home() {
         <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-rim-indigo/10 blur-[130px]" aria-hidden />
 
         <div className="container-site relative py-32">
+          <a
+            href={site.applyForm}
+            target="_blank"
+            rel="noreferrer"
+            className="rise rise-1 mb-6 inline-flex items-center gap-2 rounded-full border border-rim-cyan/40 bg-rim-cyan/10 px-4 py-1.5 font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:bg-rim-cyan/20"
+          >
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-rim-cyan" /> Now recruiting · Apply 지원서 ↗
+          </a>
           <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
           <h1 className="h-display rise rise-2 mt-5 max-w-4xl">
             Building the <span className="grad-cyan glow-text">hardware of</span><br />
@@ -188,7 +197,7 @@ export default async function Home() {
           <Reveal delay={60}><h2 className="h-section mt-3">Build robots that touch the real world</h2></Reveal>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {[
-              { title: 'Undergraduate Intern', desc: 'Short- and long-term research internships and URECA — start hands-on robotics as an undergrad.', href: '/opening#intern', label: 'Internship info' },
+              { title: 'Undergraduate Intern', desc: 'Research internships and URECA for undergraduates seriously considering graduate study in RIM Lab — start hands-on robotics early.', href: '/opening#intern', label: 'Internship info' },
               { title: 'Undergraduate Fellow', desc: 'Ongoing undergraduate fellow positions for students who want to go deeper with a project of their own.', href: '/opening#fellow', label: 'Fellowship info' },
               { title: 'Graduate Program', desc: 'M.S., Ph.D., and integrated programs with full-funding tracks and industry-collaboration tracks.', href: '/opening#graduate', label: 'Apply to grad school' },
             ].map((c, i) => (
@@ -205,10 +214,7 @@ export default async function Home() {
             ))}
           </div>
           <Reveal delay={140}>
-            <p className="mt-8 text-[14px] text-rim-muted">
-              Weekly lab seminars are open to anyone — contact <a className="text-rim-cyan hover:underline" href="mailto:ryan8834@gmail.com">ryan8834@gmail.com</a> to sit in.
-              Applications: <a className="text-rim-cyan hover:underline" href={site.applyForm} target="_blank" rel="noreferrer">application form ↗</a>
-            </p>
+            <ApplyCard className="mt-8" />
           </Reveal>
         </div>
       </section>

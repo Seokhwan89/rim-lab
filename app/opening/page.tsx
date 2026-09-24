@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
+import ApplyCard from '@/components/ApplyCard';
 import { site } from '@/content/site';
 
 export const metadata: Metadata = { title: 'Opening' };
@@ -74,11 +75,23 @@ export default function OpeningPage() {
         eyebrow="Opening"
         title={<>Ph.D. / M.S. / Undergraduate<br /><span className="grad-cyan">2026 – 2027 Openings</span></>}
         desc="We build high-performance robotic actuation hardware and the intelligent control that runs on it. If you want to design, machine, wire, and train robots with your own hands, this is your lab."
+        actions={
+          <>
+            <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-primary">Application Form · 지원서 ↗</a>
+            <a href="#apply" className="btn-ghost">How to apply ↓</a>
+          </>
+        }
       />
 
       <section className="bg-rim-bg py-20">
         <div className="container-site">
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <Reveal>
+            <div id="apply" className="scroll-mt-28">
+              <ApplyCard />
+            </div>
+          </Reveal>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {tracks.map((t, i) => (
               <Reveal key={t.id} delay={i * 90}>
                 <div id={t.id} className="card card-hover h-full scroll-mt-28 p-8">
@@ -111,24 +124,6 @@ export default function OpeningPage() {
             ))}
           </div>
 
-          <Reveal className="mt-16">
-            <div className="card relative overflow-hidden p-8 md:p-10">
-              <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-rim-cyan/10 blur-[80px]" aria-hidden />
-              <h2 className="h-sub">How to apply</h2>
-              <p className="mt-3 max-w-2xl text-[14.5px] leading-relaxed text-rim-muted">
-                Fill in the application form, or email Prof. Seokhwan Jeong with your CV and transcript.
-                Undergraduate internships are offered only to students seriously considering graduate study in RIM Lab
-                and are selected individually; we do not host independent short-term visiting or summer research-experience internships.
-                Our weekly open lab meeting is open to anyone without prior permission — email the lab manager to ask when
-                the next one is, and come see what we build.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-primary">Application Form ↗</a>
-                <a href={`mailto:${site.email}`} className="btn-ghost">{site.email}</a>
-                <a href="mailto:ryan8834@gmail.com?subject=Open%20lab%20meeting%20inquiry" className="btn-ghost">Ask about the lab meeting ✉ ryan8834@gmail.com</a>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
     </>

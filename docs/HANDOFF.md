@@ -7,6 +7,19 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
 
 ## 완료된 것
 
+- 지원서(Google Form) 노출 강화 (2026-09-24): 교수가 리뉴얼 후 국내 지원서 제출이
+  줄었다고 함. forms-receipts 알림 메일 집계(월별 응답): 2월 19 · 3월 11 · 4월 11 ·
+  5월 6 · 6월 8 · 7월 4 · 8월 3(리뉴얼 후 1) · 9월 2(~9/24). 감소는 리뉴얼 전(봄)부터
+  시작됐지만, 학기 초인 9월이 2월(19건)과 달리 바닥인 점이 이상 신호. 조치:
+  ①`components/ApplyCard.tsx`로 How-to-apply 블록 공용화 — Opening 최상단 +
+  메인 Join Us 섹션(기존엔 페이지 맨 끝 한 줄 텍스트 링크뿐이었음). ②Opening
+  히어로에 지원서 버튼(PageHero에 `actions` prop 추가). ③메인 히어로 제목 위에
+  "Now recruiting · Apply 지원서 ↗" 필(폼 직행). ④버튼 라벨에 '지원서' 한글 병기.
+  ⑤메인 Intern 카드의 "Short- and long-term research internships" 문구가 단기 인턴
+  불가 정책과 모순이라 수정. 랩미팅 담당 메일은 `site.labContact`로 이동.
+  교수 측 확인 필요: 폼 제목이 5월부터 '대학원 입학 지원서'로 바뀌어(이전: '대학원
+  입학 / 학부 팰로우 / 인턴 지원') 학부생이 자기 대상이 아니라고 여길 수 있음.
+
 - T-ASE 하네스 논문 게재 반영 (2026-09-23): IEEE Xplore Early Access 공개
   (document/11701309, DOI 10.1109/TASE.2026.3735421). publications.ts는 링크를
   arXiv → Xplore로 바꾸고 note를 'Early Access on IEEE Xplore · DOI …'로,

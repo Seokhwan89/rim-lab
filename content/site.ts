@@ -10,6 +10,8 @@ export const site = {
   youtube: 'https://www.youtube.com/@rimlab.9158',
   scholar: 'https://scholar.google.com/citations?user=_e2qTHcAAAAJ',
   applyForm: 'https://forms.gle/iL8kcczz2YYmdbne7',
+  /** Lab manager — answers "when is the next open lab meeting?" */
+  labContact: 'ryan8834@gmail.com',
   legacy: 'https://rim.sogang.ac.kr/',
 };
 

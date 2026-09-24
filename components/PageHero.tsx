@@ -1,4 +1,4 @@
-export default function PageHero({ eyebrow, title, desc }: { eyebrow: string; title: React.ReactNode; desc?: string }) {
+export default function PageHero({ eyebrow, title, desc, actions }: { eyebrow: string; title: React.ReactNode; desc?: string; actions?: React.ReactNode }) {
   return (
     <section className="relative overflow-hidden border-b border-rim-line bg-rim-bg2">
       <div className="hero-grid absolute inset-0" aria-hidden />
@@ -7,6 +7,7 @@ export default function PageHero({ eyebrow, title, desc }: { eyebrow: string; ti
         <p className="eyebrow rise rise-1">{eyebrow}</p>
         <h1 className="h-display rise rise-2 mt-3">{title}</h1>
         {desc && <p className="rise rise-3 mt-5 max-w-2xl text-[16px] leading-relaxed text-rim-muted">{desc}</p>}
+        {actions && <div className="rise rise-4 mt-8 flex flex-wrap gap-3">{actions}</div>}
       </div>
     </section>
   );
