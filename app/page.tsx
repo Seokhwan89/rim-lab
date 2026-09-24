@@ -43,14 +43,6 @@ export default async function Home() {
         <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-rim-indigo/10 blur-[130px]" aria-hidden />
 
         <div className="container-site relative py-32">
-          <a
-            href={site.applyForm}
-            target="_blank"
-            rel="noreferrer"
-            className="rise rise-1 mb-6 inline-flex items-center gap-2 rounded-full border border-rim-cyan/40 bg-rim-cyan/10 px-4 py-1.5 font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:bg-rim-cyan/20"
-          >
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-rim-cyan" /> Now recruiting · Apply 지원서 ↗
-          </a>
           <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
           <h1 className="h-display rise rise-2 mt-5 max-w-4xl">
             Building the <span className="grad-cyan glow-text">hardware of</span><br />
@@ -63,7 +55,7 @@ export default async function Home() {
           </p>
           <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
             <Link href="/research" className="btn-primary">Explore Research</Link>
-            <Link href="/opening" className="btn-ghost">Join the Lab</Link>
+            <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-ghost">Apply · 지원서 작성 ↗</a>
           </div>
         </div>
 
