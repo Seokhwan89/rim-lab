@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 import ApplyCard from '@/components/ApplyCard';
-import { site } from '@/content/site';
 
 export const metadata: Metadata = { title: 'Opening' };
 
@@ -75,12 +74,6 @@ export default function OpeningPage() {
         eyebrow="Opening"
         title={<>Ph.D. / M.S. / Undergraduate<br /><span className="grad-cyan">2026 – 2027 Openings</span></>}
         desc="We build high-performance robotic actuation hardware and the intelligent control that runs on it. If you want to design, machine, wire, and train robots with your own hands, this is your lab."
-        actions={
-          <>
-            <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-primary">Application Form · 지원서 ↗</a>
-            <a href="#apply" className="btn-ghost">How to apply ↓</a>
-          </>
-        }
       />
 
       <section className="bg-rim-bg py-20">
