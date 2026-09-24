@@ -14,7 +14,7 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   ①`components/ApplyCard.tsx`로 How-to-apply 블록 공용화 — Opening 최상단 +
   메인 Join Us 섹션(기존엔 페이지 맨 끝 한 줄 텍스트 링크뿐이었음). ②Opening
   히어로에 지원서 버튼(PageHero에 `actions` prop 추가). ③메인 히어로의 "Join the Lab" 버튼을
-  "Apply · 지원서 작성 ↗"(폼 직행)으로 교체(교수 지시로 제목 위 필은 제거). ④버튼 라벨에 '지원서' 한글 병기.
+  "Apply · 지원서 작성"(→ /opening)으로 교체(교수 지시로 제목 위 필은 제거). ④버튼 라벨에 '지원서' 한글 병기.
   ⑤메인 Intern 카드의 "Short- and long-term research internships" 문구가 단기 인턴
   불가 정책과 모순이라 수정. 랩미팅 담당 메일은 `site.labContact`로 이동.
   교수 측 확인 필요: 폼 제목이 5월부터 '대학원 입학 지원서'로 바뀌어(이전: '대학원

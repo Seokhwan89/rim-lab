@@ -55,7 +55,7 @@ export default async function Home() {
           </p>
           <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
             <Link href="/research" className="btn-primary">Explore Research</Link>
-            <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-ghost">Apply · 지원서 작성 ↗</a>
+            <Link href="/opening" className="btn-ghost">Apply · 지원서 작성</Link>
           </div>
         </div>
 
