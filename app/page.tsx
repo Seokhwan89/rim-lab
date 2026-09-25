@@ -42,45 +42,45 @@ export default async function Home() {
         <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-rim-cyan/8 blur-[130px]" aria-hidden />
         <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-rim-indigo/10 blur-[130px]" aria-hidden />
 
-        <div className="container-site relative py-32">
-          <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
-          <h1 className="h-display rise rise-2 mt-5 max-w-4xl">
-            Building the <span className="grad-cyan glow-text">hardware of</span><br />
-            <span className="grad-cyan glow-text">physical intelligence</span>
-          </h1>
-          <p className="rise rise-3 mt-7 max-w-2xl text-[17px] leading-relaxed text-rim-muted">
-            The Robotics &amp; Intelligent Mechanisms Lab develops core robotic hardware and physical
-            intelligence for dexterous interaction with the real world — robot hands, grippers, compact
-            high-performance actuators, variable transmissions, and proprioceptive, force-aware manipulation.
-          </p>
-          <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
-            <Link href="/research" className="btn-primary">Explore Research</Link>
-            <Link href="/opening" className="btn border border-rim-cyan/70 bg-[#04121a]/60 text-rim-cyanLight shadow-[0_0_26px_-6px_rgba(34,211,238,0.7)] backdrop-blur-md hover:bg-rim-cyan/25 hover:text-white">Apply · 지원서 작성</Link>
+        <div className="container-site relative grid items-center gap-10 py-32 lg:grid-cols-[minmax(0,1fr)_360px] xl:gap-14">
+          <div className="min-w-0">
+            <p className="eyebrow rise rise-1">Sogang University · Mechanical Engineering</p>
+            <h1 className="h-display rise rise-2 mt-5 max-w-4xl lg:text-[2.75rem] xl:text-[3.6rem]">
+              Building the <span className="grad-cyan glow-text">hardware of</span><br />
+              <span className="grad-cyan glow-text">physical intelligence</span>
+            </h1>
+            <p className="rise rise-3 mt-7 max-w-2xl text-[17px] leading-relaxed text-rim-muted">
+              The Robotics &amp; Intelligent Mechanisms Lab develops core robotic hardware and physical
+              intelligence for dexterous interaction with the real world — robot hands, grippers, compact
+              high-performance actuators, variable transmissions, and proprioceptive, force-aware manipulation.
+            </p>
+            <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
+              <Link href="/research" className="btn-primary">Explore Research</Link>
+              <Link href="/opening" className="btn border border-rim-cyan/70 bg-[#04121a]/60 text-rim-cyanLight shadow-[0_0_26px_-6px_rgba(34,211,238,0.7)] backdrop-blur-md hover:bg-rim-cyan/25 hover:text-white">Apply · 지원서 작성</Link>
+            </div>
           </div>
 
-          {/* Latest news — five most recent items across all categories */}
-          <div className="rise rise-5 mt-10 max-w-2xl overflow-hidden rounded-xl border border-rim-line bg-[#040812]/75 backdrop-blur-md">
-            <div className="flex items-center gap-3 border-b border-rim-line px-5 py-3">
-              <span className="h-1.5 w-1.5 rounded-full bg-rim-cyan" />
-              <p className="font-mono text-[12px] uppercase tracking-[0.18em] text-rim-text">Latest News</p>
-              <p className="font-mono text-[11px] text-rim-faint">all categories</p>
+          {/* Latest news — five most recent items; right column on desktop, below the buttons on mobile */}
+          <div className="rise rise-5 w-full max-w-xl overflow-hidden rounded-xl border border-rim-line bg-[#040812]/80 backdrop-blur-md lg:max-w-none">
+            <div className="flex items-center justify-between gap-3 border-b border-rim-line px-4 py-3">
+              <p className="flex items-center gap-2.5 font-mono text-[12px] uppercase tracking-[0.18em] text-rim-text">
+                <span className="h-1.5 w-1.5 rounded-full bg-rim-cyan" />Latest News
+              </p>
+              <Link href="/news" className="font-mono text-[11px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:text-rim-cyanLight">All news →</Link>
             </div>
             <ul className="divide-y divide-rim-line">
               {news.slice(0, 5).map((n) => (
                 <li key={newsAnchor(n)}>
-                  <Link href={`/news#${newsAnchor(n)}`} className="group flex items-start justify-between gap-4 px-5 py-3 transition-colors hover:bg-rim-cyan/5">
-                    <span className="min-w-0">
-                      <span className="line-clamp-2 text-[14px] leading-snug text-rim-text transition-colors group-hover:text-rim-cyan">{n.title}</span>
-                      <span className={`chip mt-1.5 ${categoryColors[n.category]}`}>{n.category}</span>
+                  <Link href={`/news#${newsAnchor(n)}`} className="group block px-4 py-2.5 transition-colors hover:bg-rim-cyan/5">
+                    <span className="line-clamp-2 text-[13.5px] leading-snug text-rim-text transition-colors group-hover:text-rim-cyan">{n.title}</span>
+                    <span className="mt-1.5 flex items-center justify-between gap-3">
+                      <span className={`chip ${categoryColors[n.category]}`}>{n.category}</span>
+                      <span className="font-mono text-[11px] text-rim-faint">{n.date}</span>
                     </span>
-                    <span className="shrink-0 pt-0.5 font-mono text-[11.5px] text-rim-faint">{n.date}</span>
                   </Link>
                 </li>
               ))}
             </ul>
-            <Link href="/news" className="block border-t border-rim-line px-5 py-3 font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:text-rim-cyanLight">
-              All news →
-            </Link>
           </div>
         </div>
 
@@ -99,21 +99,23 @@ export default async function Home() {
       </section>
 
       {/* ───────────────────── Research areas ───────────────────── */}
-      <section className="border-b border-rim-line bg-rim-bg2 py-24">
+      <section className="border-b border-rim-line bg-rim-bg2 py-16">
         <div className="container-site">
           <Reveal><p className="eyebrow">Research</p></Reveal>
           <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-            <Reveal delay={60}><h2 className="h-section">What moves, grasps,<br className="hidden md:block" /> and understands force</h2></Reveal>
+            <Reveal delay={60}><h2 className="h-section">What moves, grasps, and understands force</h2></Reveal>
             <Reveal delay={120}><Link href="/research" className="font-mono text-[13px] uppercase tracking-[0.16em] text-rim-cyan hover:text-rim-cyanLight">All projects →</Link></Reveal>
           </div>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {researchAreas.map((a, i) => (
               <Reveal key={a.title} delay={i * 90}>
-                <Link href={`/research/${a.slugs[0]}`} className="card card-hover group block h-full p-7">
-                  <span className="text-rim-cyan"><ProjectIcon kind={a.icon} className="h-11 w-11" /></span>
-                  <h3 className="h-sub mt-5 group-hover:text-rim-cyan transition-colors">{a.title}</h3>
-                  <p className="mt-3 text-[13.5px] leading-relaxed text-rim-muted">{a.desc}</p>
-                  <p className="mt-5 flex flex-wrap gap-1.5">
+                <Link href={`/research/${a.slugs[0]}`} className="card card-hover group block h-full p-5">
+                  <span className="flex items-center gap-3">
+                    <span className="shrink-0 text-rim-cyan"><ProjectIcon kind={a.icon} className="h-8 w-8" /></span>
+                    <h3 className="font-display text-[18px] font-medium leading-tight text-rim-text transition-colors group-hover:text-rim-cyan">{a.title}</h3>
+                  </span>
+                  <p className="mt-3 text-[13px] leading-relaxed text-rim-muted">{a.desc}</p>
+                  <p className="mt-3 flex flex-wrap gap-1.5">
                     {a.slugs.map((s) => {
                       const p = projects.find((x) => x.slug === s);
                       return p ? <span key={s} className="chip border-rim-line text-rim-faint">{p.title.split(' — ')[0]}</span> : null;
