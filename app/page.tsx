@@ -67,7 +67,7 @@ export default async function Home() {
               <p className="flex items-center gap-2.5 font-mono text-[12px] uppercase tracking-[0.18em] text-rim-text">
                 <span className="h-1.5 w-1.5 rounded-full bg-rim-cyan" />Latest Updates
               </p>
-              <Link href="/news" className="font-mono text-[11px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:text-rim-cyanLight">All news →</Link>
+              <Link href="/updates" className="font-mono text-[11px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:text-rim-cyanLight">All updates →</Link>
             </div>
             <ul className="divide-y divide-rim-line">
               {updates.slice(0, 5).map((u) => (
