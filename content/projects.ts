@@ -62,6 +62,7 @@ export const projects: Project[] = [
     ],
     videos: [
       { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper' },
+      { id: 'te3rbLkJntU', title: 'Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping with a Direct-Drive Gripper' },
       { id: '9866GYPbY-E', title: 'RIM Hand — Accurate Carpometacarpal Joint and Nitinol-Reinforced Skeleton' },
       { id: '4oIh14FL_44', title: 'Flex RIM Hand — 1st Prototyping' },
       { id: 'Rkd7FrLRpiQ', title: 'Prosthetic Robot Hand controlled by EMG (Box and Block Test)' },

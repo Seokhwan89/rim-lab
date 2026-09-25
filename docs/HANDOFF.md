@@ -43,7 +43,7 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
 
 - 새 유튜브 영상 te3rbLkJntU (2026-09-25): 김도영 외 arXiv 2609.29031 "Simple
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
-  DDD Gripper 다음(2번째)으로, Publications 해당 항목 video 필드에 연결.
+  DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
 - 지원서(Google Form) 노출 강화 (2026-09-24): 교수가 리뉴얼 후 국내 지원서 제출이
   줄었다고 함. forms-receipts 알림 메일 집계(월별 응답): 2월 19 · 3월 11 · 4월 11 ·
