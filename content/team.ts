@@ -73,9 +73,9 @@ export const ms: Member[] = [
 ];
 
 export const undergrad: Member[] = [
-  { name: 'Uisu Hwang', role: 'Undergraduate Fellow', badge: 'Ph.D. track', topic: 'Robot Gripper', email: 'dmltn3906@sogang.ac.kr', photo: '/images/team/uisu-hwang.webp' },
-  { name: 'Sungeon Kim', role: 'Undergraduate Fellow', badge: 'Ph.D. track', topic: 'Robot Hand', email: 'sungeon200102@gmail.com', photo: '/images/team/sungeon-kim.webp' },
-  { name: 'Gyungseo Choi', role: 'Undergraduate Fellow', badge: 'Ph.D. track', email: 'gomdore1000@naver.com', photo: '/images/team/gyungseo-choi.webp' },
+  { name: 'Uisu Hwang', role: 'Undergraduate Fellow', badge: 'Ph.D. track', topic: 'Robot Gripper', background: 'B.S. student, Sogang Univ.', email: 'dmltn3906@sogang.ac.kr', photo: '/images/team/uisu-hwang.webp' },
+  { name: 'Sungeon Kim', role: 'Undergraduate Fellow', badge: 'Ph.D. track', topic: 'Robot Hand', background: 'B.S. student, Sogang Univ.', email: 'sungeon200102@gmail.com', photo: '/images/team/sungeon-kim.webp' },
+  { name: 'Gyungseo Choi', role: 'Undergraduate Fellow', badge: 'Ph.D. track', background: 'B.S. student, Sogang Univ.', email: 'gomdore1000@naver.com', photo: '/images/team/gyungseo-choi.webp' },
 ];
 
 export const alumni: Alum[] = [

@@ -45,6 +45,10 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- 학부 팰로우 3명(황의수·김성언·최경서) background에 'B.S. student, Sogang Univ.' 추가
+  (2026-09-25, 교수 지시 "학사 소속 넣자"). 학과·졸업예정연도는 메일에서 확인 못 해
+  미기재 — 교수가 알려주면 'B.S. student, Mechanical Eng., Sogang Univ. (2027)' 식으로 보강.
+
 - Latest Updates (2026-09-25, 교수 지시): 히어로 박스를 뉴스 전용에서 "사이트에 올라온
   모든 것"(뉴스·논문·특허·유튜브·강의·구성원·학술활동)으로 변경. 소스는
   content/updates.ts(수동 로그, 최신순, YYYY.MM.DD) — 9/9 이후 커밋 이력으로 초기
