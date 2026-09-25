@@ -132,7 +132,7 @@ export default function TeamPage() {
                   </thead>
                   <tbody>
                     {alumni.map((a) => (
-                      <tr key={a.name + a.date} className="border-b border-rim-line/60 transition-colors last:border-0 hover:bg-rim-cyan/5">
+                      <tr key={a.name + a.date} className="border-b border-rim-line transition-colors last:border-0 hover:bg-rim-cyan/5">
                         <td className="px-4 py-3 font-medium">
                           <span className="flex items-center gap-3">
                             {a.photo ? (

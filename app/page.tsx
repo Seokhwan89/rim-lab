@@ -8,7 +8,7 @@ import ApplyCard from '@/components/ApplyCard';
 import { researchAreas, projects } from '@/content/projects';
 import { featuredVideos, heroReel } from '@/content/videos';
 import { getResearchPlaylist } from '@/lib/playlist';
-import { news, categoryColors, type NewsCategory } from '@/content/news';
+import { news, newsAnchor, categoryColors, type NewsCategory } from '@/content/news';
 import { site } from '@/content/site';
 
 const KEYWORDS = [
@@ -56,6 +56,31 @@ export default async function Home() {
           <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
             <Link href="/research" className="btn-primary">Explore Research</Link>
             <Link href="/opening" className="btn border border-rim-cyan/70 bg-[#04121a]/60 text-rim-cyanLight shadow-[0_0_26px_-6px_rgba(34,211,238,0.7)] backdrop-blur-md hover:bg-rim-cyan/25 hover:text-white">Apply · 지원서 작성</Link>
+          </div>
+
+          {/* Latest news — five most recent items across all categories */}
+          <div className="rise rise-5 mt-10 max-w-2xl overflow-hidden rounded-xl border border-rim-line bg-[#040812]/75 backdrop-blur-md">
+            <div className="flex items-center gap-3 border-b border-rim-line px-5 py-3">
+              <span className="h-1.5 w-1.5 rounded-full bg-rim-cyan" />
+              <p className="font-mono text-[12px] uppercase tracking-[0.18em] text-rim-text">Latest News</p>
+              <p className="font-mono text-[11px] text-rim-faint">all categories</p>
+            </div>
+            <ul className="divide-y divide-rim-line">
+              {news.slice(0, 5).map((n) => (
+                <li key={newsAnchor(n)}>
+                  <Link href={`/news#${newsAnchor(n)}`} className="group flex items-start justify-between gap-4 px-5 py-3 transition-colors hover:bg-rim-cyan/5">
+                    <span className="min-w-0">
+                      <span className="line-clamp-2 text-[14px] leading-snug text-rim-text transition-colors group-hover:text-rim-cyan">{n.title}</span>
+                      <span className={`chip mt-1.5 ${categoryColors[n.category]}`}>{n.category}</span>
+                    </span>
+                    <span className="shrink-0 pt-0.5 font-mono text-[11.5px] text-rim-faint">{n.date}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link href="/news" className="block border-t border-rim-line px-5 py-3 font-mono text-[12px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:text-rim-cyanLight">
+              All news →
+            </Link>
           </div>
         </div>
 

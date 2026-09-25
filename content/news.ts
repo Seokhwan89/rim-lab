@@ -69,6 +69,10 @@ export const news: NewsItem[] = [
   { date: '2021.09', title: 'Undergraduate interns win at the 20th Intelligent Creative Robot Contest', category: 'Award', body: 'Minho Kim, Yunseok Seol, Hyunseok Lee, Jaewoo Kim, Kangil Yoon, Jisu Lim, and Siyoung Hong received awards at the 20th Intelligent Creative Robot Contest. Congratulations!', image: '/images/news/2021-09-robot-contest.webp', images: ['/images/news/2021-09-robot-contest-2.webp', '/images/news/2021-09-robot-contest-3.webp'] },
 ];
 
+/** Stable in-page anchor for a news item, e.g. '/news#2026-09-ginwoo-pyo-selected-for-nrf-ph-d-research-fellowship' */
+export const newsAnchor = (n: NewsItem) =>
+  `${n.date}-${n.title}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80);
+
 export const categoryColors: Record<NewsCategory, string> = {
   Announcement: 'text-cyan-300 border-cyan-300/40 bg-cyan-300/10',
   Conference: 'text-sky-300 border-sky-300/40 bg-sky-300/10',

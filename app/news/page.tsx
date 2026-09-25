@@ -3,7 +3,7 @@ import { useState } from 'react';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 import NewsImages from '@/components/NewsImages';
-import { news, categoryColors, type NewsCategory } from '@/content/news';
+import { news, newsAnchor, categoryColors, type NewsCategory } from '@/content/news';
 
 const FILTERS: ('All' | NewsCategory)[] = ['All', 'Announcement', 'Conference', 'Award', 'Grant', 'Publication', 'Members', 'Lab Life'];
 
@@ -36,7 +36,7 @@ export default function NewsPage() {
             {shown.map((n, i) => (
               <Reveal key={`${n.date}-${n.title}`} delay={Math.min(i, 5) * 50} className="relative mb-8 last:mb-0">
                 <span className="absolute -left-[37.5px] top-[26px] h-[11px] w-[11px] rounded-full border-2 border-rim-cyan bg-rim-bg shadow-[0_0_12px_rgba(34,211,238,0.75)] md:-left-[53.5px]" aria-hidden />
-                <div className="card card-hover p-6">
+                <div id={newsAnchor(n)} className="card card-hover scroll-mt-28 p-6">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="font-mono text-[12.5px] text-rim-faint">{n.date}</span>
                     <span className={`chip ${categoryColors[n.category]}`}>{n.category}</span>

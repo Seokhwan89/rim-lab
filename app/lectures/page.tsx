@@ -49,7 +49,7 @@ export default function LecturesPage() {
                 </div>
 
                 {/* Lecture rows */}
-                <ul className="divide-y divide-rim-line/60">
+                <ul className="divide-y divide-rim-line">
                   {[...c.lectures].sort((a, b) => b.no - a.no).map((l) => (
                     <li key={l.no}>
                       <a
