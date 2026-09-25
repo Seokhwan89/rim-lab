@@ -91,6 +91,7 @@ export const projects: Project[] = [
     ],
     videos: [
       { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper' },
+      { id: 'te3rbLkJntU', title: 'Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping with a Direct-Drive Gripper' },
       { id: 'pyLLG74D9jI', title: 'Ultra-Low-Impedance Robotic Gripper' },
       { id: 'lJGHvHAex6g', title: 'Vision-Free Multifingered Blind Grasping' },
       { id: 'dBLvZ5Zh2CE', title: 'Blind Grasping — 2nd Trial' },

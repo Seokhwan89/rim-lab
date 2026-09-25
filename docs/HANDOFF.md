@@ -41,6 +41,10 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   send_later 예약(trig_01LePxihKCs6SPrwBGHn7Tn9, 2026-10-07 09:00 KST)은 발행
   확인 + patents.ts 비고("issues Oct 6, 2026" → 발행 완료) 갱신만 하도록 수정함.
 
+- 새 유튜브 영상 te3rbLkJntU (2026-09-25): 김도영 외 arXiv 2609.29031 "Simple
+  Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
+  DDD Gripper 다음(2번째)으로, Publications 해당 항목 video 필드에 연결.
+
 - 지원서(Google Form) 노출 강화 (2026-09-24): 교수가 리뉴얼 후 국내 지원서 제출이
   줄었다고 함. forms-receipts 알림 메일 집계(월별 응답): 2월 19 · 3월 11 · 4월 11 ·
   5월 6 · 6월 8 · 7월 4 · 8월 3(리뉴얼 후 1) · 9월 2(~9/24). 감소는 리뉴얼 전(봄)부터
