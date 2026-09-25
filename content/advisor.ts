@@ -26,9 +26,10 @@ export const advisor = {
   editorial: [
     { period: '2024 – present', text: 'Technical Editor, IEEE/ASME Transactions on Mechatronics' },
     { period: '2024 – present', text: 'Associate Editor, IEEE Robotics and Automation Letters' },
+    { period: '2027', text: 'Associate Editor, IEEE ICRA 2027' },
     { period: '2026', text: 'Associate Editor, IEEE/ASME AIM 2026 · Associate Editor, IEEE/RSJ IROS 2026' },
     { period: '2024', text: 'Associate Editor, IEEE BioRob 2024 · Associate Editor, UR 2024' },
-    { period: '2023 – present', text: 'Organizing Committee — ICCAS 2025·2026, ICNR 2026, ICROS 2024·2025, KRoC 2023·2024' },
+    { period: '2023 – present', text: 'Organizing Committee — ICCAS 2025·2026, ICNR 2026, ICROS 2024·2025, KRoC 2023·2024·2027' },
     { period: '2022 – present', text: 'Executive Board Member — KSME Dynamics, Control & Robotics Div. (2023–) · Military Robotics Society (2022–) · KSMTE Robotics & Automation Div. (2024–)' },
   ],
   honors: [

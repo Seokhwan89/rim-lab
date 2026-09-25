@@ -83,3 +83,27 @@ CV를 고쳐야 하는데, 클라우드는 Drive 파일 내용을 덮어쓸 수 
 5. 'Untitled session' (cloud)에 SendMessage로 보고: 바뀐 줄의 최종 텍스트,
    PDF 쪽수, 저장 시각. 실패하면 어디서 막혔는지 보고.
 6. .bridge-done 에 task-004 기록.
+
+## task-005 (2026-09-25) — CV 학술활동 2줄 추가 + PDF 재출력 (PC 로컬 파일)
+(교수가 클라우드 세션에서 지시한 작업. ICRA 2027 AE와 KRoC 2027 조직위원을
+CV에 넣는다. 클라우드는 Drive 파일 내용을 덮어쓸 수 없어 PC에 위임.)
+
+대상 파일 (task-004와 같음, G:\My Drive 는 Drive for Desktop 동기화 폴더):
+  G:\My Drive\Drive\취업\CV\CV+Research Statement_Jeong, Seokhwan_(Most recent).docx
+  (확장자가 .doc 이면 그 파일. 같은 폴더의 같은 이름 .pdf 도 대상.)
+
+할 일 (서식은 기존 줄을 복제해서 그대로 유지 — 글머리표·글꼴·들여쓰기 동일):
+1. "International Conference Editor" 절의 첫 줄
+     Associate Editor, IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM) 2026
+   바로 위에, 그 문단을 복제한 새 줄을 넣고 텍스트를 다음으로 바꾼다:
+     Associate Editor, IEEE International Conference on Robotics and Automation (ICRA) 2027
+2. "Domestic Conference Activity" 절의 줄
+     Organizing Committee , Korea Robotics Society Annual Conference (KroC) 2024 한국로봇종합학술대회 2024 조직위
+   바로 위에, 그 문단을 복제한 새 줄을 넣고 두 군데의 "2024"만 "2027"로 바꾼다.
+3. 페이지 머리글 날짜 "September 23, 2026" 을 "September 25, 2026" 으로 바꾼다.
+4. 저장(같은 파일명·같은 위치에 덮어쓰기 — 새 파일을 만들지 말 것).
+5. Word로 같은 폴더에 PDF 내보내기(기존 PDF 덮어쓰기 — Drive 파일 id 유지용):
+     CV+Research Statement_Jeong, Seokhwan_(Most recent).pdf
+6. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 추가된 두 줄의 최종
+   텍스트, PDF 쪽수, 저장 시각. 실패하면 어디서 막혔는지 보고.
+7. .bridge-done 에 task-005 기록.
