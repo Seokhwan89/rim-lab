@@ -80,6 +80,7 @@ export const projects: Project[] = [
       'RL-DOB-based grasping combines reinforcement learning with disturbance-observer control for robust in-hand manipulation. Vision-free blind grasping uses only uniaxial fingertip force sensing to grasp unknown objects without cameras. An ultra-low-impedance gripper enables high-bandwidth, transparent physical interaction.',
     ],
     videos: [
+      { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper' },
       { id: 'pyLLG74D9jI', title: 'Ultra-Low-Impedance Robotic Gripper' },
       { id: 'lJGHvHAex6g', title: 'Vision-Free Multifingered Blind Grasping' },
       { id: '73vfS0HiApM', title: 'Robust In-Hand Manipulation Policy based on RL-DOB' },
