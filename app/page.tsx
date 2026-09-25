@@ -8,7 +8,8 @@ import ApplyCard from '@/components/ApplyCard';
 import { researchAreas, projects } from '@/content/projects';
 import { featuredVideos, heroReel } from '@/content/videos';
 import { getResearchPlaylist } from '@/lib/playlist';
-import { news, newsAnchor, categoryColors, type NewsCategory } from '@/content/news';
+import { news, categoryColors, type NewsCategory } from '@/content/news';
+import { updates, updateColors } from '@/content/updates';
 import { site } from '@/content/site';
 
 const KEYWORDS = [
@@ -60,22 +61,22 @@ export default async function Home() {
             </div>
           </div>
 
-          {/* Latest news — five most recent items; right column on desktop, below the buttons on mobile */}
+          {/* Latest updates — five newest site additions of any kind (content/updates.ts); right column on desktop, below the buttons on mobile */}
           <div className="rise rise-5 w-full max-w-xl overflow-hidden rounded-xl border border-rim-line bg-[#040812]/80 backdrop-blur-md lg:max-w-none">
             <div className="flex items-center justify-between gap-3 border-b border-rim-line px-4 py-3">
               <p className="flex items-center gap-2.5 font-mono text-[12px] uppercase tracking-[0.18em] text-rim-text">
-                <span className="h-1.5 w-1.5 rounded-full bg-rim-cyan" />Latest News
+                <span className="h-1.5 w-1.5 rounded-full bg-rim-cyan" />Latest Updates
               </p>
               <Link href="/news" className="font-mono text-[11px] uppercase tracking-[0.14em] text-rim-cyan transition-colors hover:text-rim-cyanLight">All news →</Link>
             </div>
             <ul className="divide-y divide-rim-line">
-              {news.slice(0, 5).map((n) => (
-                <li key={newsAnchor(n)}>
-                  <Link href={`/news#${newsAnchor(n)}`} className="group block px-4 py-2.5 transition-colors hover:bg-rim-cyan/5">
-                    <span className="line-clamp-2 text-[13.5px] leading-snug text-rim-text transition-colors group-hover:text-rim-cyan">{n.title}</span>
+              {updates.slice(0, 5).map((u) => (
+                <li key={`${u.date}-${u.title}`}>
+                  <Link href={u.href} className="group block px-4 py-2.5 transition-colors hover:bg-rim-cyan/5">
+                    <span className="line-clamp-2 text-[13.5px] leading-snug text-rim-text transition-colors group-hover:text-rim-cyan">{u.title}</span>
                     <span className="mt-1.5 flex items-center justify-between gap-3">
-                      <span className={`chip ${categoryColors[n.category]}`}>{n.category}</span>
-                      <span className="font-mono text-[11px] text-rim-faint">{n.date}</span>
+                      <span className={`chip ${updateColors[u.kind]}`}>{u.kind}</span>
+                      <span className="font-mono text-[11px] text-rim-faint">{u.date}</span>
                     </span>
                   </Link>
                 </li>

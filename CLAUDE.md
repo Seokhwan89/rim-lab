@@ -16,6 +16,8 @@
   - `advisor.ts` — 지도교수
   - `lectures.ts` — 강의 자료 (새 슬라이드: PDF를 public/lectures/<course.id>/에 저장 후 항목 추가)
   - `site.ts` — 메뉴, 연락처
+  - `updates.ts` — 메인 히어로 "Latest Updates"(상위 5개). 뉴스·논문·특허·유튜브
+    영상·강의·구성원 등 **무엇이든 사이트에 올리면 여기에 한 줄 추가**(최신순, 게시일).
 - **사진은 WebP로만 저장**(2026-09-17, Vercel Hobby 대역폭 보호): 새 사진은
   `python3 scripts/optimize-image.py <원본> public/images/<폴더>/<이름>.webp`
   (긴 변 1200px, q76)로 변환해 넣고 content에서 .webp 경로로 참조한다.

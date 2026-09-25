@@ -45,6 +45,11 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- Latest Updates (2026-09-25, 교수 지시): 히어로 박스를 뉴스 전용에서 "사이트에 올라온
+  모든 것"(뉴스·논문·특허·유튜브·강의·구성원·학술활동)으로 변경. 소스는
+  content/updates.ts(수동 로그, 최신순, YYYY.MM.DD) — 9/9 이후 커밋 이력으로 초기
+  13건 채움. 콘텐츠 추가 시 여기 한 줄 추가하는 규칙을 CLAUDE.md에 명시.
+
 - 메인 레이아웃 (2026-09-25, 교수 지시 "학과 홈페이지 배치 참고"): Latest News 박스를
   히어로 오른쪽 칼럼(lg 이상 360px, 모바일은 버튼 아래)으로 옮기고 항목을 제목 +
   [카테고리 칩 · 날짜] 한 줄로 압축, "All news →"는 박스 머리에. 히어로 제목은
