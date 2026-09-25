@@ -4,7 +4,8 @@ export type Project = {
   short: string; // one-liner for cards
   icon: 'transmission' | 'hand' | 'ai' | 'magnet' | 'factory' | 'surgical' | 'leg' | 'glove' | 'sensor';
   summary: string[];
-  videos?: { id: string; title: string }[];
+  /** note: credit line under the title, e.g. where the work was done and the IEEE copyright */
+  videos?: { id: string; title: string; note?: string }[];
   highlights?: string[];
   pubs?: string[]; // representative publications (short strings)
   patents?: string[];
@@ -31,6 +32,10 @@ export const projects: Project[] = [
       { id: 'rm8DG30cxmQ', title: 'Robotic Finger with 4-bar Linkage-based Continuously Variable Active Transmission' },
       { id: '_QcDDKlwtPs', title: 'Twisted String Actuation Module for Bi-directional Compact Robotic Finger' },
       { id: 'RxmGPmoC-yg', title: 'Robot Gripper and Robot Hand using 2-Speed Twisted String Actuation' },
+      { id: 'Y1uceDzhjKY', title: '2-Speed Small Transmission Based on Twisted String Actuation and a Dog Clutch', note: 'Ph.D. work at KAIST' },
+      { id: 'H8aGkbSwlYs', title: 'Robot Hand with a 2-Speed Twisted String Transmission', note: 'Ph.D. work at KAIST' },
+      { id: 'QBQMZsSQJQM', title: 'Active Dual-Mode Twisting Actuation Mechanism', note: 'Ph.D. work at KAIST' },
+      { id: 'Ctz6tUdFF8s', title: 'Robotic Finger with Active Dual-Mode Twisting Actuation — AIM 2016 Best Student Paper', note: 'Ph.D. work at KAIST' },
     ],
     pubs: [
       'Variable Transmission Mechanisms for Robotic Applications: A Review — IEEE RAM, 2025',
@@ -56,8 +61,13 @@ export const projects: Project[] = [
       'Recent work includes the RIM Hand — a robotic hand with an accurate carpometacarpal joint and nitinol-reinforced skeletal structure — and earlier prosthetic hands such as the MSC Hand, driven by twisted string actuation.',
     ],
     videos: [
+      { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper' },
+      { id: '9866GYPbY-E', title: 'RIM Hand — Accurate Carpometacarpal Joint and Nitinol-Reinforced Skeleton' },
       { id: '4oIh14FL_44', title: 'Flex RIM Hand — 1st Prototyping' },
       { id: 'Rkd7FrLRpiQ', title: 'Prosthetic Robot Hand controlled by EMG (Box and Block Test)' },
+      { id: 'M1_JCT_Ov-0', title: 'MSC Prosthetic Hand Prototype — EMG-based Grasping Intention Estimation' },
+      { id: 'gCsYF04xCR8', title: 'Webinar — High-Performance Anthropomorphic Prosthetic Hand Systems (KR)' },
+      { id: '5PtXTI1t3Po', title: 'Anthropomorphic Robot Hand with Active Dual-Mode Twisted String Actuation', note: 'Ph.D. work at KAIST' },
     ],
     pubs: [
       'RIM Hand: A Robotic Hand with an Accurate Carpometacarpal Joint and Nitinol-Reinforced Skeletal Structure — Soft Robotics, 2026',
@@ -83,6 +93,8 @@ export const projects: Project[] = [
       { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper' },
       { id: 'pyLLG74D9jI', title: 'Ultra-Low-Impedance Robotic Gripper' },
       { id: 'lJGHvHAex6g', title: 'Vision-Free Multifingered Blind Grasping' },
+      { id: 'dBLvZ5Zh2CE', title: 'Blind Grasping — 2nd Trial' },
+      { id: 'wmo343wLfB8', title: 'Progress Update on Blind Grasping Research' },
       { id: '73vfS0HiApM', title: 'Robust In-Hand Manipulation Policy based on RL-DOB' },
       { id: 'n74F0ifQ4PE', title: 'Ultra-Low-Impedance Robotic Finger — Demo 1' },
     ],
@@ -106,6 +118,7 @@ export const projects: Project[] = [
       'We developed mechanically variable magnetic gear transmissions, magnetic-gear-based actuators with disturbance-observer torque control exploiting the magnetic spring, and a coaxial magnetic gear tool-changing system.',
     ],
     videos: [
+      { id: '64h1yNFKHZI', title: 'Magnetic Gear-based Actuator — Design, Optimization, and DOB-based Torque Control' },
       { id: 'NYoOHJvqkF4', title: 'Mechanical Variable Magnetic Gear Transmission' },
       { id: 'zuAvOsLDOUI', title: 'Coaxial Magnetic Gear-based Tool-Changing System' },
     ],
@@ -147,7 +160,10 @@ export const projects: Project[] = [
     summary: [
       'Minimally invasive surgery demands dexterity at millimeter scale. During and after his time at Georgia Tech, Prof. Jeong developed steerable surgical robots including the COAST guidewire robot for endovascular intervention, robotically steerable catheters for mitral valve implant delivery, and meso-scale continuum tools for pediatric neurosurgery.',
     ],
-    videos: [{ id: 'RRY6Vp9R0aA', title: 'COAST: Coaxially Aligned Steerable Guidewire Robot' }],
+    videos: [
+      { id: 'RRY6Vp9R0aA', title: 'COAST: Coaxially Aligned Steerable Guidewire Robot', note: 'Work performed at Georgia Tech (Desai Lab) · © 2020 IEEE' },
+      { id: '_-UkOdVfq1o', title: '2-DoF Meso-scale Continuum Robotic Tool for Pediatric Neurosurgery', note: 'Work performed at Georgia Tech (Desai Lab) · © 2021 IEEE' },
+    ],
     pubs: [
       'Design, Modeling, and Control of a Coaxially Aligned Steerable (COAST) Guidewire Robot — IEEE RA-L, 2020',
       'Modeling and Control of a 2-DoF Meso-scale Continuum Robotic Tool for Pediatric Neurosurgery — IEEE T-RO, 2021',
@@ -182,7 +198,12 @@ export const projects: Project[] = [
     summary: [
       'The FLEXotendon Glove series is a soft robotic hand exoskeleton for people with spinal cord injury: voice-controlled, tendon-driven, and patient-specific, with admittance grasping control and a novel fabrication method.',
     ],
-    videos: [{ id: 'OM03dU-8-aQ', title: 'FLEXotendon Glove-III' }],
+    videos: [
+      { id: 'OM03dU-8-aQ', title: 'FLEXotendon Glove-III', note: 'Work performed at Georgia Tech (Desai Lab) · © 2022 IEEE' },
+      { id: 'V69GfhLeuBU', title: 'Voice-Controlled FLEXotendon Glove-II for Spinal Cord Injury', note: 'Work performed at Georgia Tech (Desai Lab) · © 2020 IEEE' },
+      { id: 'HTXwTqTGt8E', title: 'FLEXotendon Glove-II with Self-Sealing Suction Cups', note: 'Work performed at Georgia Tech (Desai Lab) · © 2020 IEEE' },
+      { id: 'wjMNIGHWg5g', title: 'Hand Exoskeleton with Suction Cup', note: 'Work performed at Georgia Tech (Desai Lab)' },
+    ],
     pubs: [
       'FLEXotendon Glove-III: Voice-Controlled Soft Robotic Hand Exoskeleton — IEEE/ASME T-Mech, 2022',
       'A Review: Hand Exoskeleton Systems, Clinical Rehabilitation Practices, and Future Prospects — IEEE T-MRB, 2021',

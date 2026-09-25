@@ -7,6 +7,15 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
 
 ## 완료된 것
 
+- 유튜브 영상 전수 배치 (2026-09-25): 채널 공개 영상 24편(강의 영상 6편 제외) +
+  재생목록·논문 영상을 연구 페이지 Demonstrations에 모두 배치(31편, oEmbed 전부 200).
+  DDD Gripper는 Robotic Hands·AI Grasping 양쪽. 조지아텍 시절 영상(COAST, 소아
+  신경외과 도구, FLEXotendon Glove-II/III, 흡착컵 외골격)은 영상별 `note`로
+  "Work performed at Georgia Tech (Desai Lab) · © 연도 IEEE"를 제목 아래 표시(IEEE
+  영상 게시 원칙), KAIST 박사과정 영상은 "Ph.D. work at KAIST". 하지 외골격·광학
+  힘센서 페이지는 해당 영상이 채널에 없어 비어 있음. 새 영상이 올라오면
+  projects.ts videos에 추가하고 GT/IEEE 영상이면 note를 달 것.
+
 - 메인 히어로에 '최신 소식 5개' 패널 (2026-09-25, 학과 홈페이지 방식): 버튼 아래
   Latest News 박스 — news.ts 앞에서 5개(전 카테고리), 제목·카테고리 칩·날짜,
   클릭 시 /news#<앵커>로 해당 카드까지 이동(content/news.ts `newsAnchor`, News

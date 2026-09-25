@@ -131,7 +131,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   <Reveal key={v.id} delay={(i % 2) * 80}>
                     <div className="card card-hover group overflow-hidden p-0">
                       <LiteYouTube id={v.id} title={v.title} className="rounded-b-none" quality="max" />
-                      <p className="p-4 text-[13.5px] font-medium leading-snug">{v.title}</p>
+                      <div className="p-4">
+                        <p className="text-[13.5px] font-medium leading-snug">{v.title}</p>
+                        {v.note && <p className="mt-1 font-mono text-[11px] text-rim-faint">{v.note}</p>}
+                      </div>
                     </div>
                   </Reveal>
                 ))}
