@@ -107,3 +107,30 @@ CV에 넣는다. 클라우드는 Drive 파일 내용을 덮어쓸 수 없어 PC�
 6. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 추가된 두 줄의 최종
    텍스트, PDF 쪽수, 저장 시각. 실패하면 어디서 막혔는지 보고.
 7. .bridge-done 에 task-005 기록.
+
+## task-006 (2026-09-25) — CV 미국 특허 줄을 등록번호로 교체 + PDF 재출력 (PC 로컬 파일)
+(교수가 클라우드 세션에서 지시한 작업. COAST 가이드와이어 미국 특허
+US 12,752,086 B2 — 2026-10-06 발행 확정 — 를 지금 바로 CV에 반영한다.
+task-005는 완료 확인됨: Drive PDF에 ICRA 2027 AE / KroC 2027 줄과
+"September 25, 2026" 날짜가 들어가 있음.)
+
+대상 파일 (task-004·005와 같음, G:\My Drive 는 Drive for Desktop 동기화 폴더):
+  G:\My Drive\Drive\취업\CV\CV+Research Statement_Jeong, Seokhwan_(Most recent).docx
+  (확장자가 .doc 이면 그 파일. 같은 폴더의 같은 이름 .pdf 도 대상.)
+
+할 일 (서식·글꼴·줄바꿈은 그대로 두고 텍스트만 교체 — Word COM Find/Replace 권장):
+1. "International Patent" 절에서 미국 특허 줄을 찾는다:
+     … coaxially aligned robotically steerable guidewire,” US Patent,
+     US17/919,763 (approved)
+   → "US17/919,763 (approved)" 를 "US12,752,086B2, (2026.10.6)" 로 바꾼다.
+2. 페이지 머리글 날짜 "September 25, 2026" 은 그대로 둔다(오늘 날짜와 같음).
+   다른 날짜로 되어 있으면 "September 25, 2026" 으로 맞춘다.
+3. 저장(같은 파일명·같은 위치에 덮어쓰기 — 새 파일을 만들지 말 것).
+4. Word로 같은 폴더에 PDF 내보내기(기존 PDF 덮어쓰기 — Drive 파일 id 유지용):
+     CV+Research Statement_Jeong, Seokhwan_(Most recent).pdf
+5. 저장 후 PDF의 "Domestic Conference Activity" 절에서 KroC 2027 / 2024 줄이
+   한 줄씩 정상적으로 보이는지 눈으로 확인하고(텍스트 추출 시 줄바꿈이 어색했음),
+   깨져 있으면 기존 2024 줄과 같은 모양이 되도록 고친 뒤 PDF를 다시 내보낸다.
+6. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 바뀐 줄의 최종 텍스트,
+   5번 확인 결과, PDF 쪽수, 저장 시각. 실패하면 어디서 막혔는지 보고.
+7. .bridge-done 에 task-006 기록.
