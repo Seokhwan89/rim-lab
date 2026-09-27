@@ -217,7 +217,7 @@ export default async function Home() {
           <Reveal delay={60}><h2 className="h-section mt-3">Build robots that touch the real world</h2></Reveal>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {[
-              { title: 'Undergraduate Intern', desc: 'Research internships and URECA for undergraduates seriously considering graduate study in RIM Lab — start hands-on robotics early.', href: '/opening#intern', label: 'Internship info' },
+              { title: 'Undergraduate Intern', desc: 'Research internships and URECA for undergraduates who hope to join RIM Lab for graduate study or want to explore research first — start hands-on robotics early.', href: '/opening#intern', label: 'Internship info' },
               { title: 'Undergraduate Fellow', desc: 'Ongoing undergraduate fellow positions for students who want to go deeper with a project of their own.', href: '/opening#fellow', label: 'Fellowship info' },
               { title: 'Graduate Program', desc: 'M.S., Ph.D., and integrated programs with full-funding tracks and industry-collaboration tracks.', href: '/opening#graduate', label: 'Apply to grad school' },
             ].map((c, i) => (

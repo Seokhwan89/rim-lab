@@ -19,11 +19,11 @@ const tracks = [
   {
     id: 'intern',
     title: 'Undergraduate Intern',
-    chip: 'Selective',
+    chip: 'By application',
     items: [
-      'Offered to undergraduates who are seriously considering graduate study in RIM Lab — selected individually',
-      'We do not run stand-alone short-term visiting or summer research-experience internships that are not tied to graduate admission',
-      'URECA undergraduate research program · joining before graduate admission is strongly encouraged',
+      'For undergraduates who hope to pursue graduate study in RIM Lab, or who want hands-on research experience to explore graduate school before deciding',
+      'Work alongside graduate students on ongoing projects — arranged individually based on your interests and available positions',
+      'The URECA undergraduate research program is also a great way to get started',
     ],
   },
   {

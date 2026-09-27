@@ -45,6 +45,11 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- Undergraduate Intern 문구 완화 (2026-09-27, 교수 지시): "seriously considering…only",
+  "단독 단기/여름 인턴 운영 안 함" 문장을 빼고 "진학 희망 또는 진학 전 탐색을 위해 연구
+  경험을 원하는 학부생 대상, 개별 조율"로 변경. Opening 카드(칩 Selective→By application)·
+  ApplyCard 안내문·메인 Join Us 인턴 카드 세 곳 동일 톤.
+
 - 학부 팰로우 3명(황의수·김성언·최경서) background에 'B.S. student, Sogang Univ.' 추가
   (2026-09-25, 교수 지시 "학사 소속 넣자"). 학과·졸업예정연도는 메일에서 확인 못 해
   미기재 — 교수가 알려주면 'B.S. student, Mechanical Eng., Sogang Univ. (2027)' 식으로 보강.
