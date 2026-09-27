@@ -21,8 +21,9 @@ const tracks = [
     title: 'Undergraduate Intern',
     chip: 'By application',
     items: [
-      'For undergraduates who hope to pursue graduate study in RIM Lab, or who want hands-on research experience to explore graduate school before deciding',
+      'For undergraduates who hope to pursue graduate study in RIM Lab, or who want to explore graduate study here through hands-on research before deciding',
       'Work alongside graduate students on ongoing projects — arranged individually based on your interests and available positions',
+      'Internship requests made only for general research experience — including internships to fulfill another university’s degree requirement — are not accepted',
       'The URECA undergraduate research program is also a great way to get started',
     ],
   },

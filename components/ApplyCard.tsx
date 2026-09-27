@@ -19,8 +19,9 @@ export default function ApplyCard({ className = '' }: { className?: string }) {
           </a>
         </div>
         <p className="mt-6 max-w-3xl text-[13.5px] leading-relaxed text-rim-muted">
-          Undergraduate internships are open to students who hope to join RIM Lab for graduate study or who want
-          research experience to explore graduate school, and are arranged individually.
+          Undergraduate internships are open to students who hope to join RIM Lab for graduate study or who want to
+          explore graduate study here, and are arranged individually; requests made only for general research experience
+          (including another university’s internship requirement) are not accepted.
           Our weekly open lab meeting is open to anyone without prior permission — email the lab manager to ask when
           the next one is, and come see what we build.
         </p>
