@@ -13,6 +13,7 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.09.30', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 6 slides: Transient Analysis', href: '/lectures' },
   { date: '2026.09.25', kind: 'Video', title: 'New video: Zero-shot sim-to-real grasping with the direct-drive gripper', href: '/research/ai-based-multifinger-grasping' },
   { date: '2026.09.25', kind: 'Publication', title: 'Preprint: Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping', href: '/publications' },
   { date: '2026.09.25', kind: 'Award', title: 'Ginwoo Pyo selected for NRF Ph.D. Research Fellowship', href: '/news#2026-09-ginwoo-pyo-selected-for-nrf-ph-d-research-fellowship' },

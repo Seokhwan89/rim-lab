@@ -39,6 +39,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 6,
+        title: 'Transient Analysis',
+        date: '2026-09-30',
+        file: '/lectures/mee4033-fall-2026/lecture-06-transient-analysis.pdf',
+        pages: 41,
+        size: '5.4 MB',
+      },
+      {
         no: 5,
         title: 'AC Network Analysis 2',
         date: '2026-09-16',
