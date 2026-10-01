@@ -39,6 +39,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 7,
+        title: 'Circuit Basic Experiments',
+        date: '2026-10-01',
+        file: '/lectures/mee4033-fall-2026/lecture-07-circuit-basic-experiments.pdf',
+        pages: 23,
+        size: '2.3 MB',
+      },
+      {
         no: 6,
         title: 'Transient Analysis',
         date: '2026-09-30',
