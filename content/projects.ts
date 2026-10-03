@@ -71,6 +71,7 @@ export const projects: Project[] = [
       { id: '5PtXTI1t3Po', title: 'Anthropomorphic Robot Hand with Active Dual-Mode Twisted String Actuation', note: 'Ph.D. work at KAIST' },
     ],
     pubs: [
+      'Design and Validation of an Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation — arXiv preprint, 2026',
       'RIM Hand: A Robotic Hand with an Accurate Carpometacarpal Joint and Nitinol-Reinforced Skeletal Structure — Soft Robotics, 2026',
       'The MSC Prosthetic Hand: Rapid, Powerful, and Intuitive — IEEE RA-L, 2022',
       'Designing Anthropomorphic Robot Hand With Active Dual-Mode Twisted String Actuation Mechanism and Tiny Tension Sensors — IEEE RA-L, 2017',

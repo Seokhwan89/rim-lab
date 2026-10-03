@@ -45,6 +45,7 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- 논문 추가 (2026-10-03): arXiv 2609.36241 "Design and Validation of an Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation" (이충현·권혁준·김성언·문세현·정석환*, ICRA 2027 투고 #2965 — 'Under review'로 표기). 대표 figure는 arXiv Fig.1 크롭→WebP. Robotic Hands 프로젝트 대표논문 목록 맨 위에도 추가. 데모 영상은 아직 채널에 없음(올라오면 video 필드·프로젝트 영상 추가).
 - MEE4033 Lecture 7 — Circuit Basic Experiments 슬라이드 추가 (2026-10-01, 23쪽, 2.3 MB; NI myDAQ/ELVISmx 실습), Latest Updates 등록.
 - MEE4033 Lecture 6 — Transient Analysis 슬라이드 추가 (2026-09-30, 41쪽, 5.4 MB), Latest Updates에도 등록.
 

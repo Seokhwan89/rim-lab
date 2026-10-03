@@ -13,6 +13,7 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.10.03', kind: 'Publication', title: 'Preprint: Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation', href: '/publications' },
   { date: '2026.10.01', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 7 slides: Circuit Basic Experiments', href: '/lectures' },
   { date: '2026.09.30', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 6 slides: Transient Analysis', href: '/lectures' },
   { date: '2026.09.25', kind: 'Video', title: 'New video: Zero-shot sim-to-real grasping with the direct-drive gripper', href: '/research/ai-based-multifinger-grasping' },
