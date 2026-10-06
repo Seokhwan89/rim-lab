@@ -45,6 +45,7 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- MEE4033 Lecture 8 — Frequency Response and System Concepts 슬라이드 추가 (2026-10-06, 34쪽, 3.9 MB), Latest Updates 등록.
 - 업데이트 점검 (2026-10-04, "홈페이지 업데이트할거 없나?"): 9/25 이후 메일 검토. 추가 — Smart&Soft 2026
   초청강연(11/23 16:30 Eorimok, ABST-000011 "AI-Optimized Multi-DoF Gripper & Hand Hardware and Control
   Platform", 프로그램 xlsx에서 확인) 뉴스. 보류/제외 — IES ICM2027 특별세션(공동조직위 'prospective' 단계),

@@ -39,6 +39,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 8,
+        title: 'Frequency Response and System Concepts',
+        date: '2026-10-06',
+        file: '/lectures/mee4033-fall-2026/lecture-08-frequency-response-and-system-concepts.pdf',
+        pages: 34,
+        size: '3.9 MB',
+      },
+      {
         no: 7,
         title: 'Circuit Basic Experiments',
         date: '2026-10-01',
