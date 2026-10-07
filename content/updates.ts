@@ -13,6 +13,7 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.10.07', kind: 'Patent', title: 'COAST steerable guidewire patent issued in the US — US 12,752,086 B2 (Oct 6, 2026)', href: '/publications' },
   { date: '2026.10.06', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 8 slides: Frequency Response and System Concepts', href: '/lectures' },
   { date: '2026.10.04', kind: 'News', title: 'Prof. Jeong to give an invited talk at Smart&Soft 2026, Jeju (Nov 23)', href: '/news#2026-11-invited-talk-at-smart-soft-2026-jeju-upcoming' },
   { date: '2026.10.03', kind: 'Publication', title: 'Preprint: Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation', href: '/publications' },

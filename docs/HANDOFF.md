@@ -45,6 +45,11 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- COAST 미국 특허 발행 확인 (2026-10-07, 예약 작업 trig_01LePxihKCs6SPrwBGHn7Tn9): USPTO 공보 PDF
+  (image-ppubs.uspto.gov/.../downloadPdf/12752086) 1면에서 US 12,752,086 B2, Date of Patent Oct. 6, 2026
+  확인. patents.ts COAST note → "US 12,752,086 B2, Oct 6, 2026", link → USPTO 공보 PDF(Google Patents는
+  이 환경에서 503이라 미확인), Latest Updates 등록. 브릿지 task-006도 완료 확인 — Drive CV PDF(9/25 11:33Z
+  수정)에 "US12,752,086B2, (2026.10.6)" 반영, KroC 2027/2024 줄도 정상.
 - MEE4033 Lecture 8 — Frequency Response and System Concepts 슬라이드 추가 (2026-10-06, 34쪽, 3.9 MB), Latest Updates 등록.
 - 업데이트 점검 (2026-10-04, "홈페이지 업데이트할거 없나?"): 9/25 이후 메일 검토. 추가 — Smart&Soft 2026
   초청강연(11/23 16:30 Eorimok, ABST-000011 "AI-Optimized Multi-DoF Gripper & Hand Hardware and Control

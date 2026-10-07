@@ -165,8 +165,8 @@ export const patents: Patent[] = [
     status: 'registered',
     assignee: 'Georgia Tech Research Corp.',
     project: 'surgical-robots',
-    note: 'Registered in the US (US 12,752,086, issues Oct 6, 2026), JP (2026), CN (2025) and AU (Sep 2026); US continuation (Track One) filed Sep 2026',
-    link: 'https://patents.google.com/patent/JP7798789B2',
+    note: 'Registered in the US (US 12,752,086 B2, Oct 6, 2026), JP (2026), CN (2025) and AU (Sep 2026); US continuation (Track One) filed Sep 2026',
+    link: 'https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12752086',
   },
   {
     title: 'Steerable and flexible robotic endoscopic tools for minimally invasive procedures',
