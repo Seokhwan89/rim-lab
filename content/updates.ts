@@ -13,6 +13,8 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.10.08', kind: 'Patent', title: 'Canadian patent granted for steerable robotic endoscopic tools (CA 3,132,642)', href: '/publications' },
+  { date: '2026.10.08', kind: 'Patent', title: 'Patent list updated: US 12,557,970 B2 and US 12,576,517 B2 (2026 US grants)', href: '/publications' },
   { date: '2026.10.07', kind: 'Patent', title: 'COAST steerable guidewire patent issued in the US — US 12,752,086 B2 (Oct 6, 2026)', href: '/publications' },
   { date: '2026.10.06', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 8 slides: Frequency Response and System Concepts', href: '/lectures' },
   { date: '2026.10.04', kind: 'News', title: 'Prof. Jeong to give an invited talk at Smart&Soft 2026, Jeju (Nov 23)', href: '/news#2026-11-invited-talk-at-smart-soft-2026-jeju-upcoming' },
@@ -22,7 +24,7 @@ export const updates: UpdateItem[] = [
   { date: '2026.09.25', kind: 'Video', title: 'New video: Zero-shot sim-to-real grasping with the direct-drive gripper', href: '/research/ai-based-multifinger-grasping' },
   { date: '2026.09.25', kind: 'Publication', title: 'Preprint: Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping', href: '/publications' },
   { date: '2026.09.25', kind: 'Award', title: 'Ginwoo Pyo selected for NRF Ph.D. Research Fellowship', href: '/news#2026-09-ginwoo-pyo-selected-for-nrf-ph-d-research-fellowship' },
-  { date: '2026.09.25', kind: 'Patent', title: 'COAST steerable guidewire patent granted in the US (US 12,752,086)', href: '/publications' },
+  { date: '2026.09.25', kind: 'Patent', title: 'COAST steerable guidewire: US issue notification received (US 12,752,086)', href: '/publications' },
   { date: '2026.09.25', kind: 'Service', title: 'Prof. Jeong named Associate Editor for IEEE ICRA 2027', href: '/advisor' },
   { date: '2026.09.25', kind: 'Video', title: 'All lab YouTube videos now on their research project pages', href: '/research' },
   { date: '2026.09.23', kind: 'Publication', title: 'Harness assembly paper published in IEEE T-ASE', href: '/news#2026-09-harness-assembly-paper-published-in-ieee-t-ase' },

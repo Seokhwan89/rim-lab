@@ -45,6 +45,16 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- 특허 등록 일괄 점검 (2026-10-08, 교수 "메일에 온 미국 특허 확인해서 홈페이지·CV 반영"): 10/7 메일 2건 —
+  ①US 12,752,086 Letters Patent(COAST, 이미 반영) ②**CA 3,132,642**(내시경 도구, 2026-09-29 등록; Troutman
+  메일 + CIPO DB 확인). 멀티에이전트 스윕(Gmail 6/1 이후) + 공식 DB 교차검증으로 추가 발견: **US 12,557,970 B2**
+  (내시경 분할출원 19/196,285, 2026-02-24) · **US 12,576,517 B2**(Voice-Activated 계속출원 18/924,569,
+  2026-03-17) — 둘 다 USPTO 공보 1면 확인, 사이트 note 연도는 맞았으나 번호가 출원번호로만 있었고 CV는
+  pending. 사이트 수정: 두 패밀리 numbers를 등록번호로, COAST CN→115916317B, **하지 근력 보조 장치 KR
+  10-2023-0152159는 'registered 2025.05'가 실은 공개일(KR 10-2025-0066312 A, 2025-05-13)** → status filed.
+  CV는 브릿지 task-007(6개 줄 + Japen→Japan 오타 + 머리글 October 8, 2026). 미확인 관찰: CV의 JP7411317
+  (Voice 패밀리) 저자 표기가 "Desai, Chitalia, Jeong, Chern"인데 이 패밀리 US 공보 발명자는 Desai·Jeong·
+  Tran·Wang — 교수 확인 필요. 진행 중(등록 아님): EP 21793176.5, KR 10-2024-0038169, CA 3175811/3132645.
 - COAST 미국 특허 발행 확인 (2026-10-07, 예약 작업 trig_01LePxihKCs6SPrwBGHn7Tn9): USPTO 공보 PDF
   (image-ppubs.uspto.gov/.../downloadPdf/12752086) 1면에서 US 12,752,086 B2, Date of Patent Oct. 6, 2026
   확인. patents.ts COAST note → "US 12,752,086 B2, Oct 6, 2026", link → USPTO 공보 PDF(Google Patents는
