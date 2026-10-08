@@ -135,40 +135,43 @@ task-005는 완료 확인됨: Drive PDF에 ICRA 2027 AE / KroC 2027 줄과
    5번 확인 결과, PDF 쪽수, 저장 시각. 실패하면 어디서 막혔는지 보고.
 7. .bridge-done 에 task-006 기록.
 
-## task-007 (2026-10-08) — CV 특허 줄 3건 등록 반영 + 연도/오타 정정 + PDF 재출력 (PC 로컬 파일)
+## task-007 (2026-10-08) — CV 특허 줄 등록 반영 + 표기·저자 정정 + PDF 재출력 (PC 로컬 파일)
 (교수가 클라우드 세션에서 지시: "메일에 온 특허 확인해서 홈페이지 및 CV에 반영".
-클라우드가 메일 + 공식 DB로 확인한 사실: ① CA 3,132,642 (내시경 도구) 2026-09-29 등록
-— Troutman 10/7 메일 + CIPO DB "(45) Issued 2026-09-29"; ② US 12,557,970 B2 (내시경 도구
-분할출원, 출원 19/196,285) 2026-02-24 등록 — USPTO 공보 1면; ③ US 12,576,517 B2 (Voice-
-Activated 계속출원, 출원 18/924,569) 2026-03-17 등록 — USPTO 공보 1면; ④ KR 10-1870733
-등록일 2018-06-26 — Google Patents. task-006(US12,752,086B2)은 이미 반영 확인됨.)
+클라우드가 메일 + 공식 DB로 확인한 사실: ① CA 3,132,642 (내시경 도구) 2026-09-29 등록 — 대리인
+메일 + CIPO "(45) Issued 2026-09-29"; ② US 12,557,970 B2 (내시경 도구 분할출원, 출원 19/196,285)
+2026-02-24 등록 — USPTO 공보 1면 "Division of application No. 17/433,165"; ③ US 12,576,517 B2
+(Voice-Activated 계속출원, 출원 18/924,569) 2026-03-17 등록 — USPTO 공보 1면; ④ JP7411317B2 발명자는
+공보상 Desai·Jeong·Tran·Wang (CV에는 Chitalia·Chern으로 잘못 적힘); ⑤ KR 10-1870733 등록 2018-06-19.
+task-006(US 12,752,086)은 이미 반영 확인됨 — 아래 6번은 표기만 통일.)
 
-대상 파일 (task-004~006과 같음, G:\My Drive 는 Drive for Desktop 동기화 폴더):
-  G:\My Drive\Drive\취업\CV\CV+Research Statement_Jeong, Seokhwan_(Most recent).docx
-  (확장자가 .doc 이면 그 파일. 같은 폴더의 같은 이름 .pdf 도 대상.)
+대상 파일: task-004~006과 같은 CV Word 파일과 같은 폴더의 같은 이름 PDF.
 
-할 일 (서식·글꼴·줄바꿈은 그대로 두고 텍스트만 교체 — Word COM Find/Replace 권장.
-텍스트가 여러 run에 나뉘어 있을 수 있으니 문단 단위로 확인할 것):
+할 일 (서식·글꼴·줄바꿈은 그대로 두고 텍스트만 교체 — Word COM Find/Replace 권장. 텍스트가
+여러 run에 나뉘어 있을 수 있으니 문단 단위로 확인. 각 "변경 전" 문자열이 이미 없으면 그 항목은
+건너뛰고 보고만 할 것 — 두 번 실행해도 결과가 같아야 함):
 "International Patent" 절
-1. "Steerable and flexible robotic endoscopic tools ..." Canada 줄:
-     "CA3132642, patent pending (2020.3.4)"  →  "CA3132642, (2026.9.29)"
-2. 같은 제목의 US 계속출원 줄:
-     "US19/196,285, patent pending (2025.5.1) - Continuation Application"
-     →  "US12,557,970B2, (2026.2.24) - Divisional Application"
-     (USPTO 공보상 "Division of application No. 17/433,165" — 계속출원이 아니라 분할출원)
-3. "Voice-Activated, Compact, and Portable Robotic System" US 계속출원 줄:
-     "US18/924,569, patent pending (2024.10.23) - Continuation Application"
-     →  "US12,576,517B2, (2026.3.17) - Continuation Application"
-4. 철자 정정: "Japen Patent" → "Japan Patent" (3곳 모두)
+1. "CA3132642, patent pending (2020.3.4)"  →  "CA3132642C, (2026.9.29)"
+   (주의: 바로 아래 Voice 패밀리의 "CA3132645, patent pending (2020.3.4)"는 그대로 둔다)
+2. "US19/196,285, patent pending (2025.5.1) - Continuation Application"
+   →  "US12557970B2 (2026.2.24) - Divisional Application"
+3. "US18/924,569, patent pending (2024.10.23) - Continuation Application"
+   →  "US12576517B2 (2026.3.17) - Continuation Application"
+4. JP7411317B2 줄의 저자: "J. P. Desai, Y. Chitalia, S. Jeong, and J. J Chern, “Small and portable robot
+   systems with voice recognition,”" 에서 저자 부분만
+   "J. P. Desai, Y. Chitalia, S. Jeong, and J. J Chern"  →  "J. P. Desai, S. Jeong, P. Tran, and X. Wang"
+   (이 저자 문자열은 내시경 도구 줄들에도 있으니 반드시 "Small and portable robot systems" 줄에서만 바꿀 것)
+5. 철자: "Japen Patent" → "Japan Patent" (3곳 모두)
+6. 표기 통일(교수 기존 US 표기 "US12318067B2 (2025.6.3)"에 맞춤):
+   "US12,752,086B2, (2026.10.6)" → "US12752086B2 (2026.10.6)"
 "Domestic Patent" 절
-5. "줄 꼬임 기반의 듀얼 모드 트랜스미션 메커니즘" 줄의 "10-1870733, (2017)" → "10-1870733, (2018)"
-   (등록일 2018-06-26)
-6. "로봇용 핸드" 줄의 "10-2927194" 뒤에 " (2026)" 추가 (등록일 2026-02-13)
+7. "줄 꼬임 기반의 듀얼 모드 트랜스미션 메커니즘" 줄: "10-1870733, (2017)" → "10-1870733, (2018)",
+   같은 줄 저자 "정석환 임정민" → "정석환, 임정민" (쉼표 누락)
+8. "로봇용 핸드" 줄 끝의 "10-2927194" 뒤에 " (2026)" 추가 — 이미 "(2026)"이 붙어 있으면 건너뜀.
+   (이 줄 저자 목록은 바꾸지 말 것 — 교수 확인 대기)
 공통
-7. 페이지 머리글 날짜 "September 25, 2026" → "October 8, 2026"
-8. 저장(같은 파일명·같은 위치에 덮어쓰기 — 새 파일을 만들지 말 것).
-9. Word로 같은 폴더에 PDF 내보내기(기존 PDF 덮어쓰기 — Drive 파일 id 유지용):
-     CV+Research Statement_Jeong, Seokhwan_(Most recent).pdf
-10. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 바뀐 줄 6개의 최종 텍스트,
-    PDF 쪽수, 저장 시각. 찾지 못한 줄이 있으면 그 줄을 그대로 보고(임의 수정 금지).
-11. .bridge-done 에 task-007 기록.
+9. 페이지 머리글 날짜 "September 25, 2026" → "October 8, 2026"
+10. 저장(같은 파일명·같은 위치에 덮어쓰기 — 새 파일을 만들지 말 것).
+11. Word로 같은 폴더에 PDF 내보내기(기존 PDF 덮어쓰기 — Drive 파일 id 유지용).
+12. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 1~4번·6~8번 줄의 최종 텍스트 각각,
+    5번 "Japan Patent" 3곳 확인 여부, 머리글 날짜, PDF 쪽수, 저장 시각. 건너뛴 항목은 이유와 함께.
+13. .bridge-done 에 task-007 기록.

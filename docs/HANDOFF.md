@@ -52,9 +52,14 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   2026-03-17) — 둘 다 USPTO 공보 1면 확인, 사이트 note 연도는 맞았으나 번호가 출원번호로만 있었고 CV는
   pending. 사이트 수정: 두 패밀리 numbers를 등록번호로, COAST CN→115916317B, **하지 근력 보조 장치 KR
   10-2023-0152159는 'registered 2025.05'가 실은 공개일(KR 10-2025-0066312 A, 2025-05-13)** → status filed.
-  CV는 브릿지 task-007(6개 줄 + Japen→Japan 오타 + 머리글 October 8, 2026). 미확인 관찰: CV의 JP7411317
-  (Voice 패밀리) 저자 표기가 "Desai, Chitalia, Jeong, Chern"인데 이 패밀리 US 공보 발명자는 Desai·Jeong·
-  Tran·Wang — 교수 확인 필요. 진행 중(등록 아님): EP 21793176.5, KR 10-2024-0038169, CA 3175811/3132645.
+  CV는 브릿지 task-007: CA3132642C·US12557970B2(분할)·US12576517B2(계속) 반영, 교수 기존 US 표기
+  ("US12318067B2 (2025.6.3)", 쉼표 없음)로 통일(task-006의 "US12,752,086B2, (2026.10.6)"도 정정),
+  JP7411317 저자 정정(공보상 Desai·Jeong·Tran·Wang — CV엔 Chitalia·Chern으로 잘못 적혀 있었음),
+  Japen→Japan, KR 10-1870733 (2017→2018, 등록 2018-06-19), 로봇용 핸드 (2026) 추가, 머리글 October 8.
+  3-렌즈 적대적 리뷰(사실·CV과제·렌더링) 통과 후 배포. JP 날짜는 공보 발행일이 아니라 등록일 기준
+  (JP7411317 등록 2023-12-27). **교수 확인 필요**: CV '로봇용 핸드'(10-2927194) 발명자가 Google Patents엔
+  5명(김형철·박준건·정석환·정성호·손유진, 유진엠에스 공동)인데 CV엔 3명. 진행 중(등록 아님):
+  EP 21793176.5·EP 20766820.3·EP 20766664.5, KR 10-2024-0038169, CA 3175811·3132645.
 - COAST 미국 특허 발행 확인 (2026-10-07, 예약 작업 trig_01LePxihKCs6SPrwBGHn7Tn9): USPTO 공보 PDF
   (image-ppubs.uspto.gov/.../downloadPdf/12752086) 1면에서 US 12,752,086 B2, Date of Patent Oct. 6, 2026
   확인. patents.ts COAST note → "US 12,752,086 B2, Oct 6, 2026", link → USPTO 공보 PDF(Google Patents는

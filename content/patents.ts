@@ -125,7 +125,7 @@ export const patents: Patent[] = [
     status: 'filed',
     assignee: 'Sogang University · Sejong University · National Rehabilitation Center',
     project: 'lower-limb-exo',
-    note: 'Published 2025.05 (KR 10-2025-0066312 A); under examination',
+    note: 'Published 2025.05 (KR 10-2025-0066312 A); pending',
     image: '/images/patents/lower-limb-assist.webp',
   },
   {
@@ -175,7 +175,7 @@ export const patents: Patent[] = [
     status: 'registered',
     assignee: "Georgia Tech Research Corp. · Children's Healthcare of Atlanta",
     project: 'surgical-robots',
-    note: 'Registered in the US (US 12,318,067 B2, Jun 2025; divisional US 12,557,970 B2, Feb 2026), JP (Aug 2025) and CA (CA 3,132,642, Sep 2026)',
+    note: 'US 12,318,067 B2 (2025.06) · divisional US 12,557,970 B2 (2026.02) · JP 7730614 (2025.08) · CA 3,132,642 (2026.09)',
     link: 'https://patents.google.com/patent/US12318067B2',
   },
   {
@@ -185,7 +185,7 @@ export const patents: Patent[] = [
     status: 'registered',
     assignee: 'Georgia Tech Research Corp.',
     project: 'hand-exoskeletons',
-    note: 'Registered in the US (US 12,179,356 B2, Dec 2024; continuation US 12,576,517 B2, Mar 2026) and JP (Jan 2024)',
+    note: 'US 12,179,356 B2 (2024.12) · continuation US 12,576,517 B2 (2026.03) · JP 7411317 (2023.12)',
     link: 'https://patents.google.com/patent/US12179356B2',
   },
   {
