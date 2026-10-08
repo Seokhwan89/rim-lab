@@ -12,6 +12,8 @@ export const site = {
   applyForm: 'https://forms.gle/iL8kcczz2YYmdbne7',
   /** Lab manager — answers "when is the next open lab meeting?" */
   labContact: 'ryan8834@gmail.com',
+  /** Current lab manager (랩장) — contact for open lab meeting inquiries */
+  labManager: 'Ginwoo Pyo',
   legacy: 'https://rim.sogang.ac.kr/',
 };
 

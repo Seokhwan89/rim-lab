@@ -45,6 +45,10 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- 랩미팅 문의 버튼에 랩장 표기 (2026-10-08, 교수 지시 — 교수 메일로 착각 방지): "Lab meeting inquiries ·
+  Lab manager Ginwoo Pyo ✉ ryan8834@gmail.com". 이름은 content/site.ts `labManager`, 메일은 `labContact` —
+  랩장 교체 시 두 값만 바꾸면 됨.
+
 - 지원 경로 = Application Form 일원화 (2026-10-08, 교수 지시 "메일로 물어보면 놓치니까 모두 form으로"):
   ApplyCard(Opening 상단·메인 Join Us 공용)에서 seokhwan@ 메일 버튼 삭제, 리드 문구를 "form으로 지원, 메일
   지원은 보내지 말 것", 안내문에 "특수한 사정이 있을 때만 메일(seokhwan@)로 사유와 함께" 추가. Opening의

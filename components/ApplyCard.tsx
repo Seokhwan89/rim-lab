@@ -14,7 +14,7 @@ export default function ApplyCard({ className = '' }: { className?: string }) {
         <div className="mt-6 flex flex-wrap gap-3">
           <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-primary">Application Form · 지원서 ↗</a>
           <a href={`mailto:${site.labContact}?subject=Open%20lab%20meeting%20inquiry`} className="btn-ghost">
-            Ask about the lab meeting ✉ {site.labContact}
+            Lab meeting inquiries · Lab manager {site.labManager} ✉ {site.labContact}
           </a>
         </div>
         <p className="mt-6 max-w-3xl text-[13.5px] leading-relaxed text-rim-muted">
