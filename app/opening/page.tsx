@@ -54,7 +54,7 @@ const tracks = [
       'Joint M.S./Ph.D. with the KITECH 3D-Printing Manufacturing Innovation Center',
       'Robot-arm-based large-scale metal 3D printing — equipment, process monitoring & control, AI print-quality prediction',
       'Research at KITECH (Ansan) · coursework at Sogang (Seoul)',
-      'Contact seokhwan@sogang.ac.kr to apply',
+      'Apply through the Application Form at the top of this page (mention the KITECH joint program)',
     ],
   },
 ];

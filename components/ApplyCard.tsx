@@ -9,16 +9,19 @@ export default function ApplyCard({ className = '' }: { className?: string }) {
         <p className="eyebrow">Now recruiting</p>
         <h2 className="h-sub mt-3">How to apply</h2>
         <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-rim-text">
-          Fill in the application form, or email Prof. Seokhwan Jeong with your CV and transcript.
+          Apply through the application form — every submission is reviewed, so please do not send applications by email.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <a href={site.applyForm} target="_blank" rel="noreferrer" className="btn-primary">Application Form · 지원서 ↗</a>
-          <a href={`mailto:${site.email}`} className="btn-ghost">{site.email}</a>
           <a href={`mailto:${site.labContact}?subject=Open%20lab%20meeting%20inquiry`} className="btn-ghost">
             Ask about the lab meeting ✉ {site.labContact}
           </a>
         </div>
         <p className="mt-6 max-w-3xl text-[13.5px] leading-relaxed text-rim-muted">
+          Applications sent by email can easily be missed, so please use the Application Form above. Only if special
+          circumstances prevent you from using the form, email Prof. Seokhwan Jeong ({site.email}) and briefly explain why.
+        </p>
+        <p className="mt-3 max-w-3xl text-[13.5px] leading-relaxed text-rim-muted">
           Undergraduate internships are open to students who hope to join RIM Lab for graduate study or who want to
           explore graduate study here, and are arranged individually; requests made only for general research experience
           (including another university’s internship requirement) are not accepted.
