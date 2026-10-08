@@ -104,26 +104,6 @@ export const courses: Course[] = [
       },
     ],
   },
-  {
-    id: 'mee1006-fall-2026',
-    code: 'MEE1006',
-    title: 'C Programming for Mechanical Engineers',
-    semester: 'Fall 2026',
-    level: 'Undergraduate',
-    desc: 'Programming in C for mechanical engineers — variables, control flow, loops, and the preprocessor, with hands-on Arduino assignments that connect the code to real hardware.',
-    active: true,
-    lectures: [
-      {
-        no: 8,
-        label: '4-2',
-        title: 'Advanced Loops — for Variants, Nested Loops, break · continue, #define',
-        date: '2026-09-22',
-        file: '/lectures/mee1006-fall-2026/week-04-2-advanced-loops.pdf',
-        pages: 19,
-        size: '2.1 MB',
-      },
-    ],
-  },
 ];
 
 export const lectureNotice =

@@ -27,7 +27,6 @@ export const updates: UpdateItem[] = [
   { date: '2026.09.25', kind: 'Service', title: 'Prof. Jeong named Associate Editor for IEEE ICRA 2027', href: '/advisor' },
   { date: '2026.09.25', kind: 'Video', title: 'All lab YouTube videos now on their research project pages', href: '/research' },
   { date: '2026.09.23', kind: 'Publication', title: 'Harness assembly paper published in IEEE T-ASE', href: '/news#2026-09-harness-assembly-paper-published-in-ieee-t-ase' },
-  { date: '2026.09.22', kind: 'Lecture', title: 'MEE1006 C Programming — Week 4-2 slides', href: '/lectures' },
   { date: '2026.09.18', kind: 'Patent', title: 'US continuation filed for the COAST guidewire patent family', href: '/publications' },
   { date: '2026.09.16', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 5 slides', href: '/lectures' },
   { date: '2026.09.13', kind: 'Patent', title: 'COAST steerable guidewire patent granted in Australia', href: '/publications' },
