@@ -13,6 +13,8 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.10.12', kind: 'News', title: 'Prof. Jeong to give an invited talk at KSRM 2026, Seoul (Oct 23)', href: '/news#2026-10-invited-talk-at-ksrm-2026-seoul-upcoming' },
+  { date: '2026.10.12', kind: 'News', title: 'KSME Annual Meeting 2026: two talks by Prof. Jeong and six lab oral presentations (Nov 11–14, Jeju)', href: '/news#2026-11-ksme-annual-meeting-2026-jeju-upcoming' },
   { date: '2026.10.08', kind: 'Patent', title: 'Canadian patent granted for steerable robotic endoscopic tools (CA 3,132,642); 2026 US grants added for the endoscopic-tool and voice-activated families', href: '/publications' },
   { date: '2026.10.07', kind: 'Patent', title: 'COAST steerable guidewire patent issued in the US — US 12,752,086 B2 (Oct 6, 2026)', href: '/publications' },
   { date: '2026.10.06', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 8 slides: Frequency Response and System Concepts', href: '/lectures' },

@@ -45,6 +45,15 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- 새 소식 2건 (2026-10-12, 교수 "1, 2 올려줘"): ①KSRM 2026(제45회 대한미세수술학회) 초청강연 10/23 11:05,
+  세종대 컨벤션홀, 세션 Innovation 1 (Robotic Microsurgery), 제목은 9/23 최종 안내 기준 "Muscle, Tendon,
+  Sensing and Feedback: What Robotic Hands Still Lack for Surgical Use". ②KSME 2026 기존 예정 뉴스 보강 —
+  교수 구두 2건(00249·00126) + 연구실 구두 6건(00814·00810·00702·00804·00764·00852). 발표자는 프로그램에
+  확인된 하창욱(11/13 로봇공학II)만 이름 표기, 주제는 일반 표현(하네스 2열 조립은 10/12 특허 출원 건이라
+  기술 내용 미기재). 보류: 토론토대–서강대 AI 공동워크숍(10/28, 일정 미확정), KSME 좌장 2건(수락 여부
+  미확인), DDD 그리퍼 언론 인터뷰(The Primary, 기사 미게재), 연구년 승인(내부 행정).
+  유튜브 "RIM Hand Test 1"(3지 핸드 시험 영상, 10/8)은 교수 확인 전까지 미게시.
+
 - 랩미팅 문의 버튼에 랩장 표기 (2026-10-08, 교수 지시 — 교수 메일로 착각 방지): "Lab meeting inquiries ·
   Lab manager Ginwoo Pyo ✉ ryan8834@gmail.com". 이름은 content/site.ts `labManager`, 메일은 `labContact` —
   랩장 교체 시 두 값만 바꾸면 됨.
