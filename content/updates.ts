@@ -2,7 +2,8 @@
 // Add one line here whenever any content goes up — a news item, paper, patent,
 // YouTube video, lecture, team change, etc. Newest first; date = day it went live.
 
-export type UpdateKind = 'News' | 'Publication' | 'Patent' | 'Video' | 'Lecture' | 'Team' | 'Award' | 'Service';
+// Lecture slides are NOT logged here (professor's decision 2026-10-13) — they live only on /lectures.
+export type UpdateKind = 'News' | 'Publication' | 'Patent' | 'Video' | 'Team' | 'Award' | 'Service';
 
 export type UpdateItem = {
   date: string; // YYYY.MM.DD
@@ -13,17 +14,13 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
-  { date: '2026.10.13', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 9 slides: Passive Filter Experiments', href: '/lectures' },
   { date: '2026.10.13', kind: 'Award', title: 'Prof. Jeong named a finalist for the IROS 2026 Outstanding Associate Editor Award', href: '/news#2026-10-prof-jeong-named-a-finalist-for-the-iros-2026-outstanding-associate-edit' },
   { date: '2026.10.12', kind: 'News', title: 'Prof. Jeong to give an invited talk at KSRM 2026, Seoul (Oct 23)', href: '/news#2026-10-invited-talk-at-ksrm-2026-seoul-upcoming' },
   { date: '2026.10.12', kind: 'News', title: 'KSME Annual Meeting 2026: two talks by Prof. Jeong and six lab oral presentations (Nov 11–14, Jeju)', href: '/news#2026-11-ksme-annual-meeting-2026-jeju-upcoming' },
   { date: '2026.10.08', kind: 'Patent', title: 'Canadian patent granted for steerable robotic endoscopic tools (CA 3,132,642); 2026 US grants added for the endoscopic-tool and voice-activated families', href: '/publications' },
   { date: '2026.10.07', kind: 'Patent', title: 'COAST steerable guidewire patent issued in the US — US 12,752,086 B2 (Oct 6, 2026)', href: '/publications' },
-  { date: '2026.10.06', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 8 slides: Frequency Response and System Concepts', href: '/lectures' },
   { date: '2026.10.04', kind: 'News', title: 'Prof. Jeong to give an invited talk at Smart&Soft 2026, Jeju (Nov 23)', href: '/news#2026-11-invited-talk-at-smart-soft-2026-jeju-upcoming' },
   { date: '2026.10.03', kind: 'Publication', title: 'Preprint: Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation', href: '/publications' },
-  { date: '2026.10.01', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 7 slides: Circuit Basic Experiments', href: '/lectures' },
-  { date: '2026.09.30', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 6 slides: Transient Analysis', href: '/lectures' },
   { date: '2026.09.25', kind: 'Video', title: 'New video: Zero-shot sim-to-real grasping with the direct-drive gripper', href: '/research/ai-based-multifinger-grasping' },
   { date: '2026.09.25', kind: 'Publication', title: 'Preprint: Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping', href: '/publications' },
   { date: '2026.09.25', kind: 'Award', title: 'Ginwoo Pyo selected for NRF Ph.D. Research Fellowship', href: '/news#2026-09-ginwoo-pyo-selected-for-nrf-ph-d-research-fellowship' },
@@ -32,9 +29,7 @@ export const updates: UpdateItem[] = [
   { date: '2026.09.25', kind: 'Video', title: 'All lab YouTube videos now on their research project pages', href: '/research' },
   { date: '2026.09.23', kind: 'Publication', title: 'Harness assembly paper published in IEEE T-ASE', href: '/news#2026-09-harness-assembly-paper-published-in-ieee-t-ase' },
   { date: '2026.09.18', kind: 'Patent', title: 'US continuation filed for the COAST guidewire patent family', href: '/publications' },
-  { date: '2026.09.16', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 5 slides', href: '/lectures' },
   { date: '2026.09.13', kind: 'Patent', title: 'COAST steerable guidewire patent granted in Australia', href: '/publications' },
-  { date: '2026.09.10', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 4 slides', href: '/lectures' },
   { date: '2026.09.09', kind: 'Team', title: 'Gyungseo Choi joins as an undergraduate fellow', href: '/team' },
 ];
 
@@ -43,7 +38,6 @@ export const updateColors: Record<UpdateKind, string> = {
   Publication: 'text-violet-300 border-violet-300/40 bg-violet-300/10',
   Patent: 'text-emerald-300 border-emerald-300/40 bg-emerald-300/10',
   Video: 'text-rose-300 border-rose-300/40 bg-rose-300/10',
-  Lecture: 'text-sky-300 border-sky-300/40 bg-sky-300/10',
   Team: 'text-slate-300 border-slate-300/40 bg-slate-300/10',
   Award: 'text-amber-300 border-amber-300/40 bg-amber-300/10',
   Service: 'text-teal-300 border-teal-300/40 bg-teal-300/10',

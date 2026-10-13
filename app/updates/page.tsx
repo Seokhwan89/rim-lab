@@ -4,7 +4,7 @@ import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import { updates, updateColors, type UpdateKind } from '@/content/updates';
 
-const FILTERS: ('All' | UpdateKind)[] = ['All', 'News', 'Publication', 'Patent', 'Video', 'Lecture', 'Award', 'Service', 'Team'];
+const FILTERS: ('All' | UpdateKind)[] = ['All', 'News', 'Publication', 'Patent', 'Video', 'Award', 'Service', 'Team'];
 
 export default function UpdatesPage() {
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>('All');
@@ -17,7 +17,7 @@ export default function UpdatesPage() {
       <PageHero
         eyebrow="Updates"
         title={<>What&apos;s <span className="grad-cyan">new</span> on the site</>}
-        desc="Every addition to this site — news, papers, patents, videos, lectures, and team changes — newest first."
+        desc="Every addition to this site — news, papers, patents, videos, and team changes — newest first."
       />
       <section className="bg-rim-bg py-16">
         <div className="container-site">
