@@ -49,7 +49,9 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   빠짐): 10/13 Eiichi Yoshida(EiC) 메일 + 첨부 인증서 PDF → 뉴스(인증서 WebP), Advisor honors, Latest Updates.
   '수상(winner)'이 아니라 '최종 후보(finalist)'로 정확히 표기.
   교수가 보낸 발표 슬라이드 사진(16명 finalist 명단)은 GT Lunar Lab(Lu Gan, 공동 finalist) 블로그 갤러리 이미지와
-  동일 → 대표 이미지로 쓰고 출처 링크(links)로 크레딧 표기. 인증서는 갤러리 두 번째.
+  동일 → 한때 대표 이미지+출처 링크로 올렸다가, 교수 지시로 **사진 내림**(10/13). 교수가 Lu Gan 교수
+  (lgan@gatech.edu)에게 홈페이지 게시 허락 메일 발송함. 허락 회신이 오면 커밋 8a2d71d의
+  public/images/news/2026-10-iros-oae-finalists-slide.webp와 links 항목을 되살리면 됨. 현재는 인증서만 표시.
 
 - 새 소식 2건 (2026-10-12, 교수 "1, 2 올려줘"): ①KSRM 2026(제45회 대한미세수술학회) 초청강연 10/23 11:05,
   세종대 컨벤션홀, 세션 Innovation 1 (Robotic Microsurgery), 제목은 9/23 최종 안내 기준 "Muscle, Tendon,
