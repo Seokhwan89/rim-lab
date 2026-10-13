@@ -45,6 +45,7 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- MEE4033 Lecture 9 — Passive Filter Experiments 슬라이드 추가 (2026-10-13, 30쪽, 4.7 MB), Latest Updates 등록.
 - IROS 2026 Outstanding Associate Editor Award **Finalist** (2026-10-13, 교수 지시 "홈페이지에 기재" — CV는 요청에서
   빠짐): 10/13 Eiichi Yoshida(EiC) 메일 + 첨부 인증서 PDF → 뉴스(인증서 WebP), Advisor honors, Latest Updates.
   '수상(winner)'이 아니라 '최종 후보(finalist)'로 정확히 표기.

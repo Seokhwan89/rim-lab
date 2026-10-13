@@ -13,6 +13,7 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.10.13', kind: 'Lecture', title: 'MEE4033 Mechatronics — Lecture 9 slides: Passive Filter Experiments', href: '/lectures' },
   { date: '2026.10.13', kind: 'Award', title: 'Prof. Jeong named a finalist for the IROS 2026 Outstanding Associate Editor Award', href: '/news#2026-10-prof-jeong-named-a-finalist-for-the-iros-2026-outstanding-associate-edit' },
   { date: '2026.10.12', kind: 'News', title: 'Prof. Jeong to give an invited talk at KSRM 2026, Seoul (Oct 23)', href: '/news#2026-10-invited-talk-at-ksrm-2026-seoul-upcoming' },
   { date: '2026.10.12', kind: 'News', title: 'KSME Annual Meeting 2026: two talks by Prof. Jeong and six lab oral presentations (Nov 11–14, Jeju)', href: '/news#2026-11-ksme-annual-meeting-2026-jeju-upcoming' },

@@ -39,6 +39,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 9,
+        title: 'Passive Filter Experiments',
+        date: '2026-10-13',
+        file: '/lectures/mee4033-fall-2026/lecture-09-passive-filter-experiments.pdf',
+        pages: 30,
+        size: '4.7 MB',
+      },
+      {
         no: 8,
         title: 'Frequency Response and System Concepts',
         date: '2026-10-06',
