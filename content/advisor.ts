@@ -34,6 +34,7 @@ export const advisor = {
   ],
   honors: [
     { period: '2026 – 2027', text: 'Fulbright Scholar Program (for Faculty and Professionals)' },
+    { period: '2026', text: 'Finalist, Outstanding Associate Editor Award, IEEE/RSJ IROS 2026' },
     { period: '2026', text: 'RED Show Excellence Award, Korea Robotics Society Annual Conference' },
     { period: '2025', text: 'Young Scientist Award, Korea Robotics Society (KROS)' },
     { period: '2025', text: 'Best Paper Award, ICROS' },

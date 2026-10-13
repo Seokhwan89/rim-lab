@@ -45,6 +45,10 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Torque-Observation Alignment …" 데모. AI-based Multifinger Grasping 페이지에
   DDD Gripper 다음(2번째)으로, Robotic Hands 페이지에도 같은 위치로(교수 지시), Publications 해당 항목 video 필드에 연결.
 
+- IROS 2026 Outstanding Associate Editor Award **Finalist** (2026-10-13, 교수 지시 "홈페이지에 기재" — CV는 요청에서
+  빠짐): 10/13 Eiichi Yoshida(EiC) 메일 + 첨부 인증서 PDF → 뉴스(인증서 WebP), Advisor honors, Latest Updates.
+  '수상(winner)'이 아니라 '최종 후보(finalist)'로 정확히 표기.
+
 - 새 소식 2건 (2026-10-12, 교수 "1, 2 올려줘"): ①KSRM 2026(제45회 대한미세수술학회) 초청강연 10/23 11:05,
   세종대 컨벤션홀, 세션 Innovation 1 (Robotic Microsurgery), 제목은 9/23 최종 안내 기준 "Muscle, Tendon,
   Sensing and Feedback: What Robotic Hands Still Lack for Surgical Use". ②KSME 2026 기존 예정 뉴스 보강 —
