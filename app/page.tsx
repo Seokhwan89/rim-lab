@@ -6,7 +6,7 @@ import LiteYouTube from '@/components/LiteYouTube';
 import ProjectIcon from '@/components/ProjectIcon';
 import ApplyCard from '@/components/ApplyCard';
 import { researchAreas, projects } from '@/content/projects';
-import { featuredVideos, heroReel } from '@/content/videos';
+import { featuredVideos, heroReel, playlistSnapshot } from '@/content/videos';
 import { getResearchPlaylist } from '@/lib/playlist';
 import { news, categoryColors, type NewsCategory } from '@/content/news';
 import { updates, updateColors } from '@/content/updates';
@@ -25,13 +25,23 @@ const newsGroups: { label: string; cats: NewsCategory[] }[] = [
   { label: 'Members & Alumni', cats: ['Members', 'Lab Life'] },
 ];
 
-/** Fetch the playlist once at build time and prerender — refreshed on every deploy */
+/**
+ * Prerendered, then regenerated in the background at most every 10 minutes (ISR) so new
+ * uploads to the YouTube "Research" playlist show up without a redeploy. Visitors always
+ * get the cached page; regeneration costs one server render per 10 min, only when visited.
+ */
 export const dynamic = 'force-static';
+export const revalidate = 600;
 
 export default async function Home() {
   const featured = featuredVideos.slice(0, 2);
   const featuredIds = new Set(featured.map((v) => v.id));
   const playlistAll = await getResearchPlaylist();
+  // A failed YouTube fetch during background regeneration must not replace the last good
+  // page with the static snapshot: throwing keeps the previous version (build still falls back).
+  if (playlistAll === playlistSnapshot && process.env.NEXT_PHASE !== 'phase-production-build') {
+    throw new Error('Research playlist fetch failed; keeping the previous page');
+  }
   const playlist = playlistAll.filter((v) => !featuredIds.has(v.id));
   return (
     <>

@@ -11,7 +11,8 @@ function ageSeconds(metaJson: string): number {
 }
 
 /**
- * Fetch the full YouTube "Research" playlist at build time (no API key).
+ * Fetch the full YouTube "Research" playlist (no API key) — at build time and on each
+ * ISR regeneration of the home page (data cached 10 min).
  * Falls back to the RSS feed (first 15 items) and then to the static
  * snapshot in content/videos.ts, so a blocked fetch can never break the build.
  */
@@ -26,7 +27,7 @@ export async function getResearchPlaylist(): Promise<Video[]> {
           context: { client: { clientName: 'WEB', clientVersion: '2.20240101.00.00' } },
           browseId: `VL${heroPlaylistId}`,
         }),
-        cache: 'no-store',
+        next: { revalidate: 600 },
       }
     );
     if (res.ok) {
@@ -67,7 +68,7 @@ export async function getResearchPlaylist(): Promise<Video[]> {
     }
   } catch { /* fall through */ }
   try {
-    const res = await fetch(`https://www.youtube.com/feeds/videos.xml?playlist_id=${heroPlaylistId}`, { cache: 'no-store' });
+    const res = await fetch(`https://www.youtube.com/feeds/videos.xml?playlist_id=${heroPlaylistId}`, { next: { revalidate: 600 } });
     if (res.ok) {
       const xml = await res.text();
       const ids: string[] = [];

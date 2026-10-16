@@ -68,6 +68,11 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- 메인 페이지 ISR 10분 (2026-10-16, 교수 지시): app/page.tsx `revalidate = 600`, lib/playlist.ts fetch
+  `next: { revalidate: 600 }` → Research 재생목록 새 영상이 재배포 없이 ~10분 내 메인 그리드·히어로 첫 클립 목록에
+  반영. 배포 저장소 미사용, 갱신은 10분에 최대 1회(방문 있을 때만). 런타임 재생성 중 유튜브 fetch가 실패해
+  스냅샷으로 떨어지면 throw → 직전 정상 페이지 유지(빌드 때는 기존대로 스냅샷 폴백).
+  히어로 배경 영상은 원래 브라우저가 유튜브에서 직접 재생목록을 받아오므로 Vercel 자원과 무관.
 
 - 랩미팅 문의 버튼에 랩장 표기 (2026-10-08, 교수 지시 — 교수 메일로 착각 방지): "Lab meeting inquiries ·
   Lab manager Ginwoo Pyo ✉ ryan8834@gmail.com". 이름은 content/site.ts `labManager`, 메일은 `labContact` —
