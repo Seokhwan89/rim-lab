@@ -65,7 +65,9 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   확인된 하창욱(11/13 로봇공학II)만 이름 표기, 주제는 일반 표현(하네스 2열 조립은 10/12 특허 출원 건이라
   기술 내용 미기재). 보류: 토론토대–서강대 AI 공동워크숍(10/28, 일정 미확정), KSME 좌장 2건(수락 여부
   미확인), DDD 그리퍼 언론 인터뷰(The Primary, 기사 미게재), 연구년 승인(내부 행정).
-  유튜브 "RIM Hand Test 1"(3지 핸드 시험 영상, 10/8)은 교수 확인 전까지 미게시.
+  유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
+  Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
+  있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
 
 - 랩미팅 문의 버튼에 랩장 표기 (2026-10-08, 교수 지시 — 교수 메일로 착각 방지): "Lab meeting inquiries ·
   Lab manager Ginwoo Pyo ✉ ryan8834@gmail.com". 이름은 content/site.ts `labManager`, 메일은 `labContact` —
