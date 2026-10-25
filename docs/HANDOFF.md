@@ -68,6 +68,17 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- 메일 점검 업데이트 (2026-10-25, 교수 "홈페이지 업데이트할 거 메일에서 찾고 CV에도 반영해 PDF 업데이트"):
+  ①「하지 근력 보조 장치」KR 10-2980945 등록(2026-06-17; 산학협력단 10/20 메일 + Google Patents KR102980945B1
+  등록공고 2026-06-24) → patents.ts registered·링크, Latest Updates 1줄. CV는 브릿지 task-008(줄 교체 + 머리글
+  10/25 + PDF 재출력; CV는 교수 PC 원본 → Drive 자동 동기화라 홈페이지 CV 링크는 그대로). ②서강–토론토 AI
+  공동워크숍 10/28 일정 확정(앵커사업단 10/21 메일 PDF): 교수 발표 "Mechanism and Control Co-Design for
+  Dexterous Robotic Hands and Grippers in Physical AI", Session 2 (Physical AI…), A401B 16:40 → 뉴스 + Latest
+  Updates. ③10/23 "로봇용 핸드" 10-2927194 등록 메일은 이미 사이트·CV 반영분(중복). ④CV 10/13자 PDF에 IROS
+  finalist가 교수 손으로 이미 들어가 있음(Honors). CV에는 초청강연 절이 없어 강연은 CV에 넣지 않음.
+  **보류(교수 확인)**: 유온로보틱스 초청강연(11/2 14:00 대전, 로봇 파지·AI — 기업 R&D 과제 내부 강연이라
+  게시 여부 미정), TBME 리뷰논문(Chitalia 외) minor revision(게재 전), 현대모비스 산학 미팅·피아로보틱스 TRL
+  제안서(비공개), ICRA 2027 T-ASE 발표옵션 제출(결과 전).
 - 메인 페이지 ISR 10분 (2026-10-16, 교수 지시): app/page.tsx `revalidate = 600`, lib/playlist.ts fetch
   `next: { revalidate: 600 }` → Research 재생목록 새 영상이 재배포 없이 ~10분 내 메인 그리드·히어로 첫 클립 목록에
   반영. 배포 저장소 미사용, 갱신은 10분에 최대 1회(방문 있을 때만). 런타임 재생성 중 유튜브 fetch가 실패해

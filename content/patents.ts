@@ -120,12 +120,13 @@ export const patents: Patent[] = [
   {
     title: 'Lower-limb force assistance device',
     titleKo: '하지 근력 보조 장치',
-    numbers: 'KR 10-2023-0152159',
+    numbers: 'KR 10-2980945',
     year: 2023,
-    status: 'filed',
+    status: 'registered',
     assignee: 'Sogang University · Sejong University · National Rehabilitation Center',
     project: 'lower-limb-exo',
-    note: 'Published 2025.05 (KR 10-2025-0066312 A); pending',
+    note: 'Registered 2026.06 (filed 2023.11 as KR 10-2023-0152159)',
+    link: 'https://patents.google.com/patent/KR102980945B1',
     image: '/images/patents/lower-limb-assist.webp',
   },
   {
