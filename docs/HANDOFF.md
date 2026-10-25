@@ -74,10 +74,9 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   10/25 + PDF 재출력; CV는 교수 PC 원본 → Drive 자동 동기화라 홈페이지 CV 링크는 그대로). ②서강–토론토 AI
   공동워크숍 10/28 일정 확정(앵커사업단 10/21 메일 PDF): 교수 발표 "Mechanism and Control Co-Design for
   Dexterous Robotic Hands and Grippers in Physical AI", Session 2 (Physical AI…), A401B 16:40 → 뉴스 + Latest
-  Updates. ③10/23 "로봇용 핸드" 10-2927194 등록 메일은 이미 사이트·CV 반영분(중복). ④CV 10/13자 PDF에 IROS
+  Updates에 올렸다가 **교수 지시로 내림(10/25, 게시 안 함)**. 유온로보틱스 초청강연(11/2)도 교수 지시로 게시 안 함. ③10/23 "로봇용 핸드" 10-2927194 등록 메일은 이미 사이트·CV 반영분(중복). ④CV 10/13자 PDF에 IROS
   finalist가 교수 손으로 이미 들어가 있음(Honors). CV에는 초청강연 절이 없어 강연은 CV에 넣지 않음.
-  **보류(교수 확인)**: 유온로보틱스 초청강연(11/2 14:00 대전, 로봇 파지·AI — 기업 R&D 과제 내부 강연이라
-  게시 여부 미정), TBME 리뷰논문(Chitalia 외) minor revision(게재 전), 현대모비스 산학 미팅·피아로보틱스 TRL
+  **보류(교수 확인)**: TBME 리뷰논문(Chitalia 외) minor revision(게재 전), 현대모비스 산학 미팅·피아로보틱스 TRL
   제안서(비공개), ICRA 2027 T-ASE 발표옵션 제출(결과 전).
 - 메인 페이지 ISR 10분 (2026-10-16, 교수 지시): app/page.tsx `revalidate = 600`, lib/playlist.ts fetch
   `next: { revalidate: 600 }` → Research 재생목록 새 영상이 재배포 없이 ~10분 내 메인 그리드·히어로 첫 클립 목록에

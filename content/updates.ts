@@ -14,7 +14,6 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
-  { date: '2026.10.25', kind: 'News', title: 'Prof. Jeong to speak at the Sogang–Toronto AI Joint Workshop (Oct 28)', href: '/news#2026-10-sogang-toronto-ai-joint-workshop-oct-28-upcoming' },
   { date: '2026.10.25', kind: 'Patent', title: 'Korean patent granted for the lower-limb force assistance device (KR 10-2980945, with NRC and Sejong Univ.)', href: '/publications' },
   { date: '2026.10.16', kind: 'Video', title: 'New videos: RIM Hand Test 1 & 2', href: '/research/robotic-hands' },
   { date: '2026.10.13', kind: 'Award', title: 'Prof. Jeong named a finalist for the IROS 2026 Outstanding Associate Editor Award', href: '/news#2026-10-prof-jeong-named-a-finalist-for-the-iros-2026-outstanding-associate-edit' },
