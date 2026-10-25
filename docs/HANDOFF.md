@@ -71,7 +71,9 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
 - 메일 점검 업데이트 (2026-10-25, 교수 "홈페이지 업데이트할 거 메일에서 찾고 CV에도 반영해 PDF 업데이트"):
   ①「하지 근력 보조 장치」KR 10-2980945 등록(2026-06-17; 산학협력단 10/20 메일 + Google Patents KR102980945B1
   등록공고 2026-06-24) → patents.ts registered·링크, Latest Updates 1줄. CV는 브릿지 task-008(줄 교체 + 머리글
-  10/25 + PDF 재출력; CV는 교수 PC 원본 → Drive 자동 동기화라 홈페이지 CV 링크는 그대로). ②서강–토론토 AI
+  10/25 + PDF 재출력; CV는 교수 PC 원본 → Drive 자동 동기화라 홈페이지 CV 링크는 그대로) — **PC 수행 완료**
+  (Drive PDF 10/25 01:32Z 갱신, 7쪽; 클라우드가 PDF 디코드로 "South Korea Patent, 10-2980945 (2026)" 줄과
+  머리글 "October 25, 2026" 7곳 확인, 'patent pending' 잔여 없음). ②서강–토론토 AI
   공동워크숍 10/28 일정 확정(앵커사업단 10/21 메일 PDF): 교수 발표 "Mechanism and Control Co-Design for
   Dexterous Robotic Hands and Grippers in Physical AI", Session 2 (Physical AI…), A401B 16:40 → 뉴스 + Latest
   Updates에 올렸다가 **교수 지시로 내림(10/25, 게시 안 함)**. 유온로보틱스 초청강연(11/2)도 교수 지시로 게시 안 함. ③10/23 "로봇용 핸드" 10-2927194 등록 메일은 이미 사이트·CV 반영분(중복). ④CV 10/13자 PDF에 IROS
