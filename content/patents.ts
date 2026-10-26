@@ -20,6 +20,16 @@ export type Patent = {
 /** Patent families, newest first. Same-invention filings in multiple countries are grouped as one entry. */
 export const patents: Patent[] = [
   {
+    title: 'Automated assembly system for two-row flexible ribbon harness cables',
+    titleKo: '2열 플렉시블 리본형 하네스 케이블의 자동 조립 시스템',
+    numbers: 'KR 10-2026-0195251',
+    year: 2026,
+    status: 'filed',
+    assignee: 'Sogang University',
+    project: 'factory-automation',
+    note: 'Filed 2026.10.12 (provisional); regular filing with domestic priority in progress',
+  },
+  {
     title: 'Fingertip 3-axis force estimation from actuator current in a direct-drive differential mechanism',
     titleKo: '직구동 차동 메커니즘 기반 구동기 전류를 이용한 손끝 3축 힘 추정 방법',
     numbers: 'KR 10-2026-0177849',
