@@ -1,5 +1,4 @@
 {
- "note": "Daily visitor counts preserved from Vercel Web Analytics (Korean calendar days).",
  "days": {
   "2026-09-28": {
    "visitors": 0,
@@ -126,5 +125,6 @@
    "pageviews": 0
   }
  },
- "updated": "2026-10-29 22:58 KST"
+ "note": "Daily visitor counts preserved from Vercel Web Analytics (UTC calendar days = KST 09:00 to next 09:00). Days with page views also keep top pages / referrers / countries as {label: [visitors, pageviews]}.",
+ "updated": "2026-10-29 23:02 KST"
 }
