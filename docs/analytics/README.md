@@ -31,6 +31,11 @@ VERCEL_TOKEN=xxx python3 scripts/snapshot-analytics.py --days 40
 
 ## 집계 범위
 
-- 2026-09-19부터. 그 이전(리뉴얼~9/18)은 분석 도구가 없었으므로 데이터가 존재하지 않는다.
+- **실제 데이터는 2026-10-29부터.** `<Analytics />`는 9/19에 넣었지만 Vercel 프로젝트의 Web Analytics
+  기능 자체는 10/29에 교수가 켰다(그 전엔 스크립트가 404라 수집 0). 10/29 조회 결과: 9/30~10/28 전부 0,
+  10/29 방문자 1·페이지뷰 2. 그 이전 수치는 존재하지 않는다.
+- 조회 경로가 둘이다: ①Claude 세션에 연결된 **Vercel MCP 연동**(count_pageviews / aggregate_pageviews,
+  team sogang-me · project rim-lab) — 대화형 세션에서는 토큰 없이 됨. ②`scripts/snapshot-analytics.py`
+  — 자동 Routine용, `VERCEL_TOKEN` 필요(Routine의 새 세션에는 MCP 연동이 없을 수 있음).
 - 검색엔진·AI 크롤러는 robots.txt로 차단돼 있고 이 방식은 자바스크립트를 실행하는
   실제 브라우저만 세므로, 수치는 사람 방문에 가깝다.
