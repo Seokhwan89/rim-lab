@@ -221,3 +221,19 @@ task-007은 10/13자 PDF(Drive)로 완료 확인됨.)
 6. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 추가된 두 줄의 최종 텍스트, 머리글 날짜, PDF 쪽수, 저장 시각.
 7. .bridge-done 에 task-009 기록.
 
+## task-010 (2026-10-29) — Vercel 방문자 통계 화면 수집 (로그인된 크롬)
+(교수가 클라우드 세션에서 "홈페이지 방문자 통계 보여줘 → 크롬 조작해서 해봐"라고 지시. 클라우드에는 크롬 확장도
+VERCEL_TOKEN도 없어 PC의 로그인된 크롬으로 위임.)
+
+할 일:
+1. 크롬으로 https://vercel.com/sogang-me/rim-lab/analytics 열기 (로그인돼 있지 않으면 중단하고 보고 — 비밀번호 입력
+   금지). 기간을 "Last 30 days"로 두고 Visitors / Page Views 요약 숫자와 일별 그래프, Pages·Referrers·Countries
+   상위 목록이 보이도록 전체 페이지 스크린샷 저장.
+2. 가능하면 같은 화면에서 숫자를 텍스트로도 옮겨 적기: 30일 Visitors 합계, Page Views 합계, 일별(날짜: visitors /
+   views), 상위 페이지 5개, 상위 유입 5개, 상위 국가 5개.
+3. 스크린샷(PNG)을 Drive 'RIM 홈페이지 자료함'(id 1sZwOkfRWHPYOfoCm-SxeKTQhXSVAWXw7)에 vercel-analytics-2026-10-29.png
+   로 업로드.
+4. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 2번 숫자 전부 + Drive 파일명. 토큰·쿠키 등 비밀값은 절대
+   보고에 넣지 말 것.
+5. .bridge-done 에 task-010 기록. (task-009가 아직 미수행이면 먼저 수행.)
+
