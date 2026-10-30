@@ -75,7 +75,11 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   Semrush·MJ12·DotBot·BLEXBot·Diffbot)는 차단 유지. ②/llms.txt 신설(AI 시스템용 사이트 요약·페이지 목록).
   ③layout.tsx에 ResearchOrganization JSON-LD 추가. ④Vercel Firewall Bot Protection(challenge)은 API(PATCH/PUT
   모두 "Seawall Config not found" 404)로 못 켬 — 대시보드 Firewall 탭에서 최초 1회 켜야 하는 듯, 교수에게 안내.
-  ⑤Google Search Console·네이버 서치어드바이저 등록 흔적 없음(메일 검색) — 등록 권고.
+  ⑤Google Search Console: 교수가 10/30 등록(소유권 DNS 자동 확인) → 교수 PC의 Claude in Chrome으로 sitemap.xml 제출
+  (처리 완료, 발견 18페이지), /·/publications·/advisor 색인 요청(셋 다 이미 색인돼 있었고 실제 URL 테스트 "등록 가능"
+  → **방화벽 챌린지가 Googlebot을 막지 않음** 확인), robots.txt "유효". 교수가 Vercel Bot Protection도 켬(사이트 응답에
+  x-vercel-mitigated: challenge; API는 여전히 Seawall 404라 설정 조회 불가). 네이버 서치어드바이저는 미등록.
+  다음 점검: 11월 중순 Search Console 실적·페이지 보고서 해석.
 - MEE4033 Lecture 10 — Digital System Implementation: Interrupts 슬라이드 추가 (2026-10-29, 22쪽, 3.4 MB; Latest Updates 미게재 규칙 유지).
 - 하네스 가출원 게시 (2026-10-26, 교수 "하네스 케이블 특허 최근 가출원 올라갔나"): 산학협력단 10/12 메일 —
   「2열 플렉시블 리본형 하네스 케이블의 자동 조립 시스템」 KR 10-2026-0195251 (2026-10-12 가출원, 발명자 정석환·
