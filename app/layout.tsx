@@ -46,10 +46,26 @@ export const metadata: Metadata = {
   },
 };
 
+// Structured data so search engines and AI answer engines identify the lab unambiguously.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ResearchOrganization',
+  name: 'RIM Lab — Robotics and Intelligent Mechanisms Lab',
+  alternateName: 'RIM Lab, Sogang University',
+  url: 'https://rim.sogang.ac.kr',
+  logo: 'https://rim.sogang.ac.kr/logo/rim-mark.png',
+  parentOrganization: { '@type': 'CollegeOrUniversity', name: 'Sogang University', url: 'https://www.sogang.ac.kr' },
+  department: { '@type': 'Organization', name: 'Department of Mechanical Engineering, Sogang University', url: 'https://me.sogang.ac.kr' },
+  founder: { '@type': 'Person', name: 'Seokhwan Jeong', jobTitle: 'Associate Professor', url: 'https://rim.sogang.ac.kr/advisor' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Seoul', addressCountry: 'KR' },
+  knowsAbout: ['robot hands', 'robotic grippers', 'direct-drive actuation', 'tendon-driven mechanisms', 'variable transmissions', 'magnetic gears', 'force sensing', 'physical AI', 'robotic grasping'],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
       <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         <link rel="preconnect" href="https://www.youtube.com" />
         <link rel="preconnect" href="https://i.ytimg.com" />

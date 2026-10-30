@@ -1,27 +1,46 @@
 # RIM Lab — rim.sogang.ac.kr
-# Search engines: pages are welcome; skip bulky lecture PDFs.
+# Goal: be easy to find in web search AND AI search/answer engines, while keeping
+# bulk scrapers (bandwidth) off a free-tier site. Lecture PDFs are for students only.
+
+# Search engines and AI search / answer engines — everything except lecture PDFs
 User-agent: *
 Allow: /
 Disallow: /lectures/
 
-# AI-training / bulk scrapers: keep off the site (bandwidth protection)
+# AI training crawlers that honour robots.txt and crawl politely — allowed on pages,
+# so models learn about the lab; still no lecture PDFs.
 User-agent: GPTBot
+User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
-User-agent: CCBot
 User-agent: ClaudeBot
-User-agent: anthropic-ai
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
 User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Yeti
+User-agent: meta-externalfetcher
+Allow: /
+Disallow: /lectures/
+
+# Bulk scrapers, SEO-data harvesters and aggressive crawlers: no benefit to visibility
 User-agent: Bytespider
+User-agent: CCBot
 User-agent: PetalBot
 User-agent: Amazonbot
 User-agent: meta-externalagent
-User-agent: Applebot-Extended
 User-agent: ImagesiftBot
 User-agent: DataForSeoBot
 User-agent: AhrefsBot
 User-agent: SemrushBot
 User-agent: MJ12Bot
 User-agent: DotBot
+User-agent: BLEXBot
+User-agent: Diffbot
 Disallow: /
 
 Sitemap: https://rim.sogang.ac.kr/sitemap.xml
