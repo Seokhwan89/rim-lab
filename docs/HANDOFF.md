@@ -68,6 +68,8 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- 표진우(랩장) 메일 주소 변경 (2026-10-31, 본인 메일 요청 → 교수 "읽어봐"): ryan8834@gmail.com → ryan8834@sogang.ac.kr
+  (team.ts, site.ts labContact — Opening의 Lab meeting inquiries 버튼도 같은 값).
 - 검색·AI 노출 + 봇 정책 정리 (2026-10-30, 교수 "AI검색·검색엔진에 잘 노출되게, 무료 한도 지키고 악성 봇은 차단"):
   ①robots.txt 전면 개정 — 검색엔진과 AI 검색/답변 봇(OAI-SearchBot·ChatGPT-User·PerplexityBot·Claude-SearchBot·
   Bingbot·Applebot·Yeti 등)과 예의 바른 AI 학습 크롤러(GPTBot·ClaudeBot·Google-Extended)는 **허용**(단 /lectures/

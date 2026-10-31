@@ -58,7 +58,7 @@ export const phd: Member[] = [
   { name: 'Joon Lee', topic: 'Robot Hand Design and Actuation', background: 'B.S. Sogang Univ. (2023)', email: 'hnj1208@naver.com', photo: '/images/team/joon-lee.webp' },
   { name: 'Seungbeom Noh', topic: 'Metal 3D Printing', background: 'M.S. DGIST · B.S. Tech Univ. of Korea', email: 'suny1357913@kitech.re.kr', photo: '/images/team/seungbeom-noh.webp' },
   { name: 'Yundong Kim', topic: 'Axial Flux Motor', background: 'B.S. Sogang Univ. (2024)', email: 'kydong05020@naver.com', photo: '/images/team/yundong-kim.webp' },
-  { name: 'Ginwoo Pyo', topic: 'Robotic Hand Design', background: 'M.S./B.S. Kangwon Nat’l Univ. (2025/2023)', email: 'ryan8834@gmail.com', photo: '/images/team/ginwoo-pyo.webp' },
+  { name: 'Ginwoo Pyo', topic: 'Robotic Hand Design', background: 'M.S./B.S. Kangwon Nat’l Univ. (2025/2023)', email: 'ryan8834@sogang.ac.kr', photo: '/images/team/ginwoo-pyo.webp' },
   { name: 'Ari Choi', topic: 'Gripper Actuation Mechanism and Control', background: 'M.S. Sogang Univ. (2026) · B.S. Pusan Nat’l Univ. (2023)', email: 'cheg1541@naver.com', photo: '/images/team/ari-choi.webp' },
   { name: 'Chanhyeok Lee', topic: 'LLM-based Robotic Lab Automation', background: 'M.S. Sogang Univ. (2026) · B.S. Hanyang Univ. (2024)', email: 'chanhyeok.lee.development@gmail.com', photo: '/images/team/chanhyeok-lee.webp' },
   { name: 'Junho Choi', topic: 'Variable Transmission Mechanism, MPC Control', background: 'B.S. Sogang Univ. (2024)', email: 'wnsgh3810@naver.com', photo: '/images/team/junho-choi.webp' },
