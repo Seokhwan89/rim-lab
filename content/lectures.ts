@@ -39,6 +39,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 11,
+        title: 'Digital System Implementation: Interrupt Experiments',
+        date: '2026-11-03',
+        file: '/lectures/mee4033-fall-2026/lecture-11-digital-system-implementation-interrupt-experiments.pdf',
+        pages: 15,
+        size: '1.9 MB',
+      },
+      {
         no: 10,
         title: 'Digital System Implementation: Interrupts',
         date: '2026-10-29',
