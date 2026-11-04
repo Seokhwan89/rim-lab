@@ -68,6 +68,9 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- AI Grasping 페이지 특허 보강 (2026-11-04, 교수 "특허가 1개만 있는데 맞아? 그리퍼 관련?"): patents.ts의 project를
+  배열 허용(string | string[])으로 넓히고, DDD 그리퍼(KR 10-2026-0005274·PCT)와 손끝 3축 힘 추정(KR 10-2026-0177849)을
+  robotic-hands + ai-based-multifinger-grasping 양쪽에 표시(기존엔 단축 힘센서 파지 제어 1건만). patentsByProject가 배열 처리.
 - 메일 점검 (2026-11-04, 교수 "홈페이지 업데이트할 거 메일에서 찾아봐", 10/25~11/4): ①**US 19/265,263 등록결정**
   (산학협력단 11/4 메일, 「능동 가변 강성 및 변속 메커니즘이 적용된 보행 로봇」, 교수는 분할출원 안 함) → patents.ts
   note "allowed 2026.11", Latest Updates 1줄, CV는 브릿지 task-011("(approved 2026.11)"). 등록번호 나오면 재갱신.

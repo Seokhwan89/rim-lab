@@ -8,8 +8,8 @@ export type Patent = {
   year: number;
   status: 'registered' | 'filed';
   assignee: string;
-  /** Related research project slug (content/projects.ts) */
-  project?: string;
+  /** Related research project slug(s) (content/projects.ts) — a patent can belong to more than one page */
+  project?: string | string[];
   note?: string;
   /** Public patent-document page (Google Patents) */
   link?: string;
@@ -36,7 +36,7 @@ export const patents: Patent[] = [
     year: 2026,
     status: 'filed',
     assignee: 'Sogang University',
-    project: 'robotic-hands',
+    project: ['robotic-hands', 'ai-based-multifinger-grasping'],
     note: 'Filed 2026.09.17',
   },
   {
@@ -46,7 +46,7 @@ export const patents: Patent[] = [
     year: 2026,
     status: 'filed',
     assignee: 'Sogang University',
-    project: 'robotic-hands',
+    project: ['robotic-hands', 'ai-based-multifinger-grasping'],
   },
   {
     title: 'Quasi-direct-drive robot hand actuation with a nonlinear elastic mechanism and its control',
@@ -224,4 +224,5 @@ export const patents: Patent[] = [
   },
 ];
 
-export const patentsByProject = (slug: string) => patents.filter((p) => p.project === slug);
+export const patentsByProject = (slug: string) =>
+  patents.filter((p) => (Array.isArray(p.project) ? p.project.includes(slug) : p.project === slug));
