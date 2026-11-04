@@ -68,6 +68,12 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- 메일 점검 (2026-11-04, 교수 "홈페이지 업데이트할 거 메일에서 찾아봐", 10/25~11/4): ①**US 19/265,263 등록결정**
+  (산학협력단 11/4 메일, 「능동 가변 강성 및 변속 메커니즘이 적용된 보행 로봇」, 교수는 분할출원 안 함) → patents.ts
+  note "allowed 2026.11", Latest Updates 1줄, CV는 브릿지 task-011("(approved 2026.11)"). 등록번호 나오면 재갱신.
+  ②그 외 게시 대상 없음: TMECH-04-2026-24530 Accepted는 교수가 TE로 다룬 타인 논문, 삼성휴먼테크(김도영)는 심사 중,
+  KSME 동제로 특별세션(송가혜 KIST, 11/13)은 기존 KSME 뉴스에 포함된 발표, 포스코DX 착수회의·삼성미래기술 제안은 비공개,
+  KRoC 2027 조직위는 Advisor에 이미 있음.
 - MEE4033 Lecture 11 — Digital System Implementation: Interrupt Experiments 슬라이드 추가 (2026-11-03, 15쪽, 1.9 MB).
 - 표진우(랩장) 메일 주소 변경 (2026-10-31, 본인 메일 요청 → 교수 "읽어봐"): ryan8834@gmail.com → ryan8834@sogang.ac.kr
   (team.ts, site.ts labContact — Opening의 Lab meeting inquiries 버튼도 같은 값).

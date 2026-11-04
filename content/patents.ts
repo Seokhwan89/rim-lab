@@ -85,6 +85,7 @@ export const patents: Patent[] = [
     status: 'filed',
     assignee: 'Sogang University',
     project: 'compact-variable-transmission',
+    note: 'US application allowed 2026.11 (Notice of Allowance received; registration pending)',
   },
   {
     title: 'Hybrid transmission combining magnetic and mechanical gears',
