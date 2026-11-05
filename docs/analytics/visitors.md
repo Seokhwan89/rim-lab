@@ -2,15 +2,63 @@
 
 Vercel Web Analytics(쿠키 미사용)의 수치를 월 2회 이 파일에 보존한다.
 무료 플랜은 최근 1개월만 조회되므로, 이 파일이 장기 기록의 원본이다.
-집계 시작: 2026-10-29 (Vercel Web Analytics 활성화일 — 그 이전은 데이터 없음) · 최종 갱신: 2026-11-01
+집계 시작: 2026-10-29 (Vercel Web Analytics 활성화일 — 그 이전은 데이터 없음) · 최종 갱신: 2026-11-05
 날짜는 UTC 기준(한국시간 09:00 ~ 다음날 09:00). Vercel이 방문자를 UTC 하루 단위로 세기 때문이다.
 
 ## 월별 합계
 
 | 월 | 방문자 | 페이지뷰 | 집계일수 |
 |---|---:|---:|---:|
+| 2026-11 | 184 | 587 | 4 |
 | 2026-10 | 87 | 289 | 31 |
 | 2026-09 | 0 | 0 | 3 |
+
+## 2026-11 상세 (페이지뷰 기준, 일별 상위 10개 합산)
+
+### 상위 페이지
+
+| 상위 페이지 | 페이지뷰 |
+|---|---:|
+| / | 192 |
+| /team | 83 |
+| /lectures | 70 |
+| /publications | 58 |
+| /advisor | 52 |
+| /opening | 40 |
+| /news | 38 |
+| /research | 31 |
+| Others | 23 |
+| /research/robotic-hands | 9 |
+
+### 유입 사이트
+
+| 유입 사이트 | 페이지뷰 |
+|---|---:|
+| (direct) | 540 |
+| google.com | 33 |
+| eclass.sogang.ac.kr | 10 |
+| youtube.com | 9 |
+| bing.com | 6 |
+| cyber.sogang.ac.kr | 5 |
+| search.naver.com | 3 |
+| m.youtube.com | 2 |
+| aocr.org | 2 |
+| tramsackysu.com | 1 |
+
+### 국가
+
+| 국가 | 페이지뷰 |
+|---|---:|
+| KR | 508 |
+| US | 52 |
+| SG | 7 |
+| VN | 6 |
+| PT | 6 |
+| NZ | 4 |
+| HK | 4 |
+| CN | 4 |
+| AU | 3 |
+| JP | 3 |
 
 ## 2026-10 상세 (페이지뷰 기준, 일별 상위 10개 합산)
 
@@ -27,7 +75,7 @@ Vercel Web Analytics(쿠키 미사용)의 수치를 월 2회 이 파일에 보�
 | /news | 11 |
 | /research/robotic-hands | 6 |
 | /research/factory-automation | 3 |
-| /channel/UCp4ll6qZqm-TCgj-9Ewyv5g | 2 |
+| /research | 2 |
 
 ### 유입 사이트
 
@@ -52,13 +100,17 @@ Vercel Web Analytics(쿠키 미사용)의 수치를 월 2회 이 파일에 보�
 | JP | 3 |
 | CN | 1 |
 | MX | 1 |
+| SK | 1 |
 | TH | 1 |
-| TN | 1 |
 
 ## 최근 31일
 
 | 날짜 | 방문자 | 페이지뷰 | 상위 페이지 |
 |---|---:|---:|---|
+| 2026-11-04 | 59 | 166 | / (57), /lectures (31), /team (24) |
+| 2026-11-03 | 53 | 171 | / (59), /team (22), /publications (21) |
+| 2026-11-02 | 50 | 167 | / (57), /team (26), /opening (16) |
+| 2026-11-01 | 22 | 83 | / (19), /lectures (13), /publications (11) |
 | 2026-10-31 | 22 | 67 | / (18), /team (14), /advisor (10) |
 | 2026-10-30 | 53 | 181 | / (67), /lectures (58), /team (18) |
 | 2026-10-29 | 12 | 41 | / (12), /team (9), /publications (7) |
@@ -86,9 +138,5 @@ Vercel Web Analytics(쿠키 미사용)의 수치를 월 2회 이 파일에 보�
 | 2026-10-07 | 0 | 0 |  |
 | 2026-10-06 | 0 | 0 |  |
 | 2026-10-05 | 0 | 0 |  |
-| 2026-10-04 | 0 | 0 |  |
-| 2026-10-03 | 0 | 0 |  |
-| 2026-10-02 | 0 | 0 |  |
-| 2026-10-01 | 0 | 0 |  |
 
 원본 데이터: `docs/analytics/visitors.json` · 수집 스크립트: `scripts/snapshot-analytics.py`

@@ -389,8 +389,440 @@
      1
     ]
    }
+  },
+  "2026-11-01": {
+   "visitors": 22,
+   "pageviews": 83,
+   "pages": {
+    "/": [
+     14,
+     19
+    ],
+    "/lectures": [
+     9,
+     13
+    ],
+    "/publications": [
+     9,
+     11
+    ],
+    "/team": [
+     8,
+     11
+    ],
+    "/advisor": [
+     5,
+     10
+    ],
+    "/news": [
+     4,
+     6
+    ],
+    "/opening": [
+     4,
+     7
+    ],
+    "/research": [
+     3,
+     6
+    ],
+    "Others": [
+     2,
+     2
+    ],
+    "/channel/UCp4ll6qZqm-TCgj-9Ewyv5g": [
+     1,
+     1
+    ],
+    "/research/ai-based-multifinger-grasping": [
+     1,
+     1
+    ]
+   },
+   "referrers": {
+    "(direct)": [
+     20,
+     79
+    ],
+    "aocr.org": [
+     2,
+     2
+    ],
+    "google.com": [
+     2,
+     2
+    ],
+    "youtube.com": [
+     2,
+     3
+    ],
+    "search.naver.com": [
+     1,
+     1
+    ]
+   },
+   "countries": {
+    "KR": [
+     16,
+     75
+    ],
+    "CN": [
+     3,
+     3
+    ],
+    "US": [
+     2,
+     6
+    ],
+    "ES": [
+     1,
+     1
+    ],
+    "SA": [
+     1,
+     1
+    ],
+    "TW": [
+     1,
+     1
+    ]
+   }
+  },
+  "2026-11-02": {
+   "visitors": 50,
+   "pageviews": 167,
+   "pages": {
+    "/": [
+     40,
+     57
+    ],
+    "/team": [
+     18,
+     26
+    ],
+    "/lectures": [
+     13,
+     14
+    ],
+    "/opening": [
+     10,
+     16
+    ],
+    "/publications": [
+     9,
+     15
+    ],
+    "/advisor": [
+     8,
+     8
+    ],
+    "/news": [
+     6,
+     7
+    ],
+    "Others": [
+     6,
+     13
+    ],
+    "/research": [
+     5,
+     9
+    ],
+    "/research/factory-automation": [
+     4,
+     5
+    ],
+    "/research/compact-variable-transmission": [
+     2,
+     3
+    ]
+   },
+   "referrers": {
+    "(direct)": [
+     43,
+     151
+    ],
+    "google.com": [
+     10,
+     13
+    ],
+    "eclass.sogang.ac.kr": [
+     3,
+     3
+    ],
+    "youtube.com": [
+     3,
+     3
+    ],
+    "search.naver.com": [
+     2,
+     2
+    ],
+    "bing.com": [
+     1,
+     1
+    ]
+   },
+   "countries": {
+    "KR": [
+     36,
+     146
+    ],
+    "US": [
+     7,
+     14
+    ],
+    "VN": [
+     2,
+     2
+    ],
+    "CN": [
+     1,
+     1
+    ],
+    "DE": [
+     1,
+     2
+    ],
+    "IN": [
+     1,
+     1
+    ],
+    "JP": [
+     1,
+     1
+    ],
+    "LK": [
+     1,
+     2
+    ],
+    "PK": [
+     1,
+     3
+    ],
+    "SG": [
+     1,
+     1
+    ]
+   }
+  },
+  "2026-11-03": {
+   "visitors": 53,
+   "pageviews": 171,
+   "pages": {
+    "/": [
+     43,
+     59
+    ],
+    "/team": [
+     16,
+     22
+    ],
+    "/publications": [
+     14,
+     21
+    ],
+    "/advisor": [
+     13,
+     16
+    ],
+    "/lectures": [
+     11,
+     12
+    ],
+    "/news": [
+     11,
+     15
+    ],
+    "/opening": [
+     9,
+     10
+    ],
+    "/research": [
+     7,
+     9
+    ],
+    "/research/robotic-hands": [
+     4,
+     4
+    ],
+    "/research/factory-automation": [
+     2,
+     2
+    ],
+    "Others": [
+     2,
+     2
+    ]
+   },
+   "referrers": {
+    "(direct)": [
+     51,
+     152
+    ],
+    "google.com": [
+     5,
+     5
+    ],
+    "youtube.com": [
+     3,
+     3
+    ],
+    "bing.com": [
+     2,
+     4
+    ],
+    "cyber.sogang.ac.kr": [
+     2,
+     2
+    ],
+    "eclass.sogang.ac.kr": [
+     2,
+     3
+    ],
+    "m.youtube.com": [
+     1,
+     2
+    ],
+    "tramsackysu.com": [
+     1,
+     1
+    ]
+   },
+   "countries": {
+    "KR": [
+     40,
+     120
+    ],
+    "US": [
+     6,
+     29
+    ],
+    "JP": [
+     2,
+     2
+    ],
+    "VN": [
+     2,
+     4
+    ],
+    "BR": [
+     1,
+     1
+    ],
+    "HK": [
+     1,
+     4
+    ],
+    "PT": [
+     1,
+     6
+    ],
+    "SG": [
+     1,
+     6
+    ]
+   }
+  },
+  "2026-11-04": {
+   "visitors": 59,
+   "pageviews": 166,
+   "pages": {
+    "/": [
+     46,
+     57
+    ],
+    "/lectures": [
+     26,
+     31
+    ],
+    "/team": [
+     20,
+     24
+    ],
+    "/advisor": [
+     15,
+     18
+    ],
+    "/news": [
+     9,
+     10
+    ],
+    "/publications": [
+     8,
+     11
+    ],
+    "/research": [
+     7,
+     7
+    ],
+    "/opening": [
+     6,
+     7
+    ],
+    "/research/robotic-hands": [
+     4,
+     5
+    ],
+    "Others": [
+     3,
+     6
+    ],
+    "/research/ai-based-multifinger-grasping": [
+     2,
+     3
+    ]
+   },
+   "referrers": {
+    "(direct)": [
+     55,
+     158
+    ],
+    "google.com": [
+     10,
+     13
+    ],
+    "cyber.sogang.ac.kr": [
+     3,
+     3
+    ],
+    "eclass.sogang.ac.kr": [
+     3,
+     4
+    ],
+    "bing.com": [
+     1,
+     1
+    ]
+   },
+   "countries": {
+    "KR": [
+     52,
+     167
+    ],
+    "US": [
+     3,
+     3
+    ],
+    "NZ": [
+     2,
+     4
+    ],
+    "AU": [
+     1,
+     3
+    ],
+    "BD": [
+     1,
+     1
+    ],
+    "NL": [
+     1,
+     1
+    ]
+   }
   }
  },
  "note": "Daily visitor counts preserved from Vercel Web Analytics (UTC calendar days = KST 09:00 to next 09:00). Days with page views also keep top pages / referrers / countries as {label: [visitors, pageviews]}.",
- "updated": "2026-11-01 14:52 KST"
+ "updated": "2026-11-05 22:45 KST"
 }
