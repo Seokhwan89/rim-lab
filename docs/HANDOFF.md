@@ -68,6 +68,8 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- MEE4033 Lecture 12 (Motor Control 1: Sensors for Motor Control, 22쪽 2.5 MB)·Lecture 13 (Motor Control 2: DC Motor
+  Modeling, 21쪽 2.4 MB) 슬라이드 추가 (2026-11-09).
 - Search Console 색인 오류 대응 (2026-11-09, 교수가 GSC 메일 "찾을 수 없음(404)" + "사용자가 선택한 표준이 없는 중복
   페이지" 캡처 → "고쳐봐"): ①layout.tsx `alternates.canonical: './'` → 모든 페이지에 rim.sogang.ac.kr 절대 canonical
   (빌드 HTML 확인). ②next.config.mjs redirects — rim-lab.vercel.app 호스트 → rim.sogang.ac.kr 301(중복 원인),

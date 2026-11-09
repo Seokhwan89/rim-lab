@@ -39,6 +39,22 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 13,
+        title: 'Motor Control 2: DC Motor Modeling',
+        date: '2026-11-09',
+        file: '/lectures/mee4033-fall-2026/lecture-13-motor-control-2-dc-motor-modeling.pdf',
+        pages: 21,
+        size: '2.4 MB',
+      },
+      {
+        no: 12,
+        title: 'Motor Control 1: Sensors for Motor Control',
+        date: '2026-11-09',
+        file: '/lectures/mee4033-fall-2026/lecture-12-motor-control-1-sensors-for-motor-control.pdf',
+        pages: 22,
+        size: '2.5 MB',
+      },
+      {
         no: 11,
         title: 'Digital System Implementation: Interrupt Experiments',
         date: '2026-11-03',
