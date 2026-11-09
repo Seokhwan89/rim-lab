@@ -9,6 +9,15 @@ const nextConfig = {
       // One canonical host: the Vercel alias serves the same pages, which Google reports as
       // "duplicate without user-selected canonical". Send it (and any preview alias) to the real domain.
       { source: '/:path*', has: [{ type: 'host', value: 'rim-lab.vercel.app' }], destination: 'https://rim.sogang.ac.kr/:path*', permanent: true },
+      // Old-site URL scheme (Search Console 404 report, 2026-11-09): /research-projects/<slug> → /research/<slug>
+      { source: '/research-projects', destination: '/research', permanent: true },
+      { source: '/research-projects/overview', destination: '/research', permanent: true },
+      { source: '/research-projects/factory-automation-harness-cable-assembly', destination: '/research/factory-automation', permanent: true },
+      { source: '/research-projects/:slug', destination: '/research/:slug', permanent: true },
+      { source: '/projects/:slug', destination: '/research/:slug', permanent: true },
+      { source: '/research-statement', destination: '/advisor', permanent: true },
+      { source: '/research-advisor', destination: '/advisor', permanent: true },
+      { source: '/publications-0', destination: '/publications', permanent: true },
       // Legacy / guessed entry points that Googlebot and visitors keep requesting (404s in Search Console)
       { source: '/home', destination: '/', permanent: true },
       { source: '/index.html', destination: '/', permanent: true },

@@ -74,8 +74,11 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   페이지" 캡처 → "고쳐봐"): ①layout.tsx `alternates.canonical: './'` → 모든 페이지에 rim.sogang.ac.kr 절대 canonical
   (빌드 HTML 확인). ②next.config.mjs redirects — rim-lab.vercel.app 호스트 → rim.sogang.ac.kr 301(중복 원인),
   /home·/index.html·/index.php·/main → /, /members·/people → /team, /professor → /advisor, /publication·/papers →
-  /publications, /projects → /research, /contact·/recruit(ing) → /opening. 실제 404 URL 목록은 GSC "페이지" 보고서에서
-  교수가 뽑아 주면 정확히 매핑할 것(크롬 명령 전달함). GSC에서 "수정 검증 시작" 눌러야 재크롤 됨.
+  /publications, /projects → /research, /contact·/recruit(ing) → /opening. 이어 교수가 크롬 Claude로 GSC 404 목록 13건을
+  뽑아 줌 → 옛 사이트 체계 매핑 추가: /research-projects(/overview) → /research, /research-projects/:slug·/projects/:slug →
+  /research/:slug, …/factory-automation-harness-cable-assembly → /research/factory-automation, /research-statement·
+  /research-advisor → /advisor, /publications-0 → /publications. 중복 2건(/lectures, /research-projects/compact-variable-
+  transmission)은 canonical+리다이렉트로 해소. GSC에서 "수정 검증 시작" 눌러야 재크롤 됨.
 - AI Grasping 페이지 특허 보강 (2026-11-04, 교수 "특허가 1개만 있는데 맞아? 그리퍼 관련?"): patents.ts의 project를
   배열 허용(string | string[])으로 넓히고, DDD 그리퍼(KR 10-2026-0005274·PCT)와 손끝 3축 힘 추정(KR 10-2026-0177849)을
   robotic-hands + ai-based-multifinger-grasping 양쪽에 표시(기존엔 단축 힘센서 파지 제어 1건만). patentsByProject가 배열 처리.
