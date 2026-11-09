@@ -78,7 +78,8 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   뽑아 줌 → 옛 사이트 체계 매핑 추가: /research-projects(/overview) → /research, /research-projects/:slug·/projects/:slug →
   /research/:slug, …/factory-automation-harness-cable-assembly → /research/factory-automation, /research-statement·
   /research-advisor → /advisor, /publications-0 → /publications. 중복 2건(/lectures, /research-projects/compact-variable-
-  transmission)은 canonical+리다이렉트로 해소. GSC에서 "수정 검증 시작" 눌러야 재크롤 됨.
+  transmission)은 canonical+리다이렉트로 해소. 교수가 크롬 Claude로 두 항목 모두 **유효성 검사 시작**(2026-11-09).
+  결과 메일(통과/실패)이 오면 확인; 보통 1~2주.
 - AI Grasping 페이지 특허 보강 (2026-11-04, 교수 "특허가 1개만 있는데 맞아? 그리퍼 관련?"): patents.ts의 project를
   배열 허용(string | string[])으로 넓히고, DDD 그리퍼(KR 10-2026-0005274·PCT)와 손끝 3축 힘 추정(KR 10-2026-0177849)을
   robotic-hands + ai-based-multifinger-grasping 양쪽에 표시(기존엔 단축 힘센서 파지 제어 1건만). patentsByProject가 배열 처리.
