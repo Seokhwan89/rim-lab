@@ -14,6 +14,9 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://rim.sogang.ac.kr'),
+  // Per-page canonical on the real domain (resolved against the current route), so the
+  // Vercel alias and any query-string variants are not indexed as duplicates.
+  alternates: { canonical: './' },
   title: {
     default: 'RIM Lab — Robotics & Intelligent Mechanisms Lab, Sogang University',
     template: '%s | RIM Lab, Sogang University',
