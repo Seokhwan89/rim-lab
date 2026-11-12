@@ -68,6 +68,12 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- 메일 점검 + GSC 알림 (2026-11-12, 교수 "확인해봐, 업데이트할 거 있나"): ①GSC 11/12 메일의 새 이유는 **"리디렉션이 포함된
+  페이지"** — 11/9에 넣은 옛 주소 301 리다이렉트를 구글이 재크롤해 404 → 리디렉션으로 재분류한 정상 결과, 조치 불필요
+  (사이트맵 URL은 모두 리다이렉트 없는 최종 주소). ②**COAST 유럽출원 EP 21793176.5 등록예정**(EPO Intention to Grant,
+  11/11 Troutman 메일; GT가 FR·UK·DE 검증 + 단일특허 진행 회신, 기한 2027-03-09) → patents.ts note, Latest Updates 1줄,
+  CV 브릿지 task-012. **task-011(US 19/265,263)은 11/4 이후 PC 미수행** — Drive PDF 10/26 그대로. ③게시 안 함: 유온로보틱스
+  강연(11/10, 교수 지시), 현대차 제조AI 과제 미진행, LG PRI 협업 논의, KSME 심사위원·KAIA 평가위원 위촉, RA-L/ICRA 심사 건.
 - 오타 정정 (2026-11-10, 교수 지적): Publications의 Ultra-Low-Impedance Gripper(이준·최아리, arXiv 2608.09198) venue
   "ICRA 2027 late-breaking result" → **ICRA 2026** (LBR 발표는 2026년 6월 ICRA, arXiv 게시는 8월).
 - MEE4033 Lecture 12 (Motor Control 1: Sensors for Motor Control, 22쪽 2.5 MB)·Lecture 13 (Motor Control 2: DC Motor

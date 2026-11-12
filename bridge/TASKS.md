@@ -254,3 +254,19 @@ US 19/265,263 (2025-07-10 출원) 「능동 가변 강성 및 변속 메커니�
 5. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 1번 줄 최종 텍스트, 머리글 날짜, PDF 쪽수, 저장 시각.
 6. .bridge-done 에 task-011 기록.
 
+## task-012 (2026-11-12) — CV 유럽특허 등록예정(Intention to Grant) 반영 (task-011과 함께 한 번에 처리 가능)
+(교수 지시 "홈페이지 업데이트할 거 있나 보고" → 11/11 Troutman(GT 대리인) 메일 "Intent to Grant received - GTRC8451EP":
+COAST 가이드와이어 유럽출원 EP 21793176.5 등록예정 통지. 등록료·번역 후 등록번호가 나오면 다시 바꿈.)
+
+대상 파일: task-004~011과 같은 CV Word 파일과 같은 폴더의 같은 이름 PDF.
+할 일 (서식 그대로, 텍스트만 교체 — 문자열이 이미 없으면 건너뛰고 보고):
+"International Patent" 절, COAST 가이드와이어 "European Patent" 줄
+1. "EP21793176.5, patent pending (2021.4.21)"  →  "EP21793176.5 (approved 2026.11)"
+   (주의: 다른 패밀리의 "EP20766820.3, patent pending"·"EP20766664.5, patent pending" 줄은 그대로 둔다)
+공통
+2. task-011이 아직 미수행이면 그 1번("US19/265,263 (approved 2026.11)")도 함께 수행.
+3. 페이지 머리글 날짜 → "November 12, 2026"
+4. 저장(덮어쓰기) → Word로 같은 폴더에 PDF 내보내기(기존 PDF 덮어쓰기, Drive id 유지)
+5. 'RIM Lab 홈페이지 관리' (cloud)에 SendMessage로 보고: 바뀐 줄의 최종 텍스트, 머리글 날짜, PDF 쪽수, 저장 시각.
+6. .bridge-done 에 task-011, task-012 기록.
+
