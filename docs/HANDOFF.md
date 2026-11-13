@@ -68,6 +68,10 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- 새 유튜브 2편 (2026-11-13, 교수 "유튜브 몇 개 업데이트 했는데 홈페이지도 반영"): hoO7AxQQLcg "Blind bold screwing using
+  DDD gripper"(11/13, 0:46; 사이트 제목은 bold→Bolt로 교정) · RLBloUT9N3E "Demo 1 using DDD gripper - Nut & Bolt assembly"
+  (11/10, 1:41; Research 재생목록엔 있으나 채널 동영상 탭엔 안 보임 — 일부 공개일 가능성, 교수에게 알림). Robotic Hands·
+  AI Grasping 양쪽 te3rbLkJntU 다음에 배치, Latest Updates 1줄. 메인 그리드는 ISR로 자동 반영.
 - 메일 점검 + GSC 알림 (2026-11-12, 교수 "확인해봐, 업데이트할 거 있나"): ①GSC 11/12 메일의 새 이유는 **"리디렉션이 포함된
   페이지"** — 11/9에 넣은 옛 주소 301 리다이렉트를 구글이 재크롤해 404 → 리디렉션으로 재분류한 정상 결과, 조치 불필요
   (사이트맵 URL은 모두 리다이렉트 없는 최종 주소). ②**COAST 유럽출원 EP 21793176.5 등록예정**(EPO Intention to Grant,

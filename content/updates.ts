@@ -14,6 +14,7 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.11.13', kind: 'Video', title: 'New videos: DDD gripper nut-and-bolt assembly and blind bolt screwing', href: '/research/robotic-hands' },
   { date: '2026.11.12', kind: 'Patent', title: 'COAST steerable guidewire patent allowed in Europe (EPO intention to grant, EP 21793176.5)', href: '/publications' },
   { date: '2026.11.04', kind: 'Patent', title: 'US patent allowed: actively variable stiffness and transmission mechanism for robots (US 19/265,263)', href: '/publications' },
   { date: '2026.10.26', kind: 'Patent', title: 'Patent application filed: automated assembly system for two-row flexible ribbon harness cables (KR 10-2026-0195251)', href: '/publications' },

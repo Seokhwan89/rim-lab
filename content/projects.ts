@@ -63,6 +63,8 @@ export const projects: Project[] = [
     videos: [
       { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper' },
       { id: 'te3rbLkJntU', title: 'Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping with a Direct-Drive Gripper' },
+      { id: 'hoO7AxQQLcg', title: 'Blind Bolt Screwing using the DDD Gripper' },
+      { id: 'RLBloUT9N3E', title: 'Demo 1 using the DDD Gripper — Nut & Bolt Assembly' },
       { id: 'eKs43FlFvTQ', title: 'RIM Hand Test 2' },
       { id: 'BfPxhfZMt6U', title: 'RIM Hand Test 1' },
       { id: '9866GYPbY-E', title: 'RIM Hand — Accurate Carpometacarpal Joint and Nitinol-Reinforced Skeleton' },
@@ -96,6 +98,8 @@ export const projects: Project[] = [
     videos: [
       { id: '0o204ERceus', title: 'DDD Gripper — Direct-Drive Differential Multi-DOF Robotic Gripper' },
       { id: 'te3rbLkJntU', title: 'Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping with a Direct-Drive Gripper' },
+      { id: 'hoO7AxQQLcg', title: 'Blind Bolt Screwing using the DDD Gripper' },
+      { id: 'RLBloUT9N3E', title: 'Demo 1 using the DDD Gripper — Nut & Bolt Assembly' },
       { id: 'pyLLG74D9jI', title: 'Ultra-Low-Impedance Robotic Gripper' },
       { id: 'lJGHvHAex6g', title: 'Vision-Free Multifingered Blind Grasping' },
       { id: 'dBLvZ5Zh2CE', title: 'Blind Grasping — 2nd Trial' },
