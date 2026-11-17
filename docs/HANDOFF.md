@@ -68,6 +68,7 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- MEE4033 Lecture 14 — Motor Control 3: Time Constants and Model Identification 슬라이드 추가 (2026-11-17, 22쪽, 2.8 MB).
 - 새 유튜브 2편 (2026-11-13, 교수 "유튜브 몇 개 업데이트 했는데 홈페이지도 반영"): hoO7AxQQLcg "Blind bold screwing using
   DDD gripper"(11/13, 0:46; 사이트 제목은 bold→Bolt로 교정) · RLBloUT9N3E "Demo 1 using DDD gripper - Nut & Bolt assembly"
   (11/10, 1:41; Research 재생목록엔 있으나 채널 동영상 탭엔 안 보임 — 일부 공개일 가능성, 교수에게 알림). Robotic Hands·

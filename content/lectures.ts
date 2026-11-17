@@ -39,6 +39,14 @@ export const courses: Course[] = [
     active: true,
     lectures: [
       {
+        no: 14,
+        title: 'Motor Control 3: Time Constants and Model Identification',
+        date: '2026-11-17',
+        file: '/lectures/mee4033-fall-2026/lecture-14-motor-control-3-time-constants-and-model-identification.pdf',
+        pages: 22,
+        size: '2.8 MB',
+      },
+      {
         no: 13,
         title: 'Motor Control 2: DC Motor Modeling',
         date: '2026-11-09',
