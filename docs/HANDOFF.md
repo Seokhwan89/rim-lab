@@ -73,7 +73,8 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   갤러리: 하네스·토크리플·연단·Q&A·저녁 회식). **Q&A 사진은 앞쪽 노트북 화면(Gmail 받은편지함)이 찍혀 있어 아래 31% 크롭.**
   7장 중 "이송계의 진동/슬로싱" 슬라이드 발표 사진 1장은 연구실 발표인지 불명이라 미게시 — 교수 확인 대기.
   하네스 사진엔 실험 결과 표(성공률 등)가 작게 보임 — 10/12 출원 후 학회 공개 발표분이라 게시, 교수에게 고지.
-  KSRM 뉴스(10/23)는 아직 제목에 (upcoming) — 교수 지시 시 정리.
+  KSRM 뉴스(10/23)도 교수 승인으로 (upcoming) 제거·과거형(앵커 `2026-10-invited-talk-at-ksrm-2026-seoul`, updates href 수정).
+  Smart&Soft(11/23)는 아직 예정이라 그대로 — 행사 후 같은 방식으로 정리할 것.
 - MEE4033 Lecture 14 — Motor Control 3: Time Constants and Model Identification 슬라이드 추가 (2026-11-17, 22쪽, 2.8 MB).
 - 새 유튜브 2편 (2026-11-13, 교수 "유튜브 몇 개 업데이트 했는데 홈페이지도 반영"): hoO7AxQQLcg "Blind bold screwing using
   DDD gripper"(11/13, 0:46; 사이트 제목은 bold→Bolt로 교정) · RLBloUT9N3E "Demo 1 using DDD gripper - Nut & Bolt assembly"

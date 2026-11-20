@@ -22,7 +22,7 @@ export const updates: UpdateItem[] = [
   { date: '2026.10.25', kind: 'Patent', title: 'Korean patent granted for the lower-limb force assistance device (KR 10-2980945, with NRC and Sejong Univ.)', href: '/publications' },
   { date: '2026.10.16', kind: 'Video', title: 'New videos: RIM Hand Test 1 & 2', href: '/research/robotic-hands' },
   { date: '2026.10.13', kind: 'Award', title: 'Prof. Jeong named a finalist for the IROS 2026 Outstanding Associate Editor Award', href: '/news#2026-10-prof-jeong-named-a-finalist-for-the-iros-2026-outstanding-associate-edit' },
-  { date: '2026.10.12', kind: 'News', title: 'Prof. Jeong to give an invited talk at KSRM 2026, Seoul (Oct 23)', href: '/news#2026-10-invited-talk-at-ksrm-2026-seoul-upcoming' },
+  { date: '2026.10.12', kind: 'News', title: 'Prof. Jeong to give an invited talk at KSRM 2026, Seoul (Oct 23)', href: '/news#2026-10-invited-talk-at-ksrm-2026-seoul' },
   { date: '2026.10.12', kind: 'News', title: 'KSME Annual Meeting 2026: two talks by Prof. Jeong and six lab oral presentations (Nov 11–14, Jeju)', href: '/news#2026-11-ksme-annual-meeting-2026-jeju' },
   { date: '2026.10.08', kind: 'Patent', title: 'Canadian patent granted for steerable robotic endoscopic tools (CA 3,132,642); 2026 US grants added for the endoscopic-tool and voice-activated families', href: '/publications' },
   { date: '2026.10.07', kind: 'Patent', title: 'COAST steerable guidewire patent issued in the US — US 12,752,086 B2 (Oct 6, 2026)', href: '/publications' },
