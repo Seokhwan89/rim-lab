@@ -68,6 +68,12 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- KSME 2026 사진 게시 (2026-11-20, 교수가 사진 7장 전달 "홈페이지에 업데이트"): 뉴스 제목에서 (upcoming) 제거(앵커
+  `2026-11-ksme-annual-meeting-2026-jeju`, updates.ts 기존 href도 수정), 본문 과거형, 사진 6장 WebP(대표: 그리퍼 발표,
+  갤러리: 하네스·토크리플·연단·Q&A·저녁 회식). **Q&A 사진은 앞쪽 노트북 화면(Gmail 받은편지함)이 찍혀 있어 아래 31% 크롭.**
+  7장 중 "이송계의 진동/슬로싱" 슬라이드 발표 사진 1장은 연구실 발표인지 불명이라 미게시 — 교수 확인 대기.
+  하네스 사진엔 실험 결과 표(성공률 등)가 작게 보임 — 10/12 출원 후 학회 공개 발표분이라 게시, 교수에게 고지.
+  KSRM 뉴스(10/23)는 아직 제목에 (upcoming) — 교수 지시 시 정리.
 - MEE4033 Lecture 14 — Motor Control 3: Time Constants and Model Identification 슬라이드 추가 (2026-11-17, 22쪽, 2.8 MB).
 - 새 유튜브 2편 (2026-11-13, 교수 "유튜브 몇 개 업데이트 했는데 홈페이지도 반영"): hoO7AxQQLcg "Blind bold screwing using
   DDD gripper"(11/13, 0:46; 사이트 제목은 bold→Bolt로 교정) · RLBloUT9N3E "Demo 1 using DDD gripper - Nut & Bolt assembly"
