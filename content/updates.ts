@@ -14,6 +14,7 @@ export type UpdateItem = {
 };
 
 export const updates: UpdateItem[] = [
+  { date: '2026.11.26', kind: 'News', title: 'Prof. Jeong gave an invited lecture at LG Electronics PRI', href: '/news#2026-11-invited-lecture-at-lg-electronics-production-engineering-research-instit' },
   { date: '2026.11.23', kind: 'News', title: 'Prof. Jeong gave an invited talk at Smart&Soft 2026, Jeju', href: '/news#2026-11-invited-talk-at-smart-soft-2026-jeju' },
   { date: '2026.11.20', kind: 'News', title: 'Photos from the KSME Annual Meeting 2026 in Jeju — eight talks from the lab', href: '/news#2026-11-ksme-annual-meeting-2026-jeju' },
   { date: '2026.11.13', kind: 'Video', title: 'New videos: DDD gripper nut-and-bolt assembly and blind bolt screwing', href: '/research/robotic-hands' },

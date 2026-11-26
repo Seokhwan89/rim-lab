@@ -68,6 +68,11 @@ _최종 갱신: 2026-09-23 (T-ASE 게재 반영 · MEE1006 강의 개설 세션)
   유튜브 "RIM Hand Test 1"(10/8)·"RIM Hand Test 2"(10/15)는 10/16 교수 지시("왜 반영이 안 되어 있지?")로 게시:
   Robotic Hands 페이지 Demonstrations 3·4번째(DDD·te3rbLkJntU 다음), Latest Updates 1줄. 둘 다 Research 재생목록에
   있어 메인 영상 그리드는 재배포 시 자동 반영(빌드 때 재생목록을 받아오므로 새 업로드는 배포가 있어야 보임).
+- LG전자 생산기술원 초청 특강 게시 (2026-11-26, 교수가 강연장 사진 전달 + "메일 참고해봐, LG 생기연 강연임"): News 맨 위
+  (Announcement) + Latest Updates 1줄. 근거: 11/16 LG 교육서비스센터 강의의뢰 메일(11/26 13:00–16:20, LG디지털파크 러닝센터,
+  주제 Robot Hands & Physical AI Manipulation) + 사진 속 표지 슬라이드 제목. 사내 과정명(AF On-Track W/S)·함께 강의한 타 교수 실명은
+  기재하지 않음. **사진은 표지 슬라이드+연단만 남기고 크롭 — 청중 얼굴과 앞자리 노트북·태블릿 화면 제거**(원본 2000px라 결과 1000px).
+  ※ 'LG PRI 협업 논의' 자체는 여전히 비게시(이번 건은 공개 강연만).
 - Smart&Soft 2026 초청강연 사진 게시 (2026-11-23, 교수가 발표 당일 사진 2장 전달 "이거도 업데이트"): 뉴스 제목에서
   (upcoming) 제거(앵커 `2026-11-invited-talk-at-smart-soft-2026-jeju`, updates.ts 기존 href 수정 + 11.23 새 줄), 본문 과거형,
   사진 2장 WebP(대표: "Sensory feedback and motor control" 슬라이드 — 연구실 자체 내용, 갤러리: AI 제어 사례 소개 슬라이드 —
